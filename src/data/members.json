@@ -30,6 +30,21 @@
     "bio": ""
   },
   {
+    "id": "mentor-miryoung_song",
+    "name": "송미령",
+    "nameEn": "Mi-Ryoung Song",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
     "id": "mentor-jae_young_lee",
     "name": "이재영",
     "nameEn": "Jae Young Lee",
@@ -279,7 +294,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -292,7 +309,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -305,7 +324,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -318,7 +339,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -331,7 +354,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -344,7 +369,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -357,7 +384,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -370,7 +399,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -383,7 +414,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -396,7 +429,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -409,7 +444,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
+    "research": [
+      "Emergind devices"
+    ],
     "bio": ""
   },
   {
@@ -422,21 +459,8 @@
     "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
-    "research": [],
-    "bio": ""
-  },
-  {
-    "id": "fellow-miryoung_song",
-    "name": "송미령",
-    "nameEn": "Mi-Ryoung Song",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
     "research": [
-      "Artificial Pebtide"
+      "Emergind devices"
     ],
     "bio": ""
   }
