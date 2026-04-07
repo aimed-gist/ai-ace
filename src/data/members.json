@@ -1,7 +1,7 @@
 [
   {
     "id": "mentor-eunji_lee",
-    "name": "",
+    "name": "이은지",
     "nameEn": "Eunji Lee",
     "role": "mentor",
     "title": "Professor, PI",
@@ -16,16 +16,427 @@
   },
   {
     "id": "mentor-hyunju_lee",
-    "name": "",
+    "name": "이현주",
     "nameEn": "Hyunju Lee",
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hyunju_lee.jpg",
     "email": "hyunjulee@gist.ac.kr",
     "website": "https://combio.gist.ac.kr/combio/",
     "research": [
       "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jae_young_lee",
+    "name": "이재영",
+    "nameEn": "Jae Young Lee",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-zee_yong_park",
+    "name": "박지용",
+    "nameEn": "Zee Yong Park",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jongchan_lee",
+    "name": "이종찬",
+    "nameEn": "Jong-Chan Lee",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "DGIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jahyoung_ryu",
+    "name": "류자형",
+    "nameEn": "Ja-Hyoung Ryu",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jaehong_kim",
+    "name": "김재홍",
+    "nameEn": "JaeHong Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-myungeun_seo",
+    "name": "서명은",
+    "nameEn": "Myungeun Seo",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-taehyuk_kwon",
+    "name": "권태혁",
+    "nameEn": "Tae-Hyuk Kwon",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jong_min_yuk",
+    "name": "유종민",
+    "nameEn": "Jong Min Yuk",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-byeong_chae_kim",
+    "name": "김병채",
+    "nameEn": "Byeong Chae Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "CNUH",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jijoon_song",
+    "name": "송지윤",
+    "nameEn": "Ji-Joon Song",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-uehwan_kim",
+    "name": "김의환",
+    "nameEn": "Ue-Hwan Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-minkyung_kim",
+    "name": "김민경",
+    "nameEn": "MinKyung Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-mansu_kim",
+    "name": "김만수",
+    "nameEn": "Mansu Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-dukjo_kong",
+    "name": "공득조",
+    "nameEn": "Duk-Jo Kong",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-byuonghoon_park",
+    "name": "박병훈",
+    "nameEn": "Byuong-Hoon Park",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "T3Q",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-hyunsu_ju",
+    "name": "주현수",
+    "nameEn": "Hyunsu Ju",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-hyeonho_jeong",
+    "name": "정현호",
+    "nameEn": "Hyeon-Ho Jeong",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jung_ah_lim",
+    "name": "임정아",
+    "nameEn": "Jung Ah Lim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-dong_ki_yoon",
+    "name": "윤동기",
+    "nameEn": "Dong Ki Yoon",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-changhee_cho",
+    "name": "조창희",
+    "nameEn": "Chang-Hee Cho",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "DGIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-hyeonjin_shin",
+    "name": "신현진",
+    "nameEn": "Hyeon-Jin Shin",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-jeongeun_park",
+    "name": "박정은",
+    "nameEn": "Jeong-Eun Park",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-hyunseob_lim",
+    "name": "임현섭",
+    "nameEn": "Hyunseob Lim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-shinhyun_kim",
+    "name": "김신현",
+    "nameEn": "Shin-Hyun Kim",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-sung_yang",
+    "name": "양성",
+    "nameEn": "Sung Yang",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-hyunhyub_ko",
+    "name": "고현섭",
+    "nameEn": "Hyunhyub Ko",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-young_min_song",
+    "name": "송영민",
+    "nameEn": "Young Min Song",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "mentor-myunghan_yoon",
+    "name": "윤명한",
+    "nameEn": "Myung-Han Yoon",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [],
+    "bio": ""
+  },
+  {
+    "id": "fellow-miryoung_song",
+    "name": "송미령",
+    "nameEn": "Mi-Ryoung Song",
+    "role": "fellow",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
     ],
     "bio": ""
   }

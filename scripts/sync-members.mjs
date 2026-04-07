@@ -6,7 +6,7 @@
  * Google Spreadsheet → members.json 자동 동기화 스크립트
  *
  * 스프레드시트 컬럼 (순서대로):
- *   이름 | 소속 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과 | 역할
+ *   이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과
  *
  * 사진 파일명 규칙:
  *   영문명 → 소문자 + 공백→언더스코어 + .jpg
@@ -30,6 +30,14 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export
 
 // Valid roles
 const VALID_ROLES = ["mentor", "global_mentor", "fellow", "alumni"];
+
+// Map spreadsheet role text → internal role key
+const ROLE_MAP = {
+  mentor: "mentor",
+  "global mentor": "global_mentor",
+  fellow: "fellow",
+  alumni: "alumni",
+};
 
 /**
  * Simple CSV parser (handles quoted fields with commas)
@@ -198,6 +206,7 @@ async function fetchSpreadsheet() {
 
   const members = [];
 
+  // Column order: 이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과
   for (let i = 1; i < rows.length; i++) {
     const row = rows[i];
     const nameEn = (row[0] || "").trim();
@@ -205,16 +214,17 @@ async function fetchSpreadsheet() {
     // Skip empty rows
     if (!nameEn) continue;
 
-    const affiliation = (row[1] || "").trim();
-    const title = (row[2] || "").trim();
-    const email = (row[3] || "").trim();
-    const website = (row[4] || "").trim();
-    const photoUrl = (row[5] || "").trim();
-    const specialty = (row[6] || "").trim();
-    const roleRaw = (row[7] || "mentor").trim().toLowerCase();
+    const nameKo = (row[1] || "").trim();
+    const affiliation = (row[2] || "").trim();
+    const roleRaw = (row[3] || "Mentor").trim().toLowerCase();
+    const title = (row[4] || "").trim();
+    const email = (row[5] || "").trim();
+    const website = (row[6] || "").trim();
+    const photoUrl = (row[7] || "").trim();
+    const specialty = (row[8] || "").trim();
 
-    // Validate role
-    const role = VALID_ROLES.includes(roleRaw) ? roleRaw : "mentor";
+    // Map role text to internal key
+    const role = ROLE_MAP[roleRaw] || "mentor";
 
     // Build research tags from specialty (split by comma)
     const research = specialty
@@ -224,12 +234,9 @@ async function fetchSpreadsheet() {
     // Download photo if URL provided, otherwise check local files
     const image = await getPhotoPath(nameEn, photoUrl);
 
-    // Generate Korean name placeholder (empty if not in spreadsheet)
-    const name = "";
-
     const member = {
       id: `${role}-${nameToFilename(nameEn)}`,
-      name,
+      name: nameKo,
       nameEn,
       role,
       title,
@@ -242,7 +249,7 @@ async function fetchSpreadsheet() {
     };
 
     members.push(member);
-    console.log(`  ✅ ${nameEn} (${role}) — ${affiliation}`);
+    console.log(`  ✅ ${nameEn} (${nameKo}) [${role}] — ${affiliation}`);
   }
 
   return members;

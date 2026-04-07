@@ -28,8 +28,9 @@ export default function MemberCard({ member }: { member: Member }) {
         />
       </div>
       <div className="p-5">
-        <h3 className="font-bold text-lg text-primary-dark">{member.nameEn}</h3>
-        <p className="text-sm text-gray-500">{member.name}</p>
+        <h3 className="font-bold text-lg text-primary-dark">
+          {member.nameEn}{member.name ? ` (${member.name})` : ""}
+        </h3>
         <p className="text-sm text-accent mt-1 font-medium">{member.title}</p>
         <p className="text-xs text-gray-400 mt-0.5">{member.affiliation}</p>
         {member.website && (
