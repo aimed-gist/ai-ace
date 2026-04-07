@@ -1,0 +1,39 @@
+name: Sync Members from Spreadsheet
+
+on:
+  schedule:
+    # 매일 KST 00:00 = UTC 15:00
+    - cron: "0 15 * * *"
+  workflow_dispatch: # 수동 실행 지원
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync members from spreadsheet
+        run: node scripts/sync-members.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/data/members.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/members.json
+          git commit -m "Auto-sync members from spreadsheet [bot]"
+          git push

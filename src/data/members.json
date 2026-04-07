@@ -1,7 +1,7 @@
 [
   {
-    "id": "mentor-1",
-    "name": "이은지",
+    "id": "mentor-eunji_lee",
+    "name": "",
     "nameEn": "Eunji Lee",
     "role": "mentor",
     "title": "Professor, PI",
@@ -9,12 +9,14 @@
     "image": "/images/members/placeholder.svg",
     "email": "eunjilee@gist.ac.kr",
     "website": "https://so-mat.wixsite.com/gist",
-    "research": ["Artificial Peptide"],
-    "bio": "Leading research in artificial peptide engineering at GIST."
+    "research": [
+      "Artificial Pebtide"
+    ],
+    "bio": ""
   },
   {
-    "id": "mentor-2",
-    "name": "이현주",
+    "id": "mentor-hyunju_lee",
+    "name": "",
     "nameEn": "Hyunju Lee",
     "role": "mentor",
     "title": "Professor",
@@ -22,46 +24,9 @@
     "image": "/images/members/placeholder.svg",
     "email": "hyunjulee@gist.ac.kr",
     "website": "https://combio.gist.ac.kr/combio/",
-    "research": ["Collective Intelligence"],
-    "bio": "Specializing in collective intelligence and computational biology at GIST."
-  },
-  {
-    "id": "global-mentor-1",
-    "name": "",
-    "nameEn": "Global Mentor (TBD)",
-    "role": "global_mentor",
-    "title": "Professor",
-    "affiliation": "TBD",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [],
-    "bio": "Global mentor information coming soon."
-  },
-  {
-    "id": "fellow-1",
-    "name": "이연구원",
-    "nameEn": "Dr. Lee",
-    "role": "fellow",
-    "title": "InnoCORE Fellow",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "researcher@gist.ac.kr",
-    "website": "",
-    "research": ["Deep Learning", "Process Optimization"],
-    "bio": "Specializing in deep learning for industrial applications."
-  },
-  {
-    "id": "alumni-1",
-    "name": "박동문",
-    "nameEn": "Dr. Park",
-    "role": "alumni",
-    "title": "Former Postdoc",
-    "affiliation": "Samsung Electronics",
-    "image": "/images/members/placeholder.svg",
-    "email": "alumni@example.com",
-    "website": "",
-    "research": ["Computer Vision", "Quality Inspection"],
-    "bio": "Currently working on AI-based quality inspection systems."
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
   }
 ]
