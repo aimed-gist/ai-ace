@@ -1,0 +1,38 @@
+[
+  {
+    "id": "news-1",
+    "title": "AI-ACE@GIST Launches New Research Partnership with Industry Leaders",
+    "date": "2025-03-15",
+    "summary": "AI-ACE@GIST has established strategic partnerships with leading manufacturing companies to advance AI-driven innovation.",
+    "image": "/images/news/placeholder.svg",
+    "link": "#",
+    "category": "news"
+  },
+  {
+    "id": "news-2",
+    "title": "Call for InnoCORE Fellowship Applications - 2025",
+    "date": "2025-03-01",
+    "summary": "We are now accepting applications for the InnoCORE Fellowship program. Join our team of innovators.",
+    "image": "/images/news/placeholder.svg",
+    "link": "#",
+    "category": "notices"
+  },
+  {
+    "id": "news-3",
+    "title": "AI Workshop 2025: Smart Manufacturing and Beyond",
+    "date": "2025-02-20",
+    "summary": "Annual workshop on AI applications in manufacturing, featuring keynote speakers from global institutions.",
+    "image": "/images/news/placeholder.svg",
+    "link": "#",
+    "category": "workshop"
+  },
+  {
+    "id": "news-4",
+    "title": "Quarterly Newsletter - Winter 2025",
+    "date": "2025-01-15",
+    "summary": "Highlights of our latest research achievements, team updates, and upcoming events.",
+    "image": "/images/news/placeholder.svg",
+    "link": "#",
+    "category": "newsletter"
+  }
+]

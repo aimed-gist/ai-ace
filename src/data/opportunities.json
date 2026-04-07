@@ -1,0 +1,30 @@
+[
+  {
+    "id": "opp-1",
+    "title": "InnoCORE Fellowship 2025",
+    "type": "fellowship",
+    "deadline": "2025-06-30",
+    "description": "Join our InnoCORE Fellowship program to work on cutting-edge AI research for smart manufacturing. Open to PhD candidates and early-career researchers.",
+    "requirements": [
+      "PhD in CS, AI, or related field",
+      "Strong background in machine learning",
+      "Interest in manufacturing applications"
+    ],
+    "contact": "fellowship@ai-ace.gist.ac.kr",
+    "active": true
+  },
+  {
+    "id": "opp-2",
+    "title": "Postdoctoral Researcher Position",
+    "type": "position",
+    "deadline": "2025-12-31",
+    "description": "We are seeking a postdoctoral researcher to join our team in developing AI solutions for industrial process optimization.",
+    "requirements": [
+      "PhD in AI, ML, or related field",
+      "Publications in top-tier venues",
+      "Experience with LLMs preferred"
+    ],
+    "contact": "hiring@ai-ace.gist.ac.kr",
+    "active": true
+  }
+]

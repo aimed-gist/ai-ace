@@ -1,0 +1,32 @@
+[
+  {
+    "id": "paper-1",
+    "title": "LLM-Powered Manufacturing Process Optimization: A Comprehensive Survey",
+    "authors": ["Kim, S.", "Lee, J.", "Park, H."],
+    "journal": "Nature Manufacturing",
+    "year": 2025,
+    "doi": "10.1234/example.2025.001",
+    "type": "publication",
+    "abstract": "This paper presents a comprehensive survey on large language model applications in manufacturing process optimization."
+  },
+  {
+    "id": "paper-2",
+    "title": "AI-Driven Anomaly Detection in Smart Factory Environments",
+    "authors": ["Lee, J.", "Kim, S."],
+    "journal": "IEEE Transactions on Industrial Informatics",
+    "year": 2025,
+    "doi": "10.1234/example.2025.002",
+    "type": "publication",
+    "abstract": "A novel approach to anomaly detection using transformer-based models for smart factory systems."
+  },
+  {
+    "id": "patent-1",
+    "title": "Method and System for AI-based Manufacturing Quality Control",
+    "authors": ["Kim, S.", "Park, H."],
+    "journal": "Korean Patent Office",
+    "year": 2024,
+    "doi": "KR-10-2024-0001234",
+    "type": "patent",
+    "abstract": "A patented system for real-time quality control using AI-based visual inspection."
+  }
+]

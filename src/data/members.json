@@ -1,0 +1,38 @@
+[
+  {
+    "id": "member-1",
+    "name": "김교수",
+    "nameEn": "Prof. Kim",
+    "role": "mentor",
+    "title": "Professor",
+    "affiliation": "GIST, School of AI",
+    "image": "/images/members/placeholder.svg",
+    "email": "professor@gist.ac.kr",
+    "research": ["AI for Manufacturing", "Smart Systems"],
+    "bio": "Leading research in AI-driven manufacturing innovation."
+  },
+  {
+    "id": "member-2",
+    "name": "이연구원",
+    "nameEn": "Dr. Lee",
+    "role": "postdoc",
+    "title": "Postdoctoral Researcher",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "researcher@gist.ac.kr",
+    "research": ["Deep Learning", "Process Optimization"],
+    "bio": "Specializing in deep learning for industrial applications."
+  },
+  {
+    "id": "member-3",
+    "name": "박동문",
+    "nameEn": "Dr. Park",
+    "role": "alumni",
+    "title": "Former Postdoc",
+    "affiliation": "Samsung Electronics",
+    "image": "/images/members/placeholder.svg",
+    "email": "alumni@example.com",
+    "research": ["Computer Vision", "Quality Inspection"],
+    "bio": "Currently working on AI-based quality inspection systems."
+  }
+]

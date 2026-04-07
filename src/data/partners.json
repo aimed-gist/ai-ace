@@ -1,0 +1,44 @@
+[
+  {
+    "id": "partner-1",
+    "name": "KAIST",
+    "type": "university",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.kaist.ac.kr"
+  },
+  {
+    "id": "partner-2",
+    "name": "Seoul National University",
+    "type": "university",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.snu.ac.kr"
+  },
+  {
+    "id": "partner-3",
+    "name": "Samsung Electronics",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.samsung.com"
+  },
+  {
+    "id": "partner-4",
+    "name": "LG AI Research",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.lgresearch.ai"
+  },
+  {
+    "id": "partner-5",
+    "name": "Hyundai Motor Group",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.hyundai.com"
+  },
+  {
+    "id": "partner-6",
+    "name": "POSTECH",
+    "type": "university",
+    "logo": "/images/partners/placeholder.svg",
+    "url": "https://www.postech.ac.kr"
+  }
+]
