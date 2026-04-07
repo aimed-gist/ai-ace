@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 interface NewsItem {
   id: string;
   title: string;
@@ -24,7 +26,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
       <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
         <div className="aspect-video relative bg-primary/5 overflow-hidden">
           <Image
-            src={item.image}
+            src={`${basePath}${item.image}`}
             alt={item.title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"

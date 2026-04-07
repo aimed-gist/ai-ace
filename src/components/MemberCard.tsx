@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 interface Member {
   id: string;
   name: string;
@@ -19,7 +21,7 @@ export default function MemberCard({ member }: { member: Member }) {
     <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
       <div className="aspect-square relative bg-primary/5 overflow-hidden">
         <Image
-          src={member.image}
+          src={`${basePath}${member.image}`}
           alt={member.nameEn}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"

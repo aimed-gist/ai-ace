@@ -1,8 +1,13 @@
 import type { NextConfig } from "next";
 
+const basePath = "/ai-ace";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/ai-ace",
+  basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

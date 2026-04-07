@@ -3,6 +3,8 @@
 import Image from "next/image";
 import partners from "@/data/partners.json";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function PartnerCarousel() {
   // Duplicate for seamless infinite scroll
   const items = [...partners, ...partners];
@@ -19,7 +21,7 @@ export default function PartnerCarousel() {
             className="flex-shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
           >
             <Image
-              src={partner.logo}
+              src={`${basePath}${partner.logo}`}
               alt={partner.name}
               width={140}
               height={56}

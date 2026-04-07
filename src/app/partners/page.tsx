@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import partners from "@/data/partners.json";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const tabs = [
   { key: "all", label: "All" },
   { key: "university", label: "University" },
@@ -53,7 +55,7 @@ export default function PartnersPage() {
           >
             <div className="w-full aspect-[5/2] relative">
               <Image
-                src={partner.logo}
+                src={`${basePath}${partner.logo}`}
                 alt={partner.name}
                 fill
                 className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
