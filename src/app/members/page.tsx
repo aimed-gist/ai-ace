@@ -6,7 +6,8 @@ import members from "@/data/members.json";
 
 const tabs = [
   { key: "mentors", label: "Mentors", role: "mentor" },
-  { key: "postdoc", label: "Post Doc", role: "postdoc" },
+  { key: "global_mentors", label: "Global Mentors", role: "global_mentor" },
+  { key: "fellows", label: "InnoCORE Fellows", role: "fellow" },
   { key: "alumni", label: "Alumni", role: "alumni" },
 ];
 

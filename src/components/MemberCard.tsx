@@ -9,6 +9,7 @@ interface Member {
   affiliation: string;
   image: string;
   email: string;
+  website?: string;
   research: string[];
   bio: string;
 }
@@ -29,6 +30,16 @@ export default function MemberCard({ member }: { member: Member }) {
         <p className="text-sm text-gray-500">{member.name}</p>
         <p className="text-sm text-accent mt-1 font-medium">{member.title}</p>
         <p className="text-xs text-gray-400 mt-0.5">{member.affiliation}</p>
+        {member.website && (
+          <a
+            href={member.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-accent hover:underline mt-1 inline-block"
+          >
+            Website &rarr;
+          </a>
+        )}
         <div className="flex flex-wrap gap-1.5 mt-3">
           {member.research.map((tag) => (
             <span

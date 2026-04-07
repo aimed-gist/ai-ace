@@ -9,7 +9,8 @@ const navItems = [
     href: "/members",
     sub: [
       { label: "Mentors", href: "/members?tab=mentors" },
-      { label: "Post Doc", href: "/members?tab=postdoc" },
+      { label: "Global Mentors", href: "/members?tab=global_mentors" },
+      { label: "InnoCORE Fellows", href: "/members?tab=fellows" },
       { label: "Alumni", href: "/members?tab=alumni" },
     ],
   },
