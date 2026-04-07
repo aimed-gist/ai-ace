@@ -17,8 +17,8 @@
  *   node scripts/sync-members.mjs
  */
 
-import { writeFileSync, existsSync } from "fs";
-import { resolve, dirname } from "path";
+import { writeFileSync, existsSync, mkdirSync } from "fs";
+import { resolve, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -86,9 +86,81 @@ function nameToFilename(nameEn) {
 }
 
 /**
- * Check if photo file exists in public/images/members/
+ * Convert Google Drive share URL to direct download URL
+ * Supports:
+ *   https://drive.google.com/file/d/FILE_ID/view?usp=sharing
+ *   https://drive.google.com/open?id=FILE_ID
  */
-function getPhotoPath(nameEn) {
+function toDirectUrl(url) {
+  // Google Drive file link
+  const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (driveMatch) {
+    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+  }
+  // Google Drive open link
+  const openMatch = url.match(/drive\.google\.com\/open\?id=([^&]+)/);
+  if (openMatch) {
+    return `https://drive.google.com/uc?export=download&id=${openMatch[1]}`;
+  }
+  // Already a direct URL
+  return url;
+}
+
+/**
+ * Download image from URL and save to public/images/members/
+ * Returns the local path on success, null on failure
+ */
+async function downloadPhoto(url, nameEn) {
+  const base = nameToFilename(nameEn);
+  const membersDir = resolve(PROJECT_ROOT, "public", "images", "members");
+  mkdirSync(membersDir, { recursive: true });
+
+  try {
+    const directUrl = toDirectUrl(url);
+    const response = await fetch(directUrl, { redirect: "follow" });
+    if (!response.ok) {
+      console.log(`    ⚠️  Photo download failed (${response.status}): ${nameEn}`);
+      return null;
+    }
+
+    // Determine extension from content-type or URL
+    const contentType = response.headers.get("content-type") || "";
+    let ext = "jpg";
+    if (contentType.includes("png")) ext = "png";
+    else if (contentType.includes("webp")) ext = "webp";
+    else if (contentType.includes("gif")) ext = "gif";
+    else {
+      // Try from URL
+      const urlExt = extname(new URL(directUrl).pathname).replace(".", "").toLowerCase();
+      if (["jpg", "jpeg", "png", "webp", "gif"].includes(urlExt)) {
+        ext = urlExt === "jpeg" ? "jpg" : urlExt;
+      }
+    }
+
+    const buffer = Buffer.from(await response.arrayBuffer());
+    const filename = `${base}.${ext}`;
+    const filePath = resolve(membersDir, filename);
+    writeFileSync(filePath, buffer);
+
+    console.log(`    📸 Downloaded: ${filename} (${(buffer.length / 1024).toFixed(1)}KB)`);
+    return `/images/members/${filename}`;
+  } catch (err) {
+    console.log(`    ⚠️  Photo download error for ${nameEn}: ${err.message}`);
+    return null;
+  }
+}
+
+/**
+ * Get photo path: download from URL if provided, otherwise check local files
+ */
+async function getPhotoPath(nameEn, photoUrl) {
+  // If a URL is provided in the spreadsheet, download it
+  if (photoUrl && (photoUrl.startsWith("http://") || photoUrl.startsWith("https://"))) {
+    const downloaded = await downloadPhoto(photoUrl, nameEn);
+    if (downloaded) return downloaded;
+  }
+
+  // Fallback: check if a local file already exists
   const base = nameToFilename(nameEn);
   const extensions = ["jpg", "jpeg", "png", "webp"];
 
@@ -137,7 +209,7 @@ async function fetchSpreadsheet() {
     const title = (row[2] || "").trim();
     const email = (row[3] || "").trim();
     const website = (row[4] || "").trim();
-    // row[5] = 사진 (unused, we use filename convention)
+    const photoUrl = (row[5] || "").trim();
     const specialty = (row[6] || "").trim();
     const roleRaw = (row[7] || "mentor").trim().toLowerCase();
 
@@ -149,6 +221,9 @@ async function fetchSpreadsheet() {
       ? specialty.split(",").map((s) => s.trim()).filter(Boolean)
       : [];
 
+    // Download photo if URL provided, otherwise check local files
+    const image = await getPhotoPath(nameEn, photoUrl);
+
     // Generate Korean name placeholder (empty if not in spreadsheet)
     const name = "";
 
@@ -159,7 +234,7 @@ async function fetchSpreadsheet() {
       role,
       title,
       affiliation,
-      image: getPhotoPath(nameEn),
+      image,
       email,
       website,
       research,

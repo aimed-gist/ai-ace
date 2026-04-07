@@ -27,13 +27,13 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet src/data/members.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git add src/data/members.json public/images/members/
+          git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/members.json
-          git commit -m "Auto-sync members from spreadsheet [bot]"
+          git commit -m "Auto-sync members + photos from spreadsheet [bot]"
           git push
