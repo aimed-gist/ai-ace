@@ -6,26 +6,26 @@
     "role": "mentor",
     "title": "Professor, PI",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/eunji_lee.jpg",
     "email": "eunjilee@gist.ac.kr",
     "website": "https://so-mat.wixsite.com/gist",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
   {
-    "id": "mentor-zee_yong_park",
-    "name": "박지용",
-    "nameEn": "Zee Yong Park",
+    "id": "mentor-hyunju_lee",
+    "name": "이현주",
+    "nameEn": "Hyunju Lee",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "zeeyong@gist.ac.kr",
-    "website": "http://life.gist.ac.kr/mass/index.do",
+    "image": "/images/members/hyunju_lee.jpg",
+    "email": "hyunjulee@gist.ac.kr",
+    "website": "https://combio.gist.ac.kr/combio/",
     "research": [
-      "Artificial Peptide"
+      "Collective Intelligence"
     ],
     "bio": ""
   },
@@ -36,11 +36,11 @@
     "role": "mentor",
     "title": "",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "msong@gist.ac.kr",
-    "website": "https://ndl.gist.ac.kr/ndl/",
+    "image": "/images/members/miryoung_song.jpg",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -52,10 +52,25 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jaeyounglee@gist.ac.kr",
-    "website": "https://sites.google.com/site/biomaterialjyl/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "mentor-zee_yong_park",
+    "name": "박지용",
+    "nameEn": "Zee Yong Park",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -67,25 +82,25 @@
     "title": "",
     "affiliation": "DGIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jclee@dgist.ac.kr",
-    "website": "https://sites.google.com/view/jcleelab/home",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
   {
     "id": "mentor-jahyoung_ryu",
-    "name": "유자형",
+    "name": "류자형",
     "nameEn": "Ja-Hyoung Ryu",
     "role": "mentor",
     "title": "",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jhryu@unist.ac.kr",
-    "website": "https://jhryu.unist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -97,10 +112,10 @@
     "title": "",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jaehongkim@kist.re.kr",
-    "website": "https://jaehongk1.wixsite.com/bestkist",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -112,10 +127,10 @@
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "seomyungeun@kaist.ac.kr",
-    "website": "https://nanopsg.kaist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -127,25 +142,25 @@
     "title": "",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "kwon90@unist.ac.kr",
-    "website": "https://chemistry.unist.ac.kr/kwon-tae-hyuk/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
   {
     "id": "mentor-jong_min_yuk",
-    "name": "육종민",
+    "name": "유종민",
     "nameEn": "Jong Min Yuk",
     "role": "mentor",
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jongmin.yuk@kaist.ac.kr",
-    "website": "https://yuklab.kaist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -157,25 +172,25 @@
     "title": "",
     "affiliation": "CNUH",
     "image": "/images/members/placeholder.svg",
-    "email": "byeckim@gmail.com",
+    "email": "",
     "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
   {
     "id": "mentor-jijoon_song",
-    "name": "송지준",
+    "name": "송지윤",
     "nameEn": "Ji-Joon Song",
     "role": "mentor",
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "songj@kaist.ac.kr",
-    "website": "https://www.song-kaist.org/",
+    "email": "",
+    "website": "",
     "research": [
-      "Artificial Peptide"
+      "Artificial Pebtide"
     ],
     "bio": ""
   },
@@ -187,8 +202,8 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "uehwan@gist.ac.kr",
-    "website": "https://uehwan.github.io/",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -202,8 +217,8 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "m.kim@gist.ac.kr",
-    "website": "https://photonics.gist.ac.kr/photonics/",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -217,23 +232,8 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "mansu.kim@gist.ac.kr",
-    "website": "https://www.aimed-lab.com/",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "mentor-hyunju_lee",
-    "name": "이현주",
-    "nameEn": "Hyunju Lee",
-    "role": "mentor",
-    "title": "Professor",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "hyunjulee@gist.ac.kr",
-    "website": "https://combio.gist.ac.kr/combio/",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -241,14 +241,14 @@
   },
   {
     "id": "mentor-dukjo_kong",
-    "name": "공덕조",
+    "name": "공득조",
     "nameEn": "Duk-Jo Kong",
     "role": "mentor",
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "dukjokong@gist.ac.kr",
-    "website": "https://impact.gist.ac.kr/main/main.php",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -262,8 +262,8 @@
     "title": "",
     "affiliation": "T3Q",
     "image": "/images/members/placeholder.svg",
-    "email": "t3q@t3q.com",
-    "website": "https://t3q.com/about-t3q/",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -277,8 +277,8 @@
     "title": "",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "hyunsuju@kist.re.kr",
-    "website": "https://www.kist.re.kr/eng/research/quantum-people.do",
+    "email": "",
+    "website": "",
     "research": [
       "Collective Intelligence"
     ],
@@ -292,10 +292,10 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jeong323@gist.ac.kr",
-    "website": "https://sites.google.com/view/nanogist/nanosystems?authuser=0",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -307,10 +307,10 @@
     "title": "",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "jalim@kist.re.kr",
-    "website": "https://sites.google.com/view/osclim/home",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -322,10 +322,10 @@
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "nandk@kaist.ac.kr",
-    "website": "https://yoon.kaist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -337,10 +337,10 @@
     "title": "",
     "affiliation": "DGIST",
     "image": "/images/members/placeholder.svg",
-    "email": "chcho@dgist.ac.kr",
-    "website": "https://sites.google.com/view/dgistfsnlab/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -352,10 +352,10 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "hyeonjin.shin@gist.ac.kr",
-    "website": "https://sites.google.com/view/gist-dream-hjshingroup/home?authuser=0",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -367,10 +367,10 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "parkje@gist.ac.kr",
-    "website": "https://jeparklab.com/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -382,10 +382,10 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "hslim17@gist.ac.kr",
-    "website": "https://www.hyunseob.net/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -397,10 +397,10 @@
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "kim.sh@kaist.ac.kr",
-    "website": "https://isml.kaist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -412,25 +412,25 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "syang@gist.ac.kr",
-    "website": "https://me.gist.ac.kr/biomems/index.do",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
   {
     "id": "mentor-hyunhyub_ko",
-    "name": "고현협",
+    "name": "고현섭",
     "nameEn": "Hyunhyub Ko",
     "role": "mentor",
     "title": "",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "hyunhko@unist.ac.kr",
-    "website": "https://hko.unist.ac.kr/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -442,10 +442,10 @@
     "title": "",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "ymsong@kaist.ac.kr",
-    "website": "https://www.ymsong.net/",
+    "email": "",
+    "website": "",
     "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   },
@@ -457,1195 +457,10 @@
     "title": "",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "mhyoon@gist.ac.kr",
-    "website": "https://sites.google.com/site/gistbioelectronics/",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-juseog_lee",
-    "name": "",
-    "nameEn": "Ju-Seog Lee",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Texas, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://faculty.mdanderson.org/profiles/ju-seog_lee.html",
-    "research": [
-      "Biology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-hyunjoon_kong",
-    "name": "",
-    "nameEn": "Hyunjoon Kong",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Illinois, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://hjkong.scs.illinois.edu",
-    "research": [
-      "Biomaterials"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-won_chan_oh",
-    "name": "",
-    "nameEn": "Won Chan Oh",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Colorado Denver, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://sites.google.com/view/wonchanoh",
-    "research": [
-      "Pharmacology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-nathan_c_gianneschi",
-    "name": "",
-    "nameEn": "Nathan C. Gianneschi",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Northwestern University, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://sites.northwestern.edu/gianneschigroup/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-seokhyoung_kim",
-    "name": "",
-    "nameEn": "Seokhyoung Kim",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Michigan State University, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://kim.chemistry.msu.edu/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-deji_akinwande",
-    "name": "",
-    "nameEn": "Deji Akinwande",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Texas at Austin, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://sites.utexas.edu/nano/",
-    "research": [
-      "Electrical Engineering"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-david_a_weitz",
-    "name": "",
-    "nameEn": "David A. Weitz",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Harvard University, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://weitzlab.seas.harvard.edu/",
-    "research": [
-      "Physics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-bumsu_lee",
-    "name": "",
-    "nameEn": "Bumsu Lee",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Southern Illinois University, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://bumsulee75.wixsite.com/quantum-optics-lab",
-    "research": [
-      "Physics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-manish_chhowalla",
-    "name": "",
-    "nameEn": "Manish Chhowalla",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Cambridge, UK",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.chhowalla.msm.cam.ac.uk/home",
-    "research": [
-      "Material Engineering"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-xinyan_tracy_cui",
-    "name": "",
-    "nameEn": "Xinyan Tracy Cui",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University of Pittsburgh, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.engineering.pitt.edu/subsites/Labs/nte-lab/",
-    "research": [
-      "Biology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-yann_ferrand",
-    "name": "",
-    "nameEn": "Yann Ferrand",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "CNRS, France",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.bise-group.cnrs.fr/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-tung_chun_lee",
-    "name": "",
-    "nameEn": "Tung Chun Lee",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "University College London, UK",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://tungchunlee.weebly.com/",
-    "research": [
-      "Nanomaterials"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-gilles_guichard",
-    "name": "",
-    "nameEn": "Gilles Guichard",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "CNRS, France",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.guichard-iecb.fr/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-sang_soon_oh",
-    "name": "",
-    "nameEn": "Sang Soon Oh",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Cardiff University, UK",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://topologicalphotonics.wordpress.com/",
-    "research": [
-      "Optics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-jintao_zhu",
-    "name": "",
-    "nameEn": "Jintao Zhu",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Huazhong Univ. of Sci. and Tech., China",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "http://www.polymer.cn/ss/jintaozhu/en/profile.html",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-xing_yi_ling",
-    "name": "",
-    "nameEn": "Xing Yi Ling",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Nanyang Technological University, Singapore",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.lingxingyi.com/members",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-thorsten_wohland",
-    "name": "",
-    "nameEn": "Thorsten Wohland",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "National University of Singapore",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.dbs.nus.edu.sg/cbis",
-    "research": [
-      "Biology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-huan_wang",
-    "name": "",
-    "nameEn": "Huan Wang",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Peking University, China",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.chem.pku.edu.cn/wanghuan/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-tzuwei_wang",
-    "name": "",
-    "nameEn": "Tzu-Wei Wang",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Tsinghua University, China",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://sites.google.com/site/teamtwlab",
-    "research": [
-      "Biology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-yucheng_chiu",
-    "name": "",
-    "nameEn": "Yu-Cheng Chiu",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "NTUST, Taiwan",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://yuchengchiu311.wixsite.com/ycclab",
-    "research": [
-      "Chemical Engineering"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-huaping_xu",
-    "name": "",
-    "nameEn": "Huaping Xu",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Tsinghua University, China",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "http://xuslab.com",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-ting_chen",
-    "name": "",
-    "nameEn": "Ting Chen",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Tsinghua University, China",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "http://timlab.cn/",
-    "research": [
-      "AI"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-rui_zhang",
-    "name": "",
-    "nameEn": "Rui Zhang",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "HKUST, Hong Kong",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.sirianray.org/",
-    "research": [
-      "Physics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-minhui_lee",
-    "name": "",
-    "nameEn": "Minhui Lee",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "The University of Tokyo, Japan",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.appchem.t.u-tokyo.ac.jp/en/",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-norihiko_hayazawa",
-    "name": "",
-    "nameEn": "Norihiko Hayazawa",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "RIKEN, Japan",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://sites.google.com/site/hayazawa/",
-    "research": [
-      "Optics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-homan_kang",
-    "name": "",
-    "nameEn": "Homan Kang",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Harvard Medical School, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://researchers.mgh.harvard.edu/profile/14746182/Homan-Kang",
-    "research": [
-      "Optics"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-steffen_hage",
-    "name": "",
-    "nameEn": "Steffen Hage",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "TU Tuebingen, Germany",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.medizin.uni-tuebingen.de/de/das-klinikum/mitarbeiter/profil/2154",
-    "research": [
-      "Clinic"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-ronald_zuckermann",
-    "name": "",
-    "nameEn": "Ronald Zuckermann",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Lawrence Berkeley National Lab, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "http://www.ronznet.com",
-    "research": [
-      "Chemistry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-kyoung_jae_won",
-    "name": "",
-    "nameEn": "Kyoung Jae Won",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Cedars-Sinai Medical Center, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.cedars-sinai.edu/health-sciences-university/research/labs/won.html",
-    "research": [
-      "Biomedicine"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-tina_ng",
-    "name": "",
-    "nameEn": "Tina Ng",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "UC San Diego, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "http://flexible-electronics.ucsd.edu/",
-    "research": [
-      "Biomedicine"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-ihn_sik_seong",
-    "name": "",
-    "nameEn": "Ihn Sik Seong",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Harvard Medical School, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://researchers.mgh.harvard.edu/profile/1251131/Ihn-Sik-Seong",
-    "research": [
-      "Neurology"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "global_mentor-j_paul_robinson",
-    "name": "",
-    "nameEn": "J. Paul Robinson",
-    "role": "global_mentor",
-    "title": "",
-    "affiliation": "Purdue University, USA",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "https://www.cyto.purdue.edu/",
-    "research": [
-      "Cytometry"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-kyurin_kim",
-    "name": "김규린",
-    "nameEn": "Kyurin Kim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
     "email": "",
     "website": "",
     "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-junwoo_kim",
-    "name": "김준우",
-    "nameEn": "Junwoo Kim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-gaeun_park",
-    "name": "박가은",
-    "nameEn": "Gaeun Park",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jaehee_park",
-    "name": "박재희",
-    "nameEn": "Jaehee Park",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jungeun_park",
-    "name": "박정은",
-    "nameEn": "Jungeun Park",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-chanhyeok_park",
-    "name": "박찬혁",
-    "nameEn": "Chanhyeok Park",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-hyeonoh_shin",
-    "name": "신현오",
-    "nameEn": "Hyeonoh Shin",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-kyeongseok_yang",
-    "name": "양경석",
-    "nameEn": "Kyeongseok Yang",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-minseok_lee",
-    "name": "이민석",
-    "nameEn": "Minseok Lee",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seonwoo_lim",
-    "name": "임선우",
-    "nameEn": "Seonwoo Lim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-haejin_jeong",
-    "name": "정해진",
-    "nameEn": "Haejin Jeong",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jeonghyun_jo",
-    "name": "조정현",
-    "nameEn": "Jeonghyun Jo",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-hyeona_joo",
-    "name": "주현아",
-    "nameEn": "Hyeona Joo",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jeongmin_ji",
-    "name": "지정민",
-    "nameEn": "Jeongmin Ji",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seongmin_cheon",
-    "name": "천성민",
-    "nameEn": "Seongmin Cheon",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-juhyung_chae",
-    "name": "채주형",
-    "nameEn": "Juhyung Chae",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-eunjin_choi",
-    "name": "최은진",
-    "nameEn": "Eunjin Choi",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-junho_hwang",
-    "name": "황준호",
-    "nameEn": "Junho Hwang",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-cristina_risueo_segovia",
-    "name": "",
-    "nameEn": "Cristina Risueño Segovia",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-sarmistha_mitra",
-    "name": "",
-    "nameEn": "Sarmistha Mitra",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-uroos_akber",
-    "name": "",
-    "nameEn": "Uroos Akber",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "CNU",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seongho_shin",
-    "name": "신성호",
-    "nameEn": "Seongho Shin",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seongho_sim",
-    "name": "심성호",
-    "nameEn": "Seongho Sim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seonggyu_yoon",
-    "name": "윤성규",
-    "nameEn": "Seonggyu Yoon",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-youngju_lee",
-    "name": "이영주",
-    "nameEn": "Youngju Lee",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seongil_im",
-    "name": "임성일",
-    "nameEn": "Seongil Im",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-hyeryeon_jeong",
-    "name": "정혜련",
-    "nameEn": "Hyeryeon Jeong",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-asad_rasheed",
-    "name": "",
-    "nameEn": "Asad Rasheed",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-doeun_kim",
-    "name": "김도은",
-    "nameEn": "Doeun Kim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-yunjeong_kim",
-    "name": "김윤정",
-    "nameEn": "Yunjeong Kim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jaewook_kim",
-    "name": "김재욱",
-    "nameEn": "Jaewook Kim",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jungwon_bae",
-    "name": "배정원",
-    "nameEn": "Jungwon Bae",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-chaehyun_ahn",
-    "name": "안채현",
-    "nameEn": "Chaehyun Ahn",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-inhyeok_oh",
-    "name": "오인혁",
-    "nameEn": "Inhyeok Oh",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-heesung_yoon",
-    "name": "윤희성",
-    "nameEn": "Heesung Yoon",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-dayoung_lee",
-    "name": "이다영",
-    "nameEn": "Dayoung Lee",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jihyeon_lee",
-    "name": "이지현",
-    "nameEn": "Jihyeon Lee",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-hanna_lee",
-    "name": "이한나",
-    "nameEn": "Hanna Lee",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-sehee_jang",
-    "name": "장세희",
-    "nameEn": "Sehee Jang",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-yugyeong_jeong",
-    "name": "정유경",
-    "nameEn": "Yugyeong Jeong",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-hyeonjeong_jeong",
-    "name": "정현정",
-    "nameEn": "Hyeonjeong Jeong",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-seonghwan_jo",
-    "name": "조성환",
-    "nameEn": "Seonghwan Jo",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-haryeong_jo",
-    "name": "조하령",
-    "nameEn": "Haryeong Jo",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-jeongmu_heo",
-    "name": "허정무",
-    "nameEn": "Jeongmu Heo",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-huu_lam_phan",
-    "name": "",
-    "nameEn": "Huu Lam Phan",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-keita_tanaka",
-    "name": "",
-    "nameEn": "Keita Tanaka",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-shah_syed_ahson_ali",
-    "name": "",
-    "nameEn": "Shah Syed Ahson Ali",
-    "role": "fellow",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emerging Devices"
+      "Emergind devices"
     ],
     "bio": ""
   }
