@@ -91,7 +91,7 @@
   },
   {
     "id": "mentor-jahyoung_ryu",
-    "name": "류자형",
+    "name": "유자형",
     "nameEn": "Ja-Hyoung Ryu",
     "role": "mentor",
     "title": "Professor",
@@ -111,7 +111,7 @@
     "role": "mentor",
     "title": "Senior Researcher",
     "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jaehong_kim.jpg",
     "email": "jaehongkim@kist.re.kr",
     "website": "https://jaehongk1.wixsite.com/bestkist",
     "research": [
@@ -349,7 +349,7 @@
     "name": "신현진",
     "nameEn": "Hyeon-Jin Shin",
     "role": "mentor",
-    "title": "Assistant Professor",
+    "title": "Associate Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
     "email": "hyeonjin.shin@gist.ac.kr",
