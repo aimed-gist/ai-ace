@@ -34,11 +34,11 @@
     "name": "송미령",
     "nameEn": "Mi-Ryoung Song",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "GIST",
     "image": "/images/members/miryoung_song.jpg",
-    "email": "",
-    "website": "",
+    "email": "msong@gist.ac.kr",
+    "website": "https://ndl.gist.ac.kr/ndl/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -49,11 +49,11 @@
     "name": "이재영",
     "nameEn": "Jae Young Lee",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "GIST",
     "image": "/images/members/jae_young_lee.jpg",
-    "email": "",
-    "website": "",
+    "email": "jaeyounglee@gist.ac.kr",
+    "website": "https://sites.google.com/site/biomaterialjyl/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -64,11 +64,11 @@
     "name": "박지용",
     "nameEn": "Zee Yong Park",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "GIST",
     "image": "/images/members/zee_yong_park.jpg",
-    "email": "",
-    "website": "",
+    "email": "zeeyong@gist.ac.kr",
+    "website": "https://life.gist.ac.kr/mass/index.do",
     "research": [
       "Artificial Pebtide"
     ],
@@ -79,11 +79,11 @@
     "name": "이종찬",
     "nameEn": "Jong-Chan Lee",
     "role": "mentor",
-    "title": "",
+    "title": "Associate Professor",
     "affiliation": "DGIST",
     "image": "/images/members/jongchan_lee.jpg",
-    "email": "",
-    "website": "",
+    "email": "jclee@dgist.ac.kr",
+    "website": "https://sites.google.com/view/jcleelab/home",
     "research": [
       "Artificial Pebtide"
     ],
@@ -94,11 +94,11 @@
     "name": "류자형",
     "nameEn": "Ja-Hyoung Ryu",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "jhryu@unist.ac.kr",
+    "website": "https://jhryu.unist.ac.kr/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -109,11 +109,11 @@
     "name": "김재홍",
     "nameEn": "JaeHong Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Senior Researcher",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "jaehongkim@kist.re.kr",
+    "website": "https://jaehongk1.wixsite.com/bestkist",
     "research": [
       "Artificial Pebtide"
     ],
@@ -124,11 +124,11 @@
     "name": "서명은",
     "nameEn": "Myungeun Seo",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "seomyungeun@kaist.ac.kr",
+    "website": "https://nanopsg.kaist.ac.kr/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -139,11 +139,11 @@
     "name": "권태혁",
     "nameEn": "Tae-Hyuk Kwon",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "kwon90@unist.ac.kr",
+    "website": "https://chemistry.unist.ac.kr/kwon-tae-hyuk/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -151,14 +151,14 @@
   },
   {
     "id": "mentor-jong_min_yuk",
-    "name": "유종민",
+    "name": "육종민",
     "nameEn": "Jong Min Yuk",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "jongmin.yuk@kaist.ac.kr",
+    "website": "https://yuklab.kaist.ac.kr/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -169,11 +169,11 @@
     "name": "김병채",
     "nameEn": "Byeong Chae Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "CNUH",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "byeckim@gmail.com",
+    "website": "https://zrr.kr/F5kH6S",
     "research": [
       "Artificial Pebtide"
     ],
@@ -181,14 +181,14 @@
   },
   {
     "id": "mentor-jijoon_song",
-    "name": "송지윤",
+    "name": "송지준",
     "nameEn": "Ji-Joon Song",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "songj@kaist.ac.kr",
+    "website": "https://www.song-kaist.org/",
     "research": [
       "Artificial Pebtide"
     ],
@@ -199,11 +199,11 @@
     "name": "김의환",
     "nameEn": "Ue-Hwan Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Associate Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "uehwan@gist.ac.kr",
+    "website": "https://uehwan.github.io/",
     "research": [
       "Collective Intelligence"
     ],
@@ -214,11 +214,11 @@
     "name": "김민경",
     "nameEn": "MinKyung Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Associate Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "m.kim@gist.ac.kr",
+    "website": "https://photonics.gist.ac.kr/photonics/",
     "research": [
       "Collective Intelligence"
     ],
@@ -229,11 +229,11 @@
     "name": "김만수",
     "nameEn": "Mansu Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Assistant Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "mansu.kim@gist.ac.kr",
+    "website": "https://www.aimed-lab.com/",
     "research": [
       "Collective Intelligence"
     ],
@@ -244,11 +244,11 @@
     "name": "공득조",
     "nameEn": "Duk-Jo Kong",
     "role": "mentor",
-    "title": "",
+    "title": "Assistant Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "dukjokong@gist.ac.kr",
+    "website": "https://impact.gist.ac.kr/main/main.php",
     "research": [
       "Collective Intelligence"
     ],
@@ -259,11 +259,11 @@
     "name": "박병훈",
     "nameEn": "Byuong-Hoon Park",
     "role": "mentor",
-    "title": "",
+    "title": "CEO",
     "affiliation": "T3Q",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "t3q@t3q.com",
+    "website": "https://t3q.com/about-t3q/",
     "research": [
       "Collective Intelligence"
     ],
@@ -274,11 +274,11 @@
     "name": "주현수",
     "nameEn": "Hyunsu Ju",
     "role": "mentor",
-    "title": "",
+    "title": "Principal Researcher",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "hyunsuju@kist.re.kr",
+    "website": "https://kist.re.kr/eng/research/quantum-people.do",
     "research": [
       "Collective Intelligence"
     ],
@@ -289,11 +289,11 @@
     "name": "정현호",
     "nameEn": "Hyeon-Ho Jeong",
     "role": "mentor",
-    "title": "",
+    "title": "Associate Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "jeong323@gist.ac.kr",
+    "website": "https://sites.google.com/view/nanogist/nanosystems?authuser=0",
     "research": [
       "Emergind devices"
     ],
@@ -304,11 +304,11 @@
     "name": "임정아",
     "nameEn": "Jung Ah Lim",
     "role": "mentor",
-    "title": "",
+    "title": "Principal Researcher",
     "affiliation": "KIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "jalim@kist.re.kr",
+    "website": "https://sites.google.com/view/osclim/home",
     "research": [
       "Emergind devices"
     ],
@@ -319,11 +319,11 @@
     "name": "윤동기",
     "nameEn": "Dong Ki Yoon",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "nandk@kaist.ac.kr",
+    "website": "https://yoon.kaist.ac.kr/",
     "research": [
       "Emergind devices"
     ],
@@ -334,11 +334,11 @@
     "name": "조창희",
     "nameEn": "Chang-Hee Cho",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "DGIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "chcho@dgist.ac.kr",
+    "website": "https://sites.google.com/view/dgistfsnlab/",
     "research": [
       "Emergind devices"
     ],
@@ -349,11 +349,11 @@
     "name": "신현진",
     "nameEn": "Hyeon-Jin Shin",
     "role": "mentor",
-    "title": "",
+    "title": "Assistant Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "hyeonjin.shin@gist.ac.kr",
+    "website": "https://sites.google.com/view/gist-dream-hjshingroup/home?authuser=0",
     "research": [
       "Emergind devices"
     ],
@@ -364,11 +364,11 @@
     "name": "박정은",
     "nameEn": "Jeong-Eun Park",
     "role": "mentor",
-    "title": "",
+    "title": "Assistant Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "parkje@gist.ac.kr",
+    "website": "https://jeparklab.com/",
     "research": [
       "Emergind devices"
     ],
@@ -379,11 +379,11 @@
     "name": "임현섭",
     "nameEn": "Hyunseob Lim",
     "role": "mentor",
-    "title": "",
+    "title": "Associate Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "hslim17@gist.ac.kr",
+    "website": "https://www.hyunseob.net/",
     "research": [
       "Emergind devices"
     ],
@@ -394,26 +394,11 @@
     "name": "김신현",
     "nameEn": "Shin-Hyun Kim",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Emergind devices"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "mentor-sung_yang",
-    "name": "양성",
-    "nameEn": "Sung Yang",
-    "role": "mentor",
-    "title": "",
-    "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "kim.sh@kaist.ac.kr",
+    "website": "https://isml.kaist.ac.kr/",
     "research": [
       "Emergind devices"
     ],
@@ -421,14 +406,14 @@
   },
   {
     "id": "mentor-hyunhyub_ko",
-    "name": "고현섭",
+    "name": "고현협",
     "nameEn": "Hyunhyub Ko",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "UNIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "hyunhko@unist.ac.kr",
+    "website": "https://hko.unist.ac.kr/",
     "research": [
       "Emergind devices"
     ],
@@ -439,11 +424,11 @@
     "name": "송영민",
     "nameEn": "Young Min Song",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "KAIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "ymsong@kaist.ac.kr",
+    "website": "https://www.ymsong.net/",
     "research": [
       "Emergind devices"
     ],
@@ -454,11 +439,11 @@
     "name": "윤명한",
     "nameEn": "Myung-Han Yoon",
     "role": "mentor",
-    "title": "",
+    "title": "Professor",
     "affiliation": "GIST",
     "image": "/images/members/placeholder.svg",
-    "email": "",
-    "website": "",
+    "email": "mhyoon@gist.ac.kr",
+    "website": "https://sites.google.com/site/gistbioelectronics/",
     "research": [
       "Emergind devices"
     ],
