@@ -1,44 +1,93 @@
 [
   {
-    "id": "partner-1",
-    "name": "KAIST",
-    "type": "university",
-    "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.kaist.ac.kr"
-  },
-  {
-    "id": "partner-2",
-    "name": "Seoul National University",
-    "type": "university",
-    "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.snu.ac.kr"
-  },
-  {
-    "id": "partner-3",
-    "name": "Samsung Electronics",
+    "id": "partner-partner_6",
+    "name": "㈜나노바이오시스템",
     "type": "industry",
     "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.samsung.com"
+    "url": ""
   },
   {
-    "id": "partner-4",
-    "name": "LG AI Research",
+    "id": "partner-partner_11",
+    "name": "㈜딥카디오",
     "type": "industry",
     "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.lgresearch.ai"
+    "url": ""
   },
   {
-    "id": "partner-5",
-    "name": "Hyundai Motor Group",
+    "id": "partner-partner_10",
+    "name": "㈜세라트젠",
     "type": "industry",
     "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.hyundai.com"
+    "url": ""
   },
   {
-    "id": "partner-6",
-    "name": "POSTECH",
-    "type": "university",
+    "id": "partner-_-4",
+    "name": "㈜아크로셀 바이오사이언스",
+    "type": "industry",
     "logo": "/images/partners/placeholder.svg",
-    "url": "https://www.postech.ac.kr"
+    "url": ""
+  },
+  {
+    "id": "partner-partner_9",
+    "name": "㈜이지씨테라퓨틱스",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-partner_13",
+    "name": "㈜제이오텍",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-_-2",
+    "name": "㈜지올 코리아",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-_-3",
+    "name": "㈜클라비스 기업부설연구소",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-partner_1",
+    "name": "㈜티쓰리큐",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-cj_",
+    "name": "CJ 올리브네트웍스",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-thermofisher_",
+    "name": "ThermoFisher 전자현미경 사업부",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-partner_12",
+    "name": "뉴로핏",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
+  },
+  {
+    "id": "partner-_",
+    "name": "삼성전자 종합기술원",
+    "type": "industry",
+    "logo": "/images/partners/placeholder.svg",
+    "url": ""
   }
 ]
