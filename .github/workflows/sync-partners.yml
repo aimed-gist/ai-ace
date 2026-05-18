@@ -1,0 +1,40 @@
+name: Sync Partners from Spreadsheet
+
+on:
+  schedule:
+    # 매일 KST 00:30 = UTC 15:30
+    # (멤버 00:00, Publications 00:15, Partners 00:30 — 충돌 방지)
+    - cron: "30 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync partners from spreadsheet
+        run: node scripts/sync-partners.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add src/data/partners.json public/images/partners/
+          git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Auto-sync partners + logos from spreadsheet [bot]"
+          git push

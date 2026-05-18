@@ -34,7 +34,6 @@ const navItems = [
     ],
   },
   { label: "Opportunities", href: "/opportunities" },
-  { label: "Industry Advisory", href: "/partners?tab=advisory" },
   { label: "Partners", href: "/partners" },
 ];
 
