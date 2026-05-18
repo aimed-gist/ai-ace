@@ -25,8 +25,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = resolve(__dirname, "..");
 
 // Google Spreadsheet CSV export URL
+// 워크북의 'Members' 시트(탭)를 이름으로 명시해서 가져옵니다.
+// (예전 방식 export?format=csv 는 첫 번째 탭만 가져왔기 때문에 탭 순서가 바뀌면 깨짐)
 const SPREADSHEET_ID = "1JBb_azDOmzVl3hCfJqqAWh1sGMHCB0tGey4k_OX7agY";
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv`;
+const SHEET_NAME = "Members";
+const CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_NAME)}`;
 
 // Valid roles
 const VALID_ROLES = ["mentor", "global_mentor", "fellow", "alumni"];
