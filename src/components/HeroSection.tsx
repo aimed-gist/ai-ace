@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     title: "AI-ACE@GIST",
-    subtitle: "AI-driven Advanced Computing and Engineering",
-    description:
-      "Bridging cutting-edge AI research with real-world manufacturing innovation through LLM-powered solutions.",
+    subtitle:
+      "AI-Nano Convergence Institute for Early Detection of Neurodegenerative Diseases",
+    description: "",
   },
   {
     title: "InnoCORE Fellowship",
@@ -70,19 +70,28 @@ export default function HeroSection() {
             <p className="text-xl sm:text-2xl text-accent-light font-medium mb-6">
               {slide.subtitle}
             </p>
-            <p className="text-lg text-text-light/80 max-w-2xl leading-relaxed">
-              {slide.description}
-            </p>
+            {slide.description && (
+              <p className="text-lg text-text-light/80 max-w-2xl leading-relaxed">
+                {slide.description}
+              </p>
+            )}
           </div>
         ))}
 
-        {/* Spacer for layout */}
-        <div className="invisible">
+        {/* Spacer for layout (가장 긴 텍스트 기준으로 공간 확보) */}
+        <div className="invisible" aria-hidden="true">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4">
             {slides[0].title}
           </h1>
           <p className="text-xl sm:text-2xl mb-6">{slides[0].subtitle}</p>
-          <p className="text-lg max-w-2xl">{slides[0].description}</p>
+          <p className="text-lg max-w-2xl leading-relaxed">
+            {/* description은 슬라이드별로 다르므로 가장 긴 것을 기준으로 spacer 확보 */}
+            {slides.reduce(
+              (longest, s) =>
+                s.description.length > longest.length ? s.description : longest,
+              ""
+            )}
+          </p>
         </div>
 
         {/* Slide indicators */}
