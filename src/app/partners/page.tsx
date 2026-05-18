@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import partners from "@/data/partners.json";
 
@@ -12,8 +13,31 @@ const tabs = [
   { key: "industry", label: "Industry" },
 ];
 
-export default function PartnersPage() {
-  const [activeTab, setActiveTab] = useState("all");
+const TAB_KEYS = tabs.map((t) => t.key);
+const DEFAULT_TAB = "all";
+
+function PartnersPageInner() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const tabFromUrl = searchParams.get("tab");
+  const initialTab =
+    tabFromUrl && TAB_KEYS.includes(tabFromUrl) ? tabFromUrl : DEFAULT_TAB;
+  const [activeTab, setActiveTab] = useState(initialTab);
+
+  useEffect(() => {
+    if (tabFromUrl && TAB_KEYS.includes(tabFromUrl)) {
+      if (tabFromUrl !== activeTab) setActiveTab(tabFromUrl);
+    } else if (!tabFromUrl && activeTab !== DEFAULT_TAB) {
+      setActiveTab(DEFAULT_TAB);
+    }
+  }, [tabFromUrl, activeTab]);
+
+  const handleTabClick = (tabKey: string) => {
+    setActiveTab(tabKey);
+    router.replace(`${pathname}?tab=${tabKey}`, { scroll: false });
+  };
+
   const filtered =
     activeTab === "all"
       ? partners
@@ -31,7 +55,7 @@ export default function PartnersPage() {
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => handleTabClick(tab.key)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === tab.key
                 ? "bg-accent text-white"
@@ -71,5 +95,13 @@ export default function PartnersPage() {
         ))}
       </div>
     </div>
+  );
+}
+
+export default function PartnersPage() {
+  return (
+    <Suspense fallback={null}>
+      <PartnersPageInner />
+    </Suspense>
   );
 }

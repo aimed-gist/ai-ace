@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import NewsCard from "@/components/NewsCard";
 import newsData from "@/data/news.json";
 
@@ -12,8 +13,30 @@ const categories = [
   { key: "workshop", label: "Workshop" },
 ];
 
-export default function NewsPage() {
-  const [activeCategory, setActiveCategory] = useState("all");
+const TAB_KEYS = categories.map((c) => c.key);
+const DEFAULT_TAB = "all";
+
+function NewsPageInner() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const tabFromUrl = searchParams.get("tab");
+  const initialTab =
+    tabFromUrl && TAB_KEYS.includes(tabFromUrl) ? tabFromUrl : DEFAULT_TAB;
+  const [activeCategory, setActiveCategory] = useState(initialTab);
+
+  useEffect(() => {
+    if (tabFromUrl && TAB_KEYS.includes(tabFromUrl)) {
+      if (tabFromUrl !== activeCategory) setActiveCategory(tabFromUrl);
+    } else if (!tabFromUrl && activeCategory !== DEFAULT_TAB) {
+      setActiveCategory(DEFAULT_TAB);
+    }
+  }, [tabFromUrl, activeCategory]);
+
+  const handleTabClick = (tabKey: string) => {
+    setActiveCategory(tabKey);
+    router.replace(`${pathname}?tab=${tabKey}`, { scroll: false });
+  };
 
   const filtered =
     activeCategory === "all"
@@ -34,7 +57,7 @@ export default function NewsPage() {
         {categories.map((cat) => (
           <button
             key={cat.key}
-            onClick={() => setActiveCategory(cat.key)}
+            onClick={() => handleTabClick(cat.key)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeCategory === cat.key
                 ? "bg-accent text-white"
@@ -59,5 +82,13 @@ export default function NewsPage() {
         </p>
       )}
     </div>
+  );
+}
+
+export default function NewsPage() {
+  return (
+    <Suspense fallback={null}>
+      <NewsPageInner />
+    </Suspense>
   );
 }

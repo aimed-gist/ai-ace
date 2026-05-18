@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import MemberCard from "@/components/MemberCard";
 import members from "@/data/members.json";
 
@@ -11,8 +12,32 @@ const tabs = [
   { key: "alumni", label: "Alumni", role: "alumni" },
 ];
 
-export default function MembersPage() {
-  const [activeTab, setActiveTab] = useState("mentors");
+const TAB_KEYS = tabs.map((t) => t.key);
+const DEFAULT_TAB = "mentors";
+
+function MembersPageInner() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const tabFromUrl = searchParams.get("tab");
+  const initialTab =
+    tabFromUrl && TAB_KEYS.includes(tabFromUrl) ? tabFromUrl : DEFAULT_TAB;
+  const [activeTab, setActiveTab] = useState(initialTab);
+
+  // URL이 변경되면 activeTab 동기화 (Navbar의 서브 링크 클릭 등)
+  useEffect(() => {
+    if (tabFromUrl && TAB_KEYS.includes(tabFromUrl)) {
+      if (tabFromUrl !== activeTab) setActiveTab(tabFromUrl);
+    } else if (!tabFromUrl && activeTab !== DEFAULT_TAB) {
+      setActiveTab(DEFAULT_TAB);
+    }
+  }, [tabFromUrl, activeTab]);
+
+  const handleTabClick = (tabKey: string) => {
+    setActiveTab(tabKey);
+    router.replace(`${pathname}?tab=${tabKey}`, { scroll: false });
+  };
+
   const activeRole = tabs.find((t) => t.key === activeTab)?.role || "mentor";
   const filtered = members.filter((m) => m.role === activeRole);
 
@@ -28,7 +53,7 @@ export default function MembersPage() {
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => handleTabClick(tab.key)}
             className={`px-5 py-3 text-sm font-medium transition-colors border-b-2 -mb-px ${
               activeTab === tab.key
                 ? "border-accent text-accent"
@@ -53,5 +78,13 @@ export default function MembersPage() {
         </p>
       )}
     </div>
+  );
+}
+
+export default function MembersPage() {
+  return (
+    <Suspense fallback={null}>
+      <MembersPageInner />
+    </Suspense>
   );
 }
