@@ -448,5 +448,50 @@
       "Emerging devices"
     ],
     "bio": ""
+  },
+  {
+    "id": "global_mentor-young_ju_lee",
+    "name": "이영주",
+    "nameEn": "Young ju Lee",
+    "role": "global_mentor",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-young_ju_lee",
+    "name": "이영주",
+    "nameEn": "Young ju Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-young_ju_lee",
+    "name": "이영주",
+    "nameEn": "Young ju Lee",
+    "role": "alumni",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
   }
 ]
