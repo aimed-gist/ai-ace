@@ -1,5 +1,40 @@
 [
   {
+    "id": "publication-10-1016-j-ensm-2026-104987",
+    "title": "Enabling ultra-high-loading LiFePO4 cathodes via a conductive binder architecture with minimized inactive content",
+    "authors": [
+      "Noh",
+      "E. H.",
+      "Oh",
+      "S.",
+      "Kang",
+      "H.",
+      "Kim",
+      "M.",
+      "Ha",
+      "J. H.",
+      "Ji",
+      "H.",
+      "Kwak",
+      "W.",
+      "Lee",
+      "E.",
+      "Joo",
+      "S. H.",
+      "Kang",
+      "S. J."
+    ],
+    "journal": "Energy Storage Materials",
+    "year": 2026,
+    "doi": "10.1016/j.ensm.2026.104987",
+    "type": "publication",
+    "pi": "Jae Young Lee",
+    "division": "Emerging Devices",
+    "featured": true,
+    "note": "",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-nature12373",
     "title": "Nanometre-scale thermometry in a living cell",
     "authors": [
