@@ -27,10 +27,9 @@ const navItems = [
     label: "News",
     href: "/news",
     sub: [
-      { label: "News", href: "/news?tab=news" },
-      { label: "Notices", href: "/news?tab=notices" },
-      { label: "Newsletter", href: "/news?tab=newsletter" },
-      { label: "Workshop", href: "/news?tab=workshop" },
+      { label: "Notice", href: "/news?tab=notice" },
+      { label: "Media Coverage", href: "/news?tab=media" },
+      { label: "Co-Lab", href: "/news?tab=co-lab" },
     ],
   },
   { label: "Opportunities", href: "/opportunities" },

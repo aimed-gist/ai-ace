@@ -1,0 +1,40 @@
+name: Sync Opportunities from Spreadsheet
+
+on:
+  schedule:
+    # 매일 KST 01:00 = UTC 16:00
+    # (마감일 자동 처리도 매일 갱신됨)
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync opportunities from spreadsheet
+        run: node scripts/sync-opportunities.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add src/data/opportunities.json
+          git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Auto-sync opportunities from spreadsheet [bot]"
+          git push

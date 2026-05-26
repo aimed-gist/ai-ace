@@ -1,20 +1,58 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import NewsCard from "@/components/NewsCard";
 import newsData from "@/data/news.json";
+import opportunities from "@/data/opportunities.json";
 
 const categories = [
   { key: "all", label: "All" },
-  { key: "news", label: "News" },
-  { key: "notices", label: "Notices" },
-  { key: "newsletter", label: "Newsletter" },
-  { key: "workshop", label: "Workshop" },
+  { key: "notice", label: "Notice" },
+  { key: "media", label: "Media Coverage" },
+  { key: "co-lab", label: "Co-Lab" },
 ];
 
 const TAB_KEYS = categories.map((c) => c.key);
 const DEFAULT_TAB = "all";
+
+type NewsItem = {
+  id: string;
+  category: string;
+  title: string;
+  date: string;
+  summary: string;
+  link: string;
+  image: string;
+};
+
+type Opportunity = {
+  id: string;
+  title: string;
+  type?: string;
+  deadline?: string;
+  description?: string;
+  contact?: string;
+  active: boolean;
+};
+
+/**
+ * 활성 Opportunity → NewsItem 어댑터.
+ * Notice 카테고리에 자동으로 함께 노출됨.
+ * 카드 클릭 시 /opportunities 페이지로 이동.
+ */
+function opportunityToNewsItem(opp: Opportunity): NewsItem {
+  const dateLabel = opp.deadline ? `마감 ${opp.deadline}` : "상시 모집";
+  return {
+    id: `${opp.id}-as-notice`,
+    category: "opportunity",
+    title: opp.title,
+    date: dateLabel,
+    summary: opp.description || "",
+    link: "/opportunities",
+    image: "",
+  };
+}
 
 function NewsPageInner() {
   const router = useRouter();
@@ -33,15 +71,31 @@ function NewsPageInner() {
     }
   }, [tabFromUrl, activeCategory]);
 
-  const handleTabClick = (tabKey: string) => {
-    setActiveCategory(tabKey);
-    router.replace(`${pathname}?tab=${tabKey}`, { scroll: false });
+  const handleTabClick = (key: string) => {
+    setActiveCategory(key);
+    router.replace(`${pathname}?tab=${key}`, { scroll: false });
   };
 
-  const filtered =
-    activeCategory === "all"
-      ? newsData
-      : newsData.filter((n) => n.category === activeCategory);
+  // 활성 채용공고를 Notice 카테고리에 자동 추가
+  const opportunityNoticeItems: NewsItem[] = useMemo(() => {
+    return (opportunities as Opportunity[])
+      .filter((o) => o.active)
+      .map(opportunityToNewsItem);
+  }, []);
+
+  const filtered: NewsItem[] = useMemo(() => {
+    const news = newsData as NewsItem[];
+    if (activeCategory === "all") {
+      // All: 모든 뉴스 + 활성 채용공고
+      return [...news, ...opportunityNoticeItems].sort(sortByDateDesc);
+    }
+    if (activeCategory === "notice") {
+      // Notice: notice 카테고리 + 활성 채용공고
+      const notices = news.filter((n) => n.category === "notice");
+      return [...notices, ...opportunityNoticeItems].sort(sortByDateDesc);
+    }
+    return news.filter((n) => n.category === activeCategory).sort(sortByDateDesc);
+  }, [activeCategory, opportunityNoticeItems]);
 
   return (
     <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -49,7 +103,7 @@ function NewsPageInner() {
         News & Updates
       </h1>
       <p className="text-text-muted mb-8">
-        Latest news, notices, newsletters, and workshop announcements.
+        Notices, media coverage, and Co-Lab events.
       </p>
 
       {/* Category filter */}
@@ -83,6 +137,15 @@ function NewsPageInner() {
       )}
     </div>
   );
+}
+
+function sortByDateDesc(a: NewsItem, b: NewsItem) {
+  // 날짜 문자열 비교 (YYYY-MM-DD 형식이면 사전식 정렬 = 시간순)
+  // "마감 ..." 같은 포맷은 그대로 두고 끝으로 밀림
+  const da = a.date || "";
+  const db = b.date || "";
+  if (db !== da) return db.localeCompare(da);
+  return a.title.localeCompare(b.title);
 }
 
 export default function NewsPage() {
