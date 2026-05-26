@@ -20,6 +20,8 @@ type Paper = {
   image?: string;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const tabs = [
   { key: "publications", label: "Publications", types: ["publication", "preprint"] },
   { key: "patents", label: "Patents", types: ["patent"] },
@@ -133,7 +135,10 @@ export default function ResearchPage() {
 
 function PaperCard({ paper }: { paper: Paper }) {
   const link = doiLink(paper.doi);
-  const hasImage = !!paper.image;
+  // 이미지 로드 실패 시 placeholder로 폴백 (basePath 누락, 파일 없음, 손상된 파일 등 모두 커버)
+  const [imageFailed, setImageFailed] = useState(false);
+  const showImage = !!paper.image && !imageFailed;
+  const imageSrc = paper.image ? `${basePath}${paper.image}` : "";
 
   return (
     <div
@@ -147,13 +152,14 @@ function PaperCard({ paper }: { paper: Paper }) {
         {/* 왼쪽 이미지 영역 (4:3) */}
         <div className="sm:w-1/3 sm:max-w-[260px] flex-shrink-0 relative bg-gray-50">
           <div className="aspect-[4/3] relative w-full">
-            {hasImage ? (
+            {showImage ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={paper.image as string}
+                src={imageSrc}
                 alt={paper.title}
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
+                onError={() => setImageFailed(true)}
               />
             ) : (
               <PaperPlaceholder paper={paper} />
