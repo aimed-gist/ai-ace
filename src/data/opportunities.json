@@ -1,30 +1,332 @@
 [
   {
-    "id": "opp-1",
-    "title": "InnoCORE Fellowship 2025",
-    "type": "fellowship",
-    "deadline": "2025-06-30",
-    "description": "Join our InnoCORE Fellowship program to work on cutting-edge AI research for smart manufacturing. Open to PhD candidates and early-career researchers.",
-    "requirements": [
-      "PhD in CS, AI, or related field",
-      "Strong background in machine learning",
-      "Interest in manufacturing applications"
-    ],
-    "contact": "fellowship@ai-ace.gist.ac.kr",
-    "active": true
+    "id": "opp-byeong_chae_kim",
+    "title": "Byeong Chae Kim",
+    "type": "other",
+    "deadline": "CNUH",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
   },
   {
-    "id": "opp-2",
-    "title": "Postdoctoral Researcher Position",
-    "type": "position",
-    "deadline": "2025-12-31",
-    "description": "We are seeking a postdoctoral researcher to join our team in developing AI solutions for industrial process optimization.",
-    "requirements": [
-      "PhD in AI, ML, or related field",
-      "Publications in top-tier venues",
-      "Experience with LLMs preferred"
-    ],
-    "contact": "hiring@ai-ace.gist.ac.kr",
-    "active": true
+    "id": "opp-jong_chan_lee",
+    "title": "Jong-Chan Lee",
+    "type": "other",
+    "deadline": "DGIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-chang_hee_cho",
+    "title": "Chang-Hee Cho",
+    "type": "other",
+    "deadline": "DGIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-eunji_lee",
+    "title": "Eunji Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor, PI",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyunju_lee",
+    "title": "Hyunju Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-mi_ryoung_song",
+    "title": "Mi-Ryoung Song",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-jae_young_lee",
+    "title": "Jae Young Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-zee_yong_park",
+    "title": "Zee Yong Park",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-ue_hwan_kim",
+    "title": "Ue-Hwan Kim",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-minkyung_kim",
+    "title": "MinKyung Kim",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-mansu_kim",
+    "title": "Mansu Kim",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Assistant Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-duk_jo_kong",
+    "title": "Duk-Jo Kong",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Assistant Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyeon_ho_jeong",
+    "title": "Hyeon-Ho Jeong",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyeon_jin_shin",
+    "title": "Hyeon-Jin Shin",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-jeong_eun_park",
+    "title": "Jeong-Eun Park",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Assistant Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyunseob_lim",
+    "title": "Hyunseob Lim",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Associate Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-myung_han_yoon",
+    "title": "Myung-Han Yoon",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-young_ju_lee",
+    "title": "Young ju Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Fellow",
+    "contact": "InnoCORE fellow",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-young_ju_lee-2",
+    "title": "Young ju Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Alumni",
+    "contact": "InnoCORE fellow",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-young_ju_lee-3",
+    "title": "Young ju Lee",
+    "type": "other",
+    "deadline": "GIST",
+    "description": "Global mentor",
+    "contact": "InnoCORE fellow",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-myungeun_seo",
+    "title": "Myungeun Seo",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-jong_min_yuk",
+    "title": "Jong Min Yuk",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-ji_joon_song",
+    "title": "Ji-Joon Song",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-dong_ki_yoon",
+    "title": "Dong Ki Yoon",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-shin_hyun_kim",
+    "title": "Shin-Hyun Kim",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-young_min_song",
+    "title": "Young Min Song",
+    "type": "other",
+    "deadline": "KAIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-jaehong_kim",
+    "title": "JaeHong Kim",
+    "type": "other",
+    "deadline": "KIST",
+    "description": "Mentor",
+    "contact": "Senior Researcher",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyunsu_ju",
+    "title": "Hyunsu Ju",
+    "type": "other",
+    "deadline": "KIST",
+    "description": "Mentor",
+    "contact": "Principal Researcher",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-jung_ah_lim",
+    "title": "Jung Ah Lim",
+    "type": "other",
+    "deadline": "KIST",
+    "description": "Mentor",
+    "contact": "Principal Researcher",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-byuong_hoon_park",
+    "title": "Byuong-Hoon Park",
+    "type": "other",
+    "deadline": "T3Q",
+    "description": "Mentor",
+    "contact": "CEO",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-ja_hyoung_ryu",
+    "title": "Ja-Hyoung Ryu",
+    "type": "other",
+    "deadline": "UNIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-tae_hyuk_kwon",
+    "title": "Tae-Hyuk Kwon",
+    "type": "other",
+    "deadline": "UNIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
+  },
+  {
+    "id": "opp-hyunhyub_ko",
+    "title": "Hyunhyub Ko",
+    "type": "other",
+    "deadline": "UNIST",
+    "description": "Mentor",
+    "contact": "Professor",
+    "active": true,
+    "requirements": []
   }
 ]
