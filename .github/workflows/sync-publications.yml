@@ -28,7 +28,8 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add src/data/papers.json
+          mkdir -p public/images/papers
+          git add src/data/papers.json public/images/papers/
           git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push
@@ -36,5 +37,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Auto-sync publications from spreadsheet [bot]"
+          git commit -m "Auto-sync publications + figures from spreadsheet [bot]"
           git push

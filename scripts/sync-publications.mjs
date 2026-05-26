@@ -9,7 +9,7 @@
  *   [Publications 탭]
  *     A: DOI | B: 제출 PI | C: 분과 | D: 유형(publication|preprint)
  *     E: Featured | F: 비고 | G: 제목 | H: 저자 | I: 저널 | J: 연도
- *     K: 상태 | L: 마지막 동기화
+ *     K: 상태 | L: 마지막 동기화 | M: 대표 이미지 (Google Drive URL 등)
  *
  *   [Patents 탭]
  *     A: 특허명 | B: 발명자 | C: 출원/등록번호 | D: 국가 | E: 상태
@@ -19,14 +19,15 @@
  *   - 시트의 두 탭을 CSV로 읽어옴
  *   - Publications: K열(상태)이 OK 또는 manual인 행만 포함
  *   - Patents: 특허명이 있는 모든 행 포함
- *   - papers.json 출력 (기존 페이지가 사용하는 스키마 유지 + 신규 필드 추가)
+ *   - 대표 이미지 URL이 있으면 public/images/papers/{slug}.{ext} 로 다운로드
+ *   - papers.json 출력 (기존 페이지가 사용하는 스키마 유지 + image 필드 추가)
  *
  * 사용법:
  *   node scripts/sync-publications.mjs
  */
 
-import { writeFileSync, readFileSync, existsSync } from "fs";
-import { resolve, dirname } from "path";
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
+import { resolve, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -43,6 +44,7 @@ function sheetCsvUrl(sheetName) {
 }
 
 const OUTPUT_PATH = resolve(PROJECT_ROOT, "src", "data", "papers.json");
+const PAPERS_IMG_DIR = resolve(PROJECT_ROOT, "public", "images", "papers");
 
 // 시트 상태 → 처리 정책
 const ALLOWED_STATUSES = new Set(["ok", "manual"]); // 소문자 비교
@@ -131,10 +133,91 @@ function parseYear(s) {
   return Number.isFinite(n) ? n : null;
 }
 
+/**
+ * Google Drive 공유 링크 → 직접 다운로드 URL 변환
+ */
+function toDirectUrl(url) {
+  const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (driveMatch) {
+    return `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
+  }
+  const openMatch = url.match(/drive\.google\.com\/open\?id=([^&]+)/);
+  if (openMatch) {
+    return `https://drive.google.com/uc?export=download&id=${openMatch[1]}`;
+  }
+  return url;
+}
+
+/**
+ * 대표 이미지 다운로드
+ * @returns 로컬 경로 (예: "/images/papers/10-1038-nature12373.jpg") 또는 ""
+ */
+async function downloadImage(url, slug) {
+  if (!url || !(url.startsWith("http://") || url.startsWith("https://"))) {
+    return "";
+  }
+  if (!slug) return "";
+
+  mkdirSync(PAPERS_IMG_DIR, { recursive: true });
+
+  try {
+    const directUrl = toDirectUrl(url);
+    const response = await fetch(directUrl, { redirect: "follow" });
+    if (!response.ok) {
+      console.log(`    ⚠️  Image download failed (${response.status}) for ${slug}`);
+      return "";
+    }
+
+    const contentType = response.headers.get("content-type") || "";
+    let ext = "jpg";
+    if (contentType.includes("png")) ext = "png";
+    else if (contentType.includes("webp")) ext = "webp";
+    else if (contentType.includes("svg")) ext = "svg";
+    else if (contentType.includes("gif")) ext = "gif";
+    else if (contentType.includes("jpeg") || contentType.includes("jpg")) ext = "jpg";
+    else {
+      const urlExt = extname(new URL(directUrl).pathname).replace(".", "").toLowerCase();
+      if (["png", "jpg", "jpeg", "webp", "svg", "gif"].includes(urlExt)) {
+        ext = urlExt === "jpeg" ? "jpg" : urlExt;
+      }
+    }
+
+    const buffer = Buffer.from(await response.arrayBuffer());
+    const filename = `${slug}.${ext}`;
+    const filePath = resolve(PAPERS_IMG_DIR, filename);
+    writeFileSync(filePath, buffer);
+
+    console.log(`    🖼️  Downloaded: ${filename} (${(buffer.length / 1024).toFixed(1)} KB)`);
+    return `/images/papers/${filename}`;
+  } catch (err) {
+    console.log(`    ⚠️  Image download error for ${slug}: ${err.message}`);
+    return "";
+  }
+}
+
+/**
+ * 이미지 경로 결정: URL이면 다운로드, 비어있으면 기존 로컬 파일 검색, 없으면 ""
+ */
+async function getImagePath(slug, url) {
+  if (url) {
+    const downloaded = await downloadImage(url, slug);
+    if (downloaded) return downloaded;
+  }
+  // 기존 로컬 파일 검색 (재실행 시 placeholder로 떨어뜨리지 않기 위함)
+  if (slug) {
+    const exts = ["jpg", "png", "webp", "svg", "gif"];
+    for (const ext of exts) {
+      const p = resolve(PAPERS_IMG_DIR, `${slug}.${ext}`);
+      if (existsSync(p)) return `/images/papers/${slug}.${ext}`;
+    }
+  }
+  return "";
+}
+
 // ───────────────────────────────────────────────────────────────
 // Publications 변환
 // ───────────────────────────────────────────────────────────────
-function parsePublications(rows) {
+async function parsePublications(rows) {
   if (rows.length < 2) {
     console.log("⚠️  Publications 탭에 데이터가 없습니다.");
     return [];
@@ -174,6 +257,7 @@ function parsePublications(rows) {
     const authorsRaw = cell(row, 7);
     const journal = cell(row, 8);
     const year = parseYear(cell(row, 9));
+    const imageUrl = cell(row, 12); // M열
 
     if (!title) {
       console.log(`  ⚠️  Skip [${doi}] — 제목 비어있음 (상태=${status})`);
@@ -181,9 +265,13 @@ function parsePublications(rows) {
     }
 
     const type = typeRaw === "preprint" ? "preprint" : "publication";
+    const slug = slugify(doi) || slugify(title) || String(i);
+
+    // 이미지 처리 (Google Drive 또는 직접 URL → public/images/papers/)
+    const image = await getImagePath(slug, imageUrl);
 
     items.push({
-      id: `${type}-${slugify(doi) || slugify(title) || String(i)}`,
+      id: `${type}-${slug}`,
       title,
       authors: parseAuthors(authorsRaw),
       journal,
@@ -194,6 +282,7 @@ function parsePublications(rows) {
       division,
       featured,
       note,
+      image,
       abstract: "",
     });
 
@@ -233,7 +322,9 @@ function parsePatents(rows) {
       id: `patent-${slugify(number) || slugify(title) || String(i)}`,
       title,
       authors: parseAuthors(inventorsRaw),
-      journal: number ? `${country ? country + " " : ""}${number}${status ? " (" + status + ")" : ""}`.trim() : "",
+      journal: number
+        ? `${country ? country + " " : ""}${number}${status ? " (" + status + ")" : ""}`.trim()
+        : "",
       year,
       doi: number,
       type: "patent",
@@ -241,6 +332,7 @@ function parsePatents(rows) {
       division,
       featured: false,
       note,
+      image: "",
       abstract: "",
     });
 
@@ -287,7 +379,7 @@ async function main() {
       console.log(`⚠️  Patents 탭을 가져올 수 없습니다: ${e.message}`);
     }
 
-    const publications = parsePublications(pubRows);
+    const publications = await parsePublications(pubRows);
     const patents = parsePatents(patRows);
 
     const all = sortItems([...publications, ...patents]);

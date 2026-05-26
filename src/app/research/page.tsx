@@ -17,6 +17,7 @@ type Paper = {
   featured?: boolean;
   note?: string;
   abstract?: string;
+  image?: string;
 };
 
 const tabs = [
@@ -132,79 +133,133 @@ export default function ResearchPage() {
 
 function PaperCard({ paper }: { paper: Paper }) {
   const link = doiLink(paper.doi);
+  const hasImage = !!paper.image;
 
   return (
     <div
-      className={`p-6 rounded-xl border transition-all duration-300 ${
+      className={`rounded-xl border overflow-hidden transition-all duration-300 ${
         paper.featured
           ? "border-accent/40 bg-accent/[0.02] hover:shadow-lg"
           : "border-gray-100 hover:border-accent/30 hover:shadow-md"
       }`}
     >
-      <div className="flex items-start gap-2 mb-2 flex-wrap">
-        {paper.featured && (
-          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-accent text-white rounded">
-            Featured
-          </span>
-        )}
-        {paper.type === "preprint" && (
-          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-gray-200 text-gray-700 rounded">
-            Preprint
-          </span>
-        )}
-        {paper.division && (
-          <span className="text-[10px] font-medium px-2 py-0.5 bg-primary/5 text-primary rounded">
-            {paper.division}
-          </span>
-        )}
-      </div>
+      <div className="flex flex-col sm:flex-row">
+        {/* 왼쪽 이미지 영역 (4:3) */}
+        <div className="sm:w-1/3 sm:max-w-[260px] flex-shrink-0 relative bg-gray-50">
+          <div className="aspect-[4/3] relative w-full">
+            {hasImage ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={paper.image as string}
+                alt={paper.title}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <PaperPlaceholder paper={paper} />
+            )}
+          </div>
+        </div>
 
-      <h3 className="font-bold text-gray-900 mb-2 leading-snug">
-        {link ? (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-accent transition-colors"
-          >
-            {paper.title}
-          </a>
-        ) : (
-          paper.title
-        )}
-      </h3>
+        {/* 오른쪽 텍스트 영역 */}
+        <div className="p-5 sm:p-6 flex-1 min-w-0">
+          <div className="flex items-start gap-2 mb-2 flex-wrap">
+            {paper.featured && (
+              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-accent text-white rounded">
+                Featured
+              </span>
+            )}
+            {paper.type === "preprint" && (
+              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-gray-200 text-gray-700 rounded">
+                Preprint
+              </span>
+            )}
+            {paper.division && (
+              <span className="text-[10px] font-medium px-2 py-0.5 bg-primary/5 text-primary rounded">
+                {paper.division}
+              </span>
+            )}
+          </div>
 
-      {paper.authors.length > 0 && (
-        <p className="text-sm text-gray-500 mb-1">{paper.authors.join(", ")}</p>
-      )}
-
-      {paper.journal && (
-        <p className="text-sm text-accent font-medium">{paper.journal}</p>
-      )}
-
-      {paper.abstract && (
-        <p className="text-sm text-gray-400 mt-2 line-clamp-2">{paper.abstract}</p>
-      )}
-
-      {paper.doi && (
-        <p className="text-xs text-gray-400 mt-2">
-          {link ? (
-            <>
-              DOI:{" "}
+          <h3 className="font-bold text-gray-900 mb-2 leading-snug">
+            {link ? (
               <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-accent"
+                className="hover:text-accent transition-colors"
               >
-                {paper.doi}
+                {paper.title}
               </a>
-            </>
-          ) : (
-            <>{paper.type === "patent" ? "No.: " : "DOI: "}{paper.doi}</>
+            ) : (
+              paper.title
+            )}
+          </h3>
+
+          {paper.authors.length > 0 && (
+            <p className="text-sm text-gray-500 mb-1">{paper.authors.join(", ")}</p>
           )}
-        </p>
-      )}
+
+          {paper.journal && (
+            <p className="text-sm text-accent font-medium">{paper.journal}</p>
+          )}
+
+          {paper.abstract && (
+            <p className="text-sm text-gray-400 mt-2 line-clamp-2">{paper.abstract}</p>
+          )}
+
+          {paper.doi && (
+            <p className="text-xs text-gray-400 mt-2 break-all">
+              {link ? (
+                <>
+                  DOI:{" "}
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-accent"
+                  >
+                    {paper.doi}
+                  </a>
+                </>
+              ) : (
+                <>
+                  {paper.type === "patent" ? "No.: " : "DOI: "}
+                  {paper.doi}
+                </>
+              )}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * 대표 이미지가 없을 때 자동 생성되는 placeholder.
+ * 그라데이션 배경 + 논문 아이콘 + 저널명 (있으면) 표시.
+ */
+function PaperPlaceholder({ paper }: { paper: Paper }) {
+  const label = paper.journal || (paper.type === "patent" ? "Patent" : "Publication");
+  return (
+    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
+      <svg
+        className="w-10 h-10 text-white/40 mb-2"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+        />
+      </svg>
+      <p className="text-[10px] sm:text-xs text-center text-white/80 line-clamp-2 font-medium">
+        {label}
+      </p>
     </div>
   );
 }
