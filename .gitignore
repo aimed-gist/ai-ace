@@ -42,3 +42,6 @@ next-env.d.ts
 
 # claude / cowork local settings
 .claude/
+
+# 파트너 로고 임시 다운로드 폴더 (Google Drive 업로드용)
+partner_logos_temp/
