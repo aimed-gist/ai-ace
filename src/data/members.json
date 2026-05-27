@@ -450,6 +450,21 @@
     "bio": ""
   },
   {
+    "id": "mentor-myunghan_yoon",
+    "name": "윤명한",
+    "nameEn": "Myung-Han Yoon",
+    "role": "mentor",
+    "title": "Professor",
+    "affiliation": "GIST",
+    "image": "/images/members/myunghan_yoon.jpg",
+    "email": "mhyoon@gist.ac.kr",
+    "website": "https://sites.google.com/site/gistbioelectronics/",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
     "id": "global_mentor-young_ju_lee",
     "name": "이영주",
     "nameEn": "Young ju Lee",
