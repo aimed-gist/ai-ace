@@ -34,6 +34,10 @@ const OUTPUT_PATH = resolve(PROJECT_ROOT, "src", "data", "opportunities.json");
 
 const VALID_TYPES = new Set(["fellowship", "position", "intern", "other"]);
 
+// 첫 컬럼 헤더가 이 값과 일치해야 우리 의도한 탭임을 확신할 수 있음.
+// (gviz는 시트 이름을 못 찾을 때 첫 번째 시트를 반환하므로 헤더 검증으로 차단)
+const EXPECTED_FIRST_HEADER = "제목";
+
 // ───────────────────────────────────────────────────────────────
 // CSV parser
 // ───────────────────────────────────────────────────────────────
@@ -139,8 +143,22 @@ async function fetchOpportunities() {
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
   const rows = parseCSV(await resp.text());
 
-  if (rows.length < 2) {
+  if (rows.length < 1) {
     console.log("⚠️  Opportunities 탭에 데이터가 없습니다.");
+    return [];
+  }
+
+  // 헤더 검증: gviz가 다른 시트를 반환했을 가능성 차단
+  const firstHeader = (rows[0][0] || "").trim();
+  if (firstHeader !== EXPECTED_FIRST_HEADER) {
+    console.log(`⚠️  헤더 검증 실패: 첫 헤더가 "${EXPECTED_FIRST_HEADER}"가 아니라 "${firstHeader}" 입니다.`);
+    console.log(`   Opportunities 탭이 시트에 존재하지 않거나 헤더가 다릅니다.`);
+    console.log(`   안전을 위해 sync를 중단합니다 (기존 opportunities.json 그대로 유지).`);
+    return [];
+  }
+
+  if (rows.length < 2) {
+    console.log("⚠️  Opportunities 탭에 헤더만 있고 데이터가 없습니다.");
     return [];
   }
 

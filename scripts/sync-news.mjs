@@ -71,13 +71,28 @@ function parseCSV(text) {
   return result;
 }
 
-async function fetchSheet(sheetName) {
+/**
+ * 시트 fetch + 헤더 검증.
+ * gviz는 시트 이름을 못 찾으면 첫 번째 시트를 반환하므로,
+ * 첫 헤더가 기대값과 다르면 다른 시트가 반환된 것으로 간주하고 빈 결과 반환.
+ */
+async function fetchSheet(sheetName, expectedFirstHeader) {
   console.log(`📡 Fetching tab: ${sheetName}`);
   const resp = await fetch(sheetCsvUrl(sheetName), { redirect: "follow" });
   if (!resp.ok) {
     throw new Error(`HTTP ${resp.status}`);
   }
-  return parseCSV(await resp.text());
+  const rows = parseCSV(await resp.text());
+
+  // 헤더 검증
+  if (rows.length === 0) return rows;
+  const firstHeader = (rows[0][0] || "").trim();
+  if (expectedFirstHeader && firstHeader !== expectedFirstHeader) {
+    console.log(`⚠️  ${sheetName} 탭 헤더 검증 실패: "${expectedFirstHeader}" 기대했으나 "${firstHeader}" 받음`);
+    console.log(`   → 탭이 존재하지 않거나 헤더가 다릅니다. 이 탭은 건너뜁니다.`);
+    return [];
+  }
+  return rows;
 }
 
 // ───────────────────────────────────────────────────────────────
@@ -304,13 +319,14 @@ async function main() {
   let mediaRows = [];
   let colabRows = [];
 
-  try { noticeRows = await fetchSheet("Notice"); }
+  // 모든 News 시트 탭의 첫 헤더는 "제목" — gviz의 잘못된 시트 반환을 차단
+  try { noticeRows = await fetchSheet("Notice", "제목"); }
   catch (e) { console.log(`⚠️  Notice 탭 가져오기 실패: ${e.message}`); }
 
-  try { mediaRows = await fetchSheet("Media Coverage"); }
+  try { mediaRows = await fetchSheet("Media Coverage", "제목"); }
   catch (e) { console.log(`⚠️  Media Coverage 탭 가져오기 실패: ${e.message}`); }
 
-  try { colabRows = await fetchSheet("Co-Lab"); }
+  try { colabRows = await fetchSheet("Co-Lab", "제목"); }
   catch (e) { console.log(`⚠️  Co-Lab 탭 가져오기 실패: ${e.message}`); }
 
   const notice = parseNotice(noticeRows);
