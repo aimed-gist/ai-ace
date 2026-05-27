@@ -24,6 +24,8 @@ const PROJECT_ROOT = resolve(__dirname, "..");
 const SPREADSHEET_ID = "1JBb_azDOmzVl3hCfJqqAWh1sGMHCB0tGey4k_OX7agY";
 const OUTPUT_PATH = resolve(PROJECT_ROOT, "src", "data", "news.json");
 const COLAB_IMG_DIR = resolve(PROJECT_ROOT, "public", "images", "colab");
+const NOTICE_IMG_DIR = resolve(PROJECT_ROOT, "public", "images", "notice");
+const MEDIA_IMG_DIR = resolve(PROJECT_ROOT, "public", "images", "media");
 
 function sheetCsvUrl(sheetName) {
   return `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
@@ -205,26 +207,33 @@ function isImageBuffer(buf) {
   return false;
 }
 
-async function getColabImagePath(slug, url) {
+/**
+ * 카테고리별 이미지 저장.
+ * URL이 있으면 다운로드, 없거나 실패하면 기존 로컬 파일 폴백, 그래도 없으면 "".
+ */
+async function getStoredImagePath(slug, url, imgDir, urlPrefix) {
   if (url) {
-    const downloaded = await downloadImage(url, slug, COLAB_IMG_DIR, "/images/colab");
+    const downloaded = await downloadImage(url, slug, imgDir, urlPrefix);
     if (downloaded) return downloaded;
   }
-  // 기존 파일 폴백
   if (slug) {
     const exts = ["jpg", "png", "webp", "svg", "gif"];
     for (const ext of exts) {
-      const p = resolve(COLAB_IMG_DIR, `${slug}.${ext}`);
-      if (existsSync(p)) return `/images/colab/${slug}.${ext}`;
+      const p = resolve(imgDir, `${slug}.${ext}`);
+      if (existsSync(p)) return `${urlPrefix}/${slug}.${ext}`;
     }
   }
   return "";
 }
 
+const getColabImagePath  = (slug, url) => getStoredImagePath(slug, url, COLAB_IMG_DIR,  "/images/colab");
+const getNoticeImagePath = (slug, url) => getStoredImagePath(slug, url, NOTICE_IMG_DIR, "/images/notice");
+const getMediaImagePath  = (slug, url) => getStoredImagePath(slug, url, MEDIA_IMG_DIR,  "/images/media");
+
 // ───────────────────────────────────────────────────────────────
 // 각 탭 파서
 // ───────────────────────────────────────────────────────────────
-function parseNotice(rows) {
+async function parseNotice(rows) {
   if (rows.length < 2) return [];
   const items = [];
   for (let i = 1; i < rows.length; i++) {
@@ -234,21 +243,24 @@ function parseNotice(rows) {
     const date = normalizeDate(cell(r, 1));
     const body = cell(r, 2);
     const link = cell(r, 3);
+    const imageUrl = cell(r, 4); // E열: 대표이미지
+    const slug = slugify(title) || `notice_${i}`;
+    const image = await getNoticeImagePath(slug, imageUrl);
     items.push({
-      id: `notice-${slugify(title) || i}`,
+      id: `notice-${slug}`,
       category: "notice",
       title,
       date,
       summary: body,
       link,
-      image: "",
+      image,
     });
-    console.log(`  ✅ notice [${date}] ${title.slice(0, 50)}`);
+    console.log(`  ✅ notice [${date}] ${title.slice(0, 50)}${image ? "" : " (이미지 없음)"}`);
   }
   return items;
 }
 
-function parseMedia(rows) {
+async function parseMedia(rows) {
   if (rows.length < 2) return [];
   const items = [];
   for (let i = 1; i < rows.length; i++) {
@@ -258,16 +270,19 @@ function parseMedia(rows) {
     const source = cell(r, 1);
     const date = normalizeDate(cell(r, 2));
     const link = cell(r, 3);
+    const imageUrl = cell(r, 4); // E열: 대표이미지
+    const slug = slugify(title) || `media_${i}`;
+    const image = await getMediaImagePath(slug, imageUrl);
     items.push({
-      id: `media-${slugify(title) || i}`,
+      id: `media-${slug}`,
       category: "media",
       title,
       date,
       summary: source, // 매체명을 summary로
       link,
-      image: "",
+      image,
     });
-    console.log(`  ✅ media [${date}] ${source ? source + " · " : ""}${title.slice(0, 50)}`);
+    console.log(`  ✅ media [${date}] ${source ? source + " · " : ""}${title.slice(0, 50)}${image ? "" : " (이미지 없음)"}`);
   }
   return items;
 }
@@ -329,8 +344,8 @@ async function main() {
   try { colabRows = await fetchSheet("Co-Lab", "제목"); }
   catch (e) { console.log(`⚠️  Co-Lab 탭 가져오기 실패: ${e.message}`); }
 
-  const notice = parseNotice(noticeRows);
-  const media = parseMedia(mediaRows);
+  const notice = await parseNotice(noticeRows);
+  const media = await parseMedia(mediaRows);
   const colab = await parseCoLab(colabRows);
 
   const all = sortItems([...notice, ...media, ...colab]);

@@ -28,8 +28,11 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          mkdir -p public/images/colab
-          git add src/data/news.json public/images/colab/
+          mkdir -p public/images/colab public/images/notice public/images/media
+          git add src/data/news.json \
+                  public/images/colab/ \
+                  public/images/notice/ \
+                  public/images/media/
           git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push
@@ -37,5 +40,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Auto-sync news + co-lab images from spreadsheet [bot]"
+          git commit -m "Auto-sync news + images from spreadsheet [bot]"
           git push
