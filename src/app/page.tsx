@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SectionWrapper from "@/components/SectionWrapper";
 import NewsCard from "@/components/NewsCard";
-import PartnerCarousel from "@/components/PartnerCarousel";
 import news from "@/data/news.json";
 
 export default function Home() {
@@ -11,6 +10,23 @@ export default function Home() {
     <>
       {/* Hero */}
       <HeroSection />
+
+      {/* News & Updates */}
+      <SectionWrapper id="news" dark>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            News & Updates
+          </h2>
+          <p className="text-text-light/70 max-w-2xl mx-auto">
+            Stay updated with the latest news, research highlights, and events.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {latestNews.map((item) => (
+            <NewsCard key={item.id} item={item} />
+          ))}
+        </div>
+      </SectionWrapper>
 
       {/* Platform Overview */}
       <SectionWrapper id="platform">
@@ -65,77 +81,6 @@ export default function Home() {
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
             </div>
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* Global Network */}
-      <SectionWrapper id="network" dark>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Global Research Network
-            </h2>
-            <p className="text-text-light/70 leading-relaxed mb-6">
-              Our network brings together top researchers, industry experts, and
-              InnoCORE Fellows from around the world to tackle the most pressing
-              challenges in AI-driven manufacturing.
-            </p>
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { num: "10+", label: "Research Partners" },
-                { num: "20+", label: "Publications" },
-                { num: "15+", label: "Industry Collaborations" },
-                { num: "30+", label: "Team Members" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-3xl font-bold text-accent-light">
-                    {stat.num}
-                  </p>
-                  <p className="text-sm text-text-muted">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-accent/20 to-primary-light/20 flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-24 h-24 text-accent-light/50 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                </svg>
-                <p className="text-text-muted text-sm">Global Network Visualization</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionWrapper>
-
-      {/* Partners */}
-      <SectionWrapper id="partners">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-dark mb-4">
-            Our Partners
-          </h2>
-          <p className="text-text-muted max-w-2xl mx-auto">
-            Collaborating with leading universities and industry partners worldwide.
-          </p>
-        </div>
-        <PartnerCarousel />
-      </SectionWrapper>
-
-      {/* News & Updates */}
-      <SectionWrapper id="news" dark>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            News & Updates
-          </h2>
-          <p className="text-text-light/70 max-w-2xl mx-auto">
-            Stay updated with the latest news, research highlights, and events.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {latestNews.map((item) => (
-            <NewsCard key={item.id} item={item} />
           ))}
         </div>
       </SectionWrapper>
