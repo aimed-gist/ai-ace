@@ -6,7 +6,9 @@
     "date": "2026-01-01",
     "summary": "5월 30일 오후 2시, GIST 본관 1층에서 진행됩니다.",
     "link": "https://drive.google.com/file/d/1nWwgvTR324ZhHHo-EaCbSEFV9TXaLlP1/view?usp=drive_link",
-    "image": ""
+    "image": "",
+    "pinned": true,
+    "source": "sheet"
   },
   {
     "id": "media-ai_ace_연구단_뇌질환_조기진단_ai_개발",
