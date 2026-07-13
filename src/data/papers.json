@@ -36,6 +36,23 @@
     "abstract": ""
   },
   {
+    "id": "patent-1234",
+    "title": "test",
+    "authors": [
+      "김만수"
+    ],
+    "journal": "KR 1234 (출원)",
+    "year": 2026,
+    "doi": "1234",
+    "type": "patent",
+    "pi": "김만수",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-nature12373",
     "title": "Nanometre-scale thermometry in a living cell",
     "authors": [
