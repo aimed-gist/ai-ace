@@ -4,7 +4,9 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import NewsCard from "@/components/NewsCard";
 import newsData from "@/data/news.json";
+import noticesMdData from "@/data/notices-md.json";
 import opportunities from "@/data/opportunities.json";
+import opportunitiesMd from "@/data/opportunities-md.json";
 
 const categories = [
   { key: "all", label: "All" },
@@ -24,6 +26,8 @@ type NewsItem = {
   summary: string;
   link: string;
   image: string;
+  pinned?: boolean;
+  source?: string;
 };
 
 type Opportunity = {
@@ -34,13 +38,9 @@ type Opportunity = {
   description?: string;
   contact?: string;
   active: boolean;
+  pinned?: boolean;
 };
 
-/**
- * 활성 Opportunity → NewsItem 어댑터.
- * Notice 카테고리에 자동으로 함께 노출됨.
- * 카드 클릭 시 /opportunities 페이지로 이동.
- */
 function opportunityToNewsItem(opp: Opportunity): NewsItem {
   const dateLabel = opp.deadline ? `마감 ${opp.deadline}` : "상시 모집";
   return {
@@ -51,7 +51,21 @@ function opportunityToNewsItem(opp: Opportunity): NewsItem {
     summary: opp.description || "",
     link: "/opportunities",
     image: "",
+    pinned: opp.pinned === true,
   };
+}
+
+/**
+ * pinned 우선 → 날짜 내림차순 → 제목
+ */
+function sortPinnedThenDate(a: NewsItem, b: NewsItem) {
+  const pa = a.pinned ? 1 : 0;
+  const pb = b.pinned ? 1 : 0;
+  if (pa !== pb) return pb - pa;
+  const da = a.date || "";
+  const db = b.date || "";
+  if (db !== da) return db.localeCompare(da);
+  return a.title.localeCompare(b.title);
 }
 
 function NewsPageInner() {
@@ -76,26 +90,44 @@ function NewsPageInner() {
     router.replace(`${pathname}?tab=${key}`, { scroll: false });
   };
 
-  // 활성 채용공고를 Notice 카테고리에 자동 추가
+  // 활성 채용공고를 Notice/All에 자동 추가 (sheet + md 병합)
   const opportunityNoticeItems: NewsItem[] = useMemo(() => {
-    return (opportunities as Opportunity[])
-      .filter((o) => o.active)
-      .map(opportunityToNewsItem);
+    const combined = [
+      ...(opportunities as Opportunity[]),
+      ...(opportunitiesMd as Opportunity[]),
+    ];
+    return combined.filter((o) => o.active).map(opportunityToNewsItem);
+  }, []);
+
+  // Notice 카테고리는 sheet + md 병합
+  const allNoticeItems: NewsItem[] = useMemo(() => {
+    const sheet = (newsData as NewsItem[]).filter((n) => n.category === "notice");
+    const md = noticesMdData as NewsItem[];
+    return [...sheet, ...md];
   }, []);
 
   const filtered: NewsItem[] = useMemo(() => {
     const news = newsData as NewsItem[];
     if (activeCategory === "all") {
-      // All: 모든 뉴스 + 활성 채용공고
-      return [...news, ...opportunityNoticeItems].sort(sortByDateDesc);
+      const other = news.filter((n) => n.category !== "notice");
+      return [
+        ...allNoticeItems,
+        ...other,
+        ...opportunityNoticeItems,
+      ].sort(sortPinnedThenDate);
     }
     if (activeCategory === "notice") {
-      // Notice: notice 카테고리 + 활성 채용공고
-      const notices = news.filter((n) => n.category === "notice");
-      return [...notices, ...opportunityNoticeItems].sort(sortByDateDesc);
+      return [
+        ...allNoticeItems,
+        ...opportunityNoticeItems,
+      ].sort(sortPinnedThenDate);
     }
-    return news.filter((n) => n.category === activeCategory).sort(sortByDateDesc);
-  }, [activeCategory, opportunityNoticeItems]);
+    return news
+      .filter((n) => n.category === activeCategory)
+      .sort(sortPinnedThenDate);
+  }, [activeCategory, opportunityNoticeItems, allNoticeItems]);
+
+  const pinnedCount = filtered.filter((f) => f.pinned).length;
 
   return (
     <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -107,7 +139,7 @@ function NewsPageInner() {
       </p>
 
       {/* Category filter */}
-      <div className="flex flex-wrap gap-2 mb-10">
+      <div className="flex flex-wrap gap-2 mb-6">
         {categories.map((cat) => (
           <button
             key={cat.key}
@@ -123,11 +155,31 @@ function NewsPageInner() {
         ))}
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filtered.map((item) => (
-          <NewsCard key={item.id} item={item} />
-        ))}
+      {pinnedCount > 0 && (
+        <p className="text-xs text-gray-400 mb-4">
+          📌 {pinnedCount}건의 주요 공지가 상단에 고정되어 있습니다
+        </p>
+      )}
+
+      {/* Grid — 3열, 최대 3행(9개)까지 보이고 나머지는 스크롤 */}
+      <div className="border border-gray-100 rounded-2xl p-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[calc(3*22rem+2*1.5rem+1rem)] overflow-y-auto px-2 py-2 scroll-smooth">
+          {filtered.map((item) => (
+            <div key={item.id} className="relative h-full">
+              {item.pinned && (
+                <div className="absolute top-2 right-2 z-10 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-rose-500 text-white rounded shadow">
+                  📌 Pinned
+                </div>
+              )}
+              <NewsCard item={item} />
+            </div>
+          ))}
+        </div>
+        {filtered.length > 9 && (
+          <p className="text-center text-xs text-gray-400 py-3">
+            {filtered.length - 9}건 더 있음 — 스크롤하여 확인하세요
+          </p>
+        )}
       </div>
 
       {filtered.length === 0 && (
@@ -137,15 +189,6 @@ function NewsPageInner() {
       )}
     </div>
   );
-}
-
-function sortByDateDesc(a: NewsItem, b: NewsItem) {
-  // 날짜 문자열 비교 (YYYY-MM-DD 형식이면 사전식 정렬 = 시간순)
-  // "마감 ..." 같은 포맷은 그대로 두고 끝으로 밀림
-  const da = a.date || "";
-  const db = b.date || "";
-  if (db !== da) return db.localeCompare(da);
-  return a.title.localeCompare(b.title);
 }
 
 export default function NewsPage() {

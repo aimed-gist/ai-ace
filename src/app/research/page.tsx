@@ -137,7 +137,10 @@ function PaperCard({ paper }: { paper: Paper }) {
   const link = doiLink(paper.doi);
   // 이미지 로드 실패 시 placeholder로 폴백 (basePath 누락, 파일 없음, 손상된 파일 등 모두 커버)
   const [imageFailed, setImageFailed] = useState(false);
-  const showImage = !!paper.image && !imageFailed;
+
+  // Patent는 이미지 영역 자체를 표시하지 않음 (텍스트만 전폭)
+  const isPatent = paper.type === "patent";
+  const showImage = !isPatent && !!paper.image && !imageFailed;
   const imageSrc = paper.image ? `${basePath}${paper.image}` : "";
 
   return (
@@ -149,23 +152,25 @@ function PaperCard({ paper }: { paper: Paper }) {
       }`}
     >
       <div className="flex flex-col sm:flex-row">
-        {/* 왼쪽 이미지 영역 (4:3) */}
-        <div className="sm:w-1/3 sm:max-w-[260px] flex-shrink-0 relative bg-gray-50">
-          <div className="aspect-[4/3] relative w-full">
-            {showImage ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={imageSrc}
-                alt={paper.title}
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
-                onError={() => setImageFailed(true)}
-              />
-            ) : (
-              <PaperPlaceholder paper={paper} />
-            )}
+        {/* 왼쪽 이미지 영역 (Patent는 생략) */}
+        {!isPatent && (
+          <div className="sm:w-1/3 sm:max-w-[260px] flex-shrink-0 relative bg-gray-50">
+            <div className="aspect-[4/3] relative w-full">
+              {showImage ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={imageSrc}
+                  alt={paper.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  onError={() => setImageFailed(true)}
+                />
+              ) : (
+                <PaperPlaceholder paper={paper} />
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* 오른쪽 텍스트 영역 */}
         <div className="p-5 sm:p-6 flex-1 min-w-0">

@@ -1,4 +1,5 @@
 import opportunities from "@/data/opportunities.json";
+import opportunitiesMd from "@/data/opportunities-md.json";
 
 type Opportunity = {
   id: string;
@@ -9,7 +10,23 @@ type Opportunity = {
   contact?: string;
   active: boolean;
   requirements?: string[];
+  pinned?: boolean;
 };
+
+/**
+ * pinned 우선 → 마감일 임박순 → 제목
+ */
+function sortOpportunities(arr: Opportunity[]) {
+  return arr.sort((a, b) => {
+    const pa = a.pinned ? 1 : 0;
+    const pb = b.pinned ? 1 : 0;
+    if (pa !== pb) return pb - pa;
+    const da = a.deadline || "9999-12-31";
+    const db = b.deadline || "9999-12-31";
+    if (da !== db) return da.localeCompare(db);
+    return a.title.localeCompare(b.title);
+  });
+}
 
 function isUrl(s: string) {
   return /^https?:\/\//i.test(s);
@@ -27,7 +44,11 @@ const typeLabels: Record<string, string> = {
 };
 
 export default function OpportunitiesPage() {
-  const items = (opportunities as Opportunity[]).filter((o) => o.active);
+  const combined = [
+    ...(opportunities as Opportunity[]),
+    ...(opportunitiesMd as Opportunity[]),
+  ];
+  const items = sortOpportunities(combined.filter((o) => o.active));
 
   return (
     <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -59,14 +80,21 @@ function OpportunityCard({ opp }: { opp: Opportunity }) {
   const contact = (opp.contact || "").trim();
 
   return (
-    <div className="p-8 rounded-2xl border border-gray-100 hover:border-accent/30 hover:shadow-lg transition-all duration-300">
+    <div className={`p-8 rounded-2xl border transition-all duration-300 ${opp.pinned ? "border-rose-300 bg-rose-50/30 hover:shadow-lg" : "border-gray-100 hover:border-accent/30 hover:shadow-lg"}`}>
       <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
         <div>
-          {typeLabel && (
-            <span className="text-xs font-medium px-3 py-1 rounded-full bg-accent/10 text-accent uppercase">
-              {typeLabel}
-            </span>
-          )}
+          <div className="flex items-center gap-2 flex-wrap">
+            {opp.pinned && (
+              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-rose-500 text-white rounded">
+                📌 Pinned
+              </span>
+            )}
+            {typeLabel && (
+              <span className="text-xs font-medium px-3 py-1 rounded-full bg-accent/10 text-accent uppercase">
+                {typeLabel}
+              </span>
+            )}
+          </div>
           <h2 className="text-2xl font-bold text-primary-dark mt-3">
             {opp.title}
           </h2>

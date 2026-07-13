@@ -53,6 +53,12 @@ export default function Footer() {
               <p>Gwangju Institute of Science and Technology (GIST)</p>
               <p>123 Cheomdangwagi-ro, Buk-gu, Gwangju, Korea</p>
               <p>
+                Tel.{" "}
+                <a href="tel:+82627154531" className="text-accent-light hover:underline">
+                  062-715-4531~3
+                </a>
+              </p>
+              <p>
                 Email:{" "}
                 <a href="mailto:contact@ai-ace.gist.ac.kr" className="text-accent-light hover:underline">
                   contact@ai-ace.gist.ac.kr

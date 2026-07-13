@@ -233,6 +233,14 @@ const getMediaImagePath  = (slug, url) => getStoredImagePath(slug, url, MEDIA_IM
 // ───────────────────────────────────────────────────────────────
 // 각 탭 파서
 // ───────────────────────────────────────────────────────────────
+/**
+ * F열 "고정" 값 파싱 (TRUE/1/yes 등 → true)
+ */
+function parsePinned(s) {
+  const v = String(s || "").trim().toLowerCase();
+  return v === "true" || v === "1" || v === "yes" || v === "y" || v === "o" || v === "고정";
+}
+
 async function parseNotice(rows) {
   if (rows.length < 2) return [];
   const items = [];
@@ -244,6 +252,7 @@ async function parseNotice(rows) {
     const body = cell(r, 2);
     const link = cell(r, 3);
     const imageUrl = cell(r, 4); // E열: 대표이미지
+    const pinned = parsePinned(cell(r, 5)); // F열: 고정
     const slug = slugify(title) || `notice_${i}`;
     const image = await getNoticeImagePath(slug, imageUrl);
     items.push({
@@ -254,8 +263,10 @@ async function parseNotice(rows) {
       summary: body,
       link,
       image,
+      pinned,
+      source: "sheet",
     });
-    console.log(`  ✅ notice [${date}] ${title.slice(0, 50)}${image ? "" : " (이미지 없음)"}`);
+    console.log(`  ✅ notice [${date}] ${title.slice(0, 50)}${pinned ? " 📌" : ""}${image ? "" : " (이미지 없음)"}`);
   }
   return items;
 }
