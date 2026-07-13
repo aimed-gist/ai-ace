@@ -123,12 +123,16 @@ function buildNotices() {
     }
 
     items.push({
-      id: `notice-md-${slugify(data.title) || fileSlug}`,
+      id: `notice-md-${fileSlug}`,
+      slug: fileSlug,
       category: "notice",
       title: String(data.title),
       date: normalizeDate(data.date),
+      // 카드에는 첫 몇 줄만 표시되므로 summary는 본문 앞부분만 (line-clamp 활용)
       summary: content,
-      link: data.link ? String(data.link) : "",
+      body: content,               // 상세 페이지용 전체 본문
+      link: "",                    // 카드/개요 페이지에서는 카드 클릭이 상세 페이지로 이동
+      externalLink: data.link ? String(data.link) : "", // 상세 페이지에서 첨부/외부 링크
       image: data.image ? String(data.image) : "",
       pinned: data.pinned === true,
       source: "md",
@@ -172,11 +176,15 @@ function buildOpportunities() {
     const active = computeActive(deadline);
 
     items.push({
-      id: `opp-md-${slugify(data.title) || fileSlug}`,
+      id: `opp-md-${fileSlug}`,
+      slug: fileSlug,
       title: String(data.title),
       type,
       deadline,
+      // 목록 카드용 요약 (본문 첫 문단)
+      summary: content.split(/\n\n/)[0] || "",
       description: content,
+      body: content,
       contact: data.contact ? String(data.contact) : "",
       active,
       requirements: [],

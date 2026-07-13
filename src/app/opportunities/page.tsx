@@ -1,21 +1,29 @@
+import Link from "next/link";
 import opportunities from "@/data/opportunities.json";
 import opportunitiesMd from "@/data/opportunities-md.json";
 
 type Opportunity = {
   id: string;
+  slug?: string;
   title: string;
   type?: string;
   deadline?: string;
+  summary?: string;
   description?: string;
   contact?: string;
   active: boolean;
   requirements?: string[];
   pinned?: boolean;
+  source?: string;
 };
 
-/**
- * pinned 우선 → 마감일 임박순 → 제목
- */
+const typeLabels: Record<string, string> = {
+  fellowship: "Fellowship",
+  position: "Position",
+  intern: "Intern",
+  other: "Other",
+};
+
 function sortOpportunities(arr: Opportunity[]) {
   return arr.sort((a, b) => {
     const pa = a.pinned ? 1 : 0;
@@ -27,21 +35,6 @@ function sortOpportunities(arr: Opportunity[]) {
     return a.title.localeCompare(b.title);
   });
 }
-
-function isUrl(s: string) {
-  return /^https?:\/\//i.test(s);
-}
-
-function isEmail(s: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
-}
-
-const typeLabels: Record<string, string> = {
-  fellowship: "Fellowship",
-  position: "Position",
-  intern: "Intern",
-  other: "Other",
-};
 
 export default function OpportunitiesPage() {
   const combined = [
@@ -59,9 +52,9 @@ export default function OpportunitiesPage() {
         Join our team. Explore fellowship and career opportunities.
       </p>
 
-      <div className="space-y-8">
+      <div className="space-y-4">
         {items.map((opp) => (
-          <OpportunityCard key={opp.id} opp={opp} />
+          <OpportunityListCard key={opp.id} opp={opp} />
         ))}
       </div>
 
@@ -74,105 +67,76 @@ export default function OpportunitiesPage() {
   );
 }
 
-function OpportunityCard({ opp }: { opp: Opportunity }) {
+function OpportunityListCard({ opp }: { opp: Opportunity }) {
   const typeLabel = opp.type ? typeLabels[opp.type] || opp.type : "";
   const hasDeadline = !!opp.deadline;
-  const contact = (opp.contact || "").trim();
+  const isMd = opp.source === "md" && !!opp.slug;
+  // 요약 텍스트: summary 우선, 없으면 description 첫 부분
+  const summary =
+    (opp.summary && opp.summary.trim()) ||
+    (opp.description || "").split(/\n\n/)[0] ||
+    "";
 
-  return (
-    <div className={`p-8 rounded-2xl border transition-all duration-300 ${opp.pinned ? "border-rose-300 bg-rose-50/30 hover:shadow-lg" : "border-gray-100 hover:border-accent/30 hover:shadow-lg"}`}>
-      <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-        <div>
-          <div className="flex items-center gap-2 flex-wrap">
+  const cardInner = (
+    <div
+      className={`p-6 rounded-2xl border transition-all duration-300 group ${
+        opp.pinned
+          ? "border-rose-300 bg-rose-50/30 hover:shadow-lg"
+          : "border-gray-100 hover:border-accent/30 hover:shadow-md"
+      }`}
+    >
+      <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 flex-wrap mb-2">
             {opp.pinned && (
               <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-rose-500 text-white rounded">
                 📌 Pinned
               </span>
             )}
             {typeLabel && (
-              <span className="text-xs font-medium px-3 py-1 rounded-full bg-accent/10 text-accent uppercase">
+              <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-accent/10 text-accent uppercase">
                 {typeLabel}
               </span>
             )}
           </div>
-          <h2 className="text-2xl font-bold text-primary-dark mt-3">
+          <h2
+            className={`text-xl font-bold leading-snug ${
+              isMd
+                ? "text-primary-dark group-hover:text-accent transition-colors"
+                : "text-primary-dark"
+            }`}
+          >
             {opp.title}
           </h2>
         </div>
-        <div className="text-right">
-          <p className="text-sm text-gray-400">
+        <div className="text-right shrink-0">
+          <p className="text-xs text-gray-400">
             {hasDeadline ? "Deadline" : "Status"}
           </p>
-          <p className="font-semibold text-gray-700">
+          <p className="text-sm font-semibold text-gray-700">
             {hasDeadline ? opp.deadline : "Open (rolling)"}
           </p>
         </div>
       </div>
 
-      {opp.description && (
-        <p className="text-gray-600 mb-6 leading-relaxed whitespace-pre-wrap">
-          {opp.description}
+      {summary && (
+        <p className="text-sm text-gray-500 line-clamp-2">{summary}</p>
+      )}
+
+      {isMd && (
+        <p className="mt-3 text-xs text-accent font-medium">
+          자세히 보기 →
         </p>
       )}
-
-      {opp.requirements && opp.requirements.length > 0 && (
-        <div className="mb-6">
-          <h3 className="font-semibold text-gray-800 mb-2">Requirements</h3>
-          <ul className="list-disc list-inside space-y-1 text-sm text-gray-500">
-            {opp.requirements.map((req, i) => (
-              <li key={i}>{req}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {contact && <ApplyButton contact={contact} />}
     </div>
   );
-}
 
-function ApplyButton({ contact }: { contact: string }) {
-  let href = contact;
-  let label = "Apply Now";
-
-  if (isUrl(contact)) {
-    href = contact;
-    label = "Apply Now";
-  } else if (isEmail(contact)) {
-    href = `mailto:${contact}`;
-    label = `Apply via Email`;
-  } else {
-    // 그 외 텍스트는 그대로 표시만
+  if (isMd) {
     return (
-      <p className="text-sm text-gray-500">
-        지원방법: <span className="font-medium text-gray-700">{contact}</span>
-      </p>
+      <Link href={`/opportunities/${opp.slug}`} className="block">
+        {cardInner}
+      </Link>
     );
   }
-
-  const external = isUrl(contact);
-
-  return (
-    <a
-      href={href}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noopener noreferrer" : undefined}
-      className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg font-medium hover:bg-accent/90 transition-colors"
-    >
-      {label}
-      <svg
-        className="w-4 h-4"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M14 5l7 7m0 0l-7 7m7-7H3"
-        />
-      </svg>
-    </a>
-  );
+  return cardInner;
 }

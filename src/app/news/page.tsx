@@ -20,11 +20,14 @@ const DEFAULT_TAB = "all";
 
 type NewsItem = {
   id: string;
+  slug?: string;
   category: string;
   title: string;
   date: string;
   summary: string;
+  body?: string;
   link: string;
+  externalLink?: string;
   image: string;
   pinned?: boolean;
   source?: string;
@@ -32,27 +35,49 @@ type NewsItem = {
 
 type Opportunity = {
   id: string;
+  slug?: string;
   title: string;
   type?: string;
   deadline?: string;
   description?: string;
+  summary?: string;
   contact?: string;
   active: boolean;
   pinned?: boolean;
+  source?: string;
 };
 
 function opportunityToNewsItem(opp: Opportunity): NewsItem {
   const dateLabel = opp.deadline ? `마감 ${opp.deadline}` : "상시 모집";
+  // MD 소스면 개별 상세 페이지로, sheet 소스면 목록 페이지로
+  const link = opp.source === "md" && opp.slug
+    ? `/opportunities/${opp.slug}`
+    : "/opportunities";
+  const summary =
+    (opp.summary && opp.summary.trim()) ||
+    (opp.description || "").split(/\n\n/)[0] ||
+    "";
   return {
     id: `${opp.id}-as-notice`,
     category: "opportunity",
     title: opp.title,
     date: dateLabel,
-    summary: opp.description || "",
-    link: "/opportunities",
+    summary,
+    link,
     image: "",
     pinned: opp.pinned === true,
   };
+}
+
+/**
+ * MD 소스 Notice면 상세 페이지 링크로 변환.
+ * sheet 소스는 원본 link(외부) 그대로 유지.
+ */
+function normalizeNoticeLink(n: NewsItem): NewsItem {
+  if (n.source === "md" && n.slug) {
+    return { ...n, link: `/notices/${n.slug}` };
+  }
+  return n;
 }
 
 /**
@@ -99,10 +124,10 @@ function NewsPageInner() {
     return combined.filter((o) => o.active).map(opportunityToNewsItem);
   }, []);
 
-  // Notice 카테고리는 sheet + md 병합
+  // Notice 카테고리는 sheet + md 병합. MD는 상세 페이지 링크로 변환.
   const allNoticeItems: NewsItem[] = useMemo(() => {
     const sheet = (newsData as NewsItem[]).filter((n) => n.category === "notice");
-    const md = noticesMdData as NewsItem[];
+    const md = (noticesMdData as NewsItem[]).map(normalizeNoticeLink);
     return [...sheet, ...md];
   }, []);
 
