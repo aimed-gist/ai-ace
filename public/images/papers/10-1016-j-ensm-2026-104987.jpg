@@ -211,8 +211,8 @@
                     
                         {src: '/oscar-static/js/global-article-es6-bundle-cbc02e1280.js', test: 'global-article-js', module: true},
                         {src: '/oscar-static/js/global-article-es5-bundle-b79fbee330.js', test: 'global-article-js', nomodule: true},
-                        {src: '/oscar-static/js/shared-es6-bundle-e5b7b97559.js', test: 'shared-js', module: true},
-                        {src: '/oscar-static/js/shared-es5-bundle-397ba0ae91.js', test: 'shared-js', nomodule: true},
+                        {src: '/oscar-static/js/shared-es6-bundle-e7342e1cf7.js', test: 'shared-js', module: true},
+                        {src: '/oscar-static/js/shared-es5-bundle-1264336e5b.js', test: 'shared-js', nomodule: true},
                         {src: '/oscar-static/js/header-150-es6-bundle-8395667412.js', test: 'header-150-js', module: true},
                         {src: '/oscar-static/js/header-150-es5-bundle-95c03c3888.js', test: 'header-150-js', nomodule: true}
                     
