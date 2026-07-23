@@ -185,7 +185,9 @@
             e.setAttribute('crossorigin', 'anonymous');
             if (h === 'nature.com' || h.endsWith('.nature.com')) {
                 e.src = 'https://cmp.nature.com/production_live/en/consent-bundle-8-latest.js';
-                e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+                
+                    e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+                
             } else {
                 e.src = '/oscar-static/js/cookie-consent-es5-bundle-c7e13f01d7.js';
                 e.setAttribute('data-consent', h);
@@ -308,7 +310,6 @@
 
 
 
-
     
         <meta name="description" content="figure 1"/>
     
@@ -376,7 +377,7 @@
          data-gpt
          data-gpt-unitpath="/285/nature.com/article"
          data-gpt-sizes="728x90"
-         data-gpt-targeting="pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1">
+         data-gpt-targeting="pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1;doi&#x3D;10.1038/nature12373">
         
         <script>
             window.SN = window.SN || {};
@@ -391,15 +392,15 @@
                     'type': 'article',
                 
                 
-                    'targeting': 'pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1'
+                    'targeting': 'pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1;doi&#x3D;10.1038/nature12373'
                 
             };
             
         </script>
         <noscript>
-            <a href="//pubads.g.doubleclick.net/gampad/jump?iu=/285/nature.com/article&amp;sz=728x90&amp;pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1">
+            <a href="//pubads.g.doubleclick.net/gampad/jump?iu=/285/nature.com/article&amp;sz=728x90&amp;pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1;doi&#x3D;10.1038/nature12373">
                 <img data-test="gpt-advert-fallback-img"
-                     src="//pubads.g.doubleclick.net/gampad/ad?iu=/285/nature.com/article&amp;sz=728x90&amp;pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1"
+                     src="//pubads.g.doubleclick.net/gampad/ad?iu=/285/nature.com/article&amp;sz=728x90&amp;pos&#x3D;top;type&#x3D;article;path&#x3D;/articles/nature12373/figures/1;doi&#x3D;10.1038/nature12373"
                      alt="Advertisement"
                      width="728"
                      height="90"/>
