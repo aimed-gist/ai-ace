@@ -94,10 +94,10 @@
 
 
     
-        <link data-test="critical-css-handler" data-inline-css-source="critical-css" rel="stylesheet" href="/oscar-static/css/enhanced-article-nature-branded-cf75b3a3f1.css" media="print" onload="this.media='only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)';this.onload=null">
+        <link data-test="critical-css-handler" data-inline-css-source="critical-css" rel="stylesheet" href="/oscar-static/css/enhanced-article-nature-branded-a3377e2886.css" media="print" onload="this.media='only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)';this.onload=null">
     
     <noscript>
-        <link rel="stylesheet" type="text/css" href="/oscar-static/css/enhanced-article-nature-branded-cf75b3a3f1.css" media="only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)">
+        <link rel="stylesheet" type="text/css" href="/oscar-static/css/enhanced-article-nature-branded-a3377e2886.css" media="only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)">
     </noscript>
 
 <link rel="stylesheet" type="text/css" href="/oscar-static/css/article-print-56663cc418.css" media="print">
