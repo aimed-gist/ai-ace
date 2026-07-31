@@ -38,9 +38,9 @@
     "affiliation": "UNIST",
     "image": "/images/members/taehyuk_kwon.jpg",
     "email": "kwon90@unist.ac.kr",
-    "website": "https://chemistry.unist.ac.kr/kwon-tae-hyuk/",
+    "website": "https://www.kwon90.com/professor",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -85,7 +85,7 @@
     "email": "byeckim@gmail.com",
     "website": "https://zrr.kr/F5kH6S",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -128,9 +128,9 @@
     "affiliation": "KIST",
     "image": "/images/members/jaehong_kim.jpg",
     "email": "jaehongkim@kist.re.kr",
-    "website": "https://jaehongk1.wixsite.com/bestkist",
+    "website": "",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -175,7 +175,7 @@
     "email": "zeeyong@gist.ac.kr",
     "website": "https://life.gist.ac.kr/mass/index.do",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -190,7 +190,7 @@
     "email": "seomyungeun@kaist.ac.kr",
     "website": "https://nanopsg.kaist.ac.kr/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -205,7 +205,7 @@
     "email": "msong@gist.ac.kr",
     "website": "https://ndl.gist.ac.kr/ndl/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -235,7 +235,7 @@
     "email": "songj@kaist.ac.kr",
     "website": "https://www.song-kaist.org/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -265,7 +265,7 @@
     "email": "jhryu@unist.ac.kr",
     "website": "https://jhryu.unist.ac.kr/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -280,7 +280,7 @@
     "email": "jongmin.yuk@kaist.ac.kr",
     "website": "https://yuklab.kaist.ac.kr/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -325,7 +325,7 @@
     "email": "eunjilee@gist.ac.kr",
     "website": "https://so-mat.wixsite.com/gist",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -340,7 +340,7 @@
     "email": "jaeyounglee@gist.ac.kr",
     "website": "https://sites.google.com/site/biomaterialjyl/",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -355,7 +355,7 @@
     "email": "jclee@dgist.ac.kr",
     "website": "https://sites.google.com/view/jcleelab/home",
     "research": [
-      "Artificial Pebtide"
+      "Artificial Peptide"
     ],
     "bio": ""
   },
@@ -465,6 +465,666 @@
     "bio": ""
   },
   {
+    "id": "fellow-gyurin_kim",
+    "name": "김규린",
+    "nameEn": "Gyurin Kim",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-yoonjeong_kim",
+    "name": "김윤정",
+    "nameEn": "Yoon-jeong Kim",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-jeongwoon_kim",
+    "name": "김정운",
+    "nameEn": "Jeongwoon Kim",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-jaeuk_kim",
+    "name": "김재욱",
+    "nameEn": "Jaeuk Kim",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-haram_nah",
+    "name": "나하람",
+    "nameEn": "Haram Nah",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-gaeun_park",
+    "name": "박가은",
+    "nameEn": "Gaeun Park",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-sejin_park",
+    "name": "박세진",
+    "nameEn": "Sejin Park",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-jaehui_park",
+    "name": "박재희",
+    "nameEn": "Jaehui Park",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-chanhyeok_park",
+    "name": "박찬혁",
+    "nameEn": "Chanhyeok Park",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-cheongwon_bae",
+    "name": "배정원",
+    "nameEn": "Cheongwon Bae",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hyeon_oh_shin",
+    "name": "신현오",
+    "nameEn": "Hyeon Oh Shin",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-chaehyeon_ahn",
+    "name": "안채현",
+    "nameEn": "Chaehyeon Ahn",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-gyeongseok_yang",
+    "name": "양경석",
+    "nameEn": "Gyeongseok Yang",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-in_hyeok_oh",
+    "name": "오인혁",
+    "nameEn": "In Hyeok Oh",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-sunggyu_yoon",
+    "name": "윤성규",
+    "nameEn": "Sunggyu Yoon",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-huiseong_yun",
+    "name": "윤희성",
+    "nameEn": "Huiseong Yun",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-dayoung_lee",
+    "name": "이다영",
+    "nameEn": "Da-Young Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-young_joo_lee",
+    "name": "이영주",
+    "nameEn": "Young Joo Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-ji_hyeon_lee",
+    "name": "이지현",
+    "nameEn": "Ji Hyeon Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hanna_lee",
+    "name": "이한나",
+    "nameEn": "Hanna Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-seon_woo_lim",
+    "name": "임선우",
+    "nameEn": "Seon Woo Lim",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "DGIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-seongil_im",
+    "name": "임성일",
+    "nameEn": "Seongil Im",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-sehui_chang",
+    "name": "장세희",
+    "nameEn": "Sehui Chang",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hwandong_jang",
+    "name": "장환동",
+    "nameEn": "Hwandong Jang",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-haejin_jeong",
+    "name": "정해진",
+    "nameEn": "Haejin Jeong",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hyeonjung_jung",
+    "name": "정현정",
+    "nameEn": "HyeonJung Jung",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hyeryun_jeong",
+    "name": "정혜련",
+    "nameEn": "Hyeryun Jeong",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-sunghwan_jo",
+    "name": "조성환",
+    "nameEn": "Sunghwan Jo",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "DGIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-junghyun_cho",
+    "name": "조정현",
+    "nameEn": "Junghyun Cho",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-haryeong_cho",
+    "name": "조하령",
+    "nameEn": "Haryeong Cho",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-hyeonah_ju",
+    "name": "주현아",
+    "nameEn": "Hyeon-Ah Ju",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-jeong_min_ji",
+    "name": "지정민",
+    "nameEn": "Jeong Min Ji",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-ju_hyung_chae",
+    "name": "채주형",
+    "nameEn": "Ju Hyung Chae",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-eun_seong_choi",
+    "name": "최은성",
+    "nameEn": "Eun Seong Choi",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "UNIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-eunjin_choi",
+    "name": "최은진",
+    "nameEn": "Eunjin Choi",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-juhwan_choi",
+    "name": "최주환",
+    "nameEn": "Juhwan Choi",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-asad_rasheed",
+    "name": "",
+    "nameEn": "Asad Rasheed",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-bu_yingjie",
+    "name": "",
+    "nameEn": "Bu Yingjie",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-cristina_risueo_segovia",
+    "name": "",
+    "nameEn": "Cristina Risueño Segovia",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-huu_lam_phan",
+    "name": "",
+    "nameEn": "Huu Lam Phan",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-keita_tanaka",
+    "name": "",
+    "nameEn": "Keita Tanaka",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-sarmistha_mitra",
+    "name": "",
+    "nameEn": "Sarmistha Mitra",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "DGIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-shah_syed_ahson",
+    "name": "",
+    "nameEn": "Shah Syed Ahson",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-uroos_akber",
+    "name": "",
+    "nameEn": "Uroos Akber",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "CNUH",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
     "id": "fellow-young_ju_lee",
     "name": "이영주",
     "nameEn": "Young ju Lee",
@@ -476,6 +1136,231 @@
     "website": "",
     "research": [
       "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-doeun_kim",
+    "name": "김도은",
+    "nameEn": "Doeun Kim",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-junewoo_kim",
+    "name": "김준우",
+    "nameEn": "June-Woo Kim",
+    "role": "alumni",
+    "title": "원광대 전자공학과 조교수",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-ingyu_bak",
+    "name": "박인규",
+    "nameEn": "Ingyu Bak",
+    "role": "alumni",
+    "title": "IFDC",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-jeong_eun_park",
+    "name": "박정은",
+    "nameEn": "Jeong Eun Park",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-sungho_shin",
+    "name": "신성호",
+    "nameEn": "Sungho Shin",
+    "role": "alumni",
+    "title": "KISTI",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-sungho_shim",
+    "name": "심성호",
+    "nameEn": "Sungho Shim",
+    "role": "alumni",
+    "title": "ETRI",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-youngkyoung_ryu",
+    "name": "유영경",
+    "nameEn": "Young-Kyoung Ryu",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "CNUH",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-min_suk_lee",
+    "name": "이민석",
+    "nameEn": "Min Suk Lee",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-jeewon_lim",
+    "name": "임지원",
+    "nameEn": "Jeewon Lim",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-junyoung_jeon",
+    "name": "전준영",
+    "nameEn": "Jun-Young Jeon",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-yugyung_jung",
+    "name": "정유경",
+    "nameEn": "Yugyung Jung",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-hyunseok_jeong",
+    "name": "정현석",
+    "nameEn": "Hyunseok Jeong",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-seongmin_cheon",
+    "name": "천성민",
+    "nameEn": "Seongmin Cheon",
+    "role": "alumni",
+    "title": "경북대 생명의학연구원 연구교수",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-jungmoo_heo",
+    "name": "허정무",
+    "nameEn": "Jung-Moo Heo",
+    "role": "alumni",
+    "title": "아주대 응용화학과 교수",
+    "affiliation": "KAIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-jun_ho_hwang",
+    "name": "황준호",
+    "nameEn": "Jun Ho Hwang",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
     ],
     "bio": ""
   },
