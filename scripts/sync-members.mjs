@@ -253,6 +253,7 @@ async function fetchSpreadsheet() {
 
   const members = [];
   const missingPhotos = [];
+  const usedIds = new Set();
 
   // Column order:
   //   이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과 | 사진 URL (자동)
@@ -296,8 +297,22 @@ async function fetchSpreadsheet() {
     const image = await getPhotoPath(nameEn, photoUrl);
     if (image.endsWith("placeholder.svg")) missingPhotos.push(nameEn);
 
+    // id 중복 방지: 같은 사람이 시트에 두 번 있으면 React key 중복으로
+    // Members 페이지에서 탭 전환 시 카드가 계속 쌓이는 버그가 발생함
+    let id = `${role}-${nameToFilename(nameEn)}`;
+    if (usedIds.has(id)) {
+      console.log(
+        `    ⚠️  중복 행 발견: ${nameEn} [${role}] — 시트에 같은 사람이 두 번 있습니다. ` +
+        `id를 고유하게 바꿔 저장하지만, 시트에서 중복 행을 삭제하는 것을 권장합니다.`
+      );
+      let k = 2;
+      while (usedIds.has(`${id}-${k}`)) k++;
+      id = `${id}-${k}`;
+    }
+    usedIds.add(id);
+
     const member = {
-      id: `${role}-${nameToFilename(nameEn)}`,
+      id,
       name: nameKo,
       nameEn,
       role,
