@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   sync:
@@ -38,3 +39,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Auto-sync partners + logos from spreadsheet [bot]"
           git push
+
+      - name: Trigger site deploy
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # GITHUB_TOKEN 푸시는 on:push 워크플로를 트리거하지 않으므로
+          # deploy 워크플로를 명시적으로 실행한다.
+          gh workflow run deploy.yml --ref main

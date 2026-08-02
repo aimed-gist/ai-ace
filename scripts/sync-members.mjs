@@ -6,7 +6,14 @@
  * Google Spreadsheet → members.json 자동 동기화 스크립트
  *
  * 스프레드시트 컬럼 (순서대로):
- *   이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과
+ *   이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과 | 사진 URL (자동)
+ *
+ * 사진 URL 우선순위:
+ *   1. J열 "사진 URL (자동)" — Apps Script(member-photos.gs)가 H열의
+ *      Drive 파일 칩에서 추출해 기록한 URL (권장)
+ *   2. H열 "사진" — 값이 http(s) URL인 경우
+ *   ※ H열에 파일명만 있는 경우(칩의 CSV 내보내기 결과)는 다운로드 불가 →
+ *     시트에서 Apps Script "📸 Member Photos → 사진 링크 갱신"을 실행해야 함.
  *
  * 사진 파일명 규칙:
  *   영문명 → 소문자 + 공백→언더스코어 + .jpg
@@ -118,6 +125,23 @@ function toDirectUrl(url) {
 }
 
 /**
+ * 바이트 시그니처로 이미지 여부 판별
+ * (Drive 권한 오류 시 HTML 페이지가 .jpg 로 저장되는 것 방지)
+ */
+function isImageBuffer(buf) {
+  if (!buf || buf.length < 4) return false;
+  // JPEG
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return true;
+  // PNG
+  if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) return true;
+  // GIF
+  if (buf[0] === 0x47 && buf[1] === 0x49 && buf[2] === 0x46) return true;
+  // WebP (RIFF....WEBP)
+  if (buf[0] === 0x52 && buf[1] === 0x49 && buf[2] === 0x46 && buf[3] === 0x46) return true;
+  return false;
+}
+
+/**
  * Download image from URL and save to public/images/members/
  * Returns the local path on success, null on failure
  */
@@ -131,6 +155,15 @@ async function downloadPhoto(url, nameEn) {
     const response = await fetch(directUrl, { redirect: "follow" });
     if (!response.ok) {
       console.log(`    ⚠️  Photo download failed (${response.status}): ${nameEn}`);
+      return null;
+    }
+
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (!isImageBuffer(buffer)) {
+      console.log(
+        `    ⚠️  Downloaded file is not a web image for ${nameEn} ` +
+        `(Drive 공유 설정 또는 파일 포맷(.emf 등) 확인 필요)`
+      );
       return null;
     }
 
@@ -148,7 +181,14 @@ async function downloadPhoto(url, nameEn) {
       }
     }
 
-    const buffer = Buffer.from(await response.arrayBuffer());
+    // content-type이 불명확하면 magic byte로 확장자 결정
+    if (!contentType.includes("image")) {
+      if (buffer[0] === 0x89 && buffer[1] === 0x50) ext = "png";
+      else if (buffer[0] === 0x47 && buffer[1] === 0x49) ext = "gif";
+      else if (buffer[0] === 0x52 && buffer[1] === 0x49) ext = "webp";
+      else ext = "jpg";
+    }
+
     const filename = `${base}.${ext}`;
     const filePath = resolve(membersDir, filename);
     writeFileSync(filePath, buffer);
@@ -161,12 +201,16 @@ async function downloadPhoto(url, nameEn) {
   }
 }
 
+function isHttpUrl(s) {
+  return typeof s === "string" && (s.startsWith("http://") || s.startsWith("https://"));
+}
+
 /**
  * Get photo path: download from URL if provided, otherwise check local files
  */
 async function getPhotoPath(nameEn, photoUrl) {
   // If a URL is provided in the spreadsheet, download it
-  if (photoUrl && (photoUrl.startsWith("http://") || photoUrl.startsWith("https://"))) {
+  if (isHttpUrl(photoUrl)) {
     const downloaded = await downloadPhoto(photoUrl, nameEn);
     if (downloaded) return downloaded;
   }
@@ -208,8 +252,10 @@ async function fetchSpreadsheet() {
   console.log(`📊 Data rows: ${rows.length - 1}`);
 
   const members = [];
+  const missingPhotos = [];
 
-  // Column order: 이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과
+  // Column order:
+  //   이름(영어) | 이름(한글) | 소속 | 역할 | 직위 | 이메일 | 웹사이트 | 사진 | 세부분과 | 사진 URL (자동)
   for (let i = 1; i < rows.length; i++) {
     const row = rows[i];
     const nameEn = (row[0] || "").trim();
@@ -223,8 +269,20 @@ async function fetchSpreadsheet() {
     const title = (row[4] || "").trim();
     const email = (row[5] || "").trim();
     const website = (row[6] || "").trim();
-    const photoUrl = (row[7] || "").trim();
+    const photoRaw = (row[7] || "").trim();      // H열: 칩/파일명/URL
     const specialty = (row[8] || "").trim();
+    const photoUrlAuto = (row[9] || "").trim();  // J열: Apps Script가 채운 URL
+
+    // J열(자동 URL) 우선, 없으면 H열이 URL일 때만 사용
+    let photoUrl = "";
+    if (isHttpUrl(photoUrlAuto)) photoUrl = photoUrlAuto;
+    else if (isHttpUrl(photoRaw)) photoUrl = photoRaw;
+    else if (photoRaw) {
+      console.log(
+        `    ⚠️  ${nameEn}: 사진 열에 URL이 아닌 값("${photoRaw.slice(0, 30)}")만 있음 — ` +
+        `시트에서 "📸 Member Photos → 사진 링크 갱신" 실행 필요`
+      );
+    }
 
     // Map role text to internal key
     const role = ROLE_MAP[roleRaw] || "mentor";
@@ -236,6 +294,7 @@ async function fetchSpreadsheet() {
 
     // Download photo if URL provided, otherwise check local files
     const image = await getPhotoPath(nameEn, photoUrl);
+    if (image.endsWith("placeholder.svg")) missingPhotos.push(nameEn);
 
     const member = {
       id: `${role}-${nameToFilename(nameEn)}`,
@@ -253,6 +312,13 @@ async function fetchSpreadsheet() {
 
     members.push(member);
     console.log(`  ✅ ${nameEn} (${nameKo}) [${role}] — ${affiliation}`);
+  }
+
+  if (missingPhotos.length > 0) {
+    console.log(
+      `\n📷 사진 없는 멤버 ${missingPhotos.length}명 (placeholder 사용): ` +
+      missingPhotos.join(", ")
+    );
   }
 
   return members;
