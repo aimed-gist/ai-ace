@@ -6,7 +6,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "UNIST",
-    "image": "/images/members/hyunhyub_ko.jpg",
+    "image": "/images/members/hyunhyub_ko.png",
     "email": "hyunhko@unist.ac.kr",
     "website": "https://hko.unist.ac.kr/",
     "research": [
@@ -21,7 +21,7 @@
     "role": "mentor",
     "title": "Assistant Professor",
     "affiliation": "GIST",
-    "image": "/images/members/dukjo_kong.jpg",
+    "image": "/images/members/dukjo_kong.png",
     "email": "dukjokong@gist.ac.kr",
     "website": "https://impact.gist.ac.kr/main/main.php",
     "research": [
@@ -36,7 +36,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "UNIST",
-    "image": "/images/members/taehyuk_kwon.jpg",
+    "image": "/images/members/taehyuk_kwon.png",
     "email": "kwon90@unist.ac.kr",
     "website": "https://www.kwon90.com/professor",
     "research": [
@@ -51,7 +51,7 @@
     "role": "mentor",
     "title": "Assistant Professor",
     "affiliation": "GIST",
-    "image": "/images/members/mansu_kim.jpg",
+    "image": "/images/members/mansu_kim.png",
     "email": "mansu.kim@gist.ac.kr",
     "website": "https://www.aimed-lab.com/",
     "research": [
@@ -66,7 +66,7 @@
     "role": "mentor",
     "title": "Associate Professor",
     "affiliation": "GIST",
-    "image": "/images/members/minkyung_kim.jpg",
+    "image": "/images/members/minkyung_kim.png",
     "email": "m.kim@gist.ac.kr",
     "website": "https://photonics.gist.ac.kr/photonics/",
     "research": [
@@ -81,7 +81,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "CNUH",
-    "image": "/images/members/byeong_chae_kim.jpg",
+    "image": "/images/members/byeong_chae_kim.png",
     "email": "byeckim@gmail.com",
     "website": "https://zrr.kr/F5kH6S",
     "research": [
@@ -96,7 +96,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/shinhyun_kim.png",
     "email": "kim.sh@kaist.ac.kr",
     "website": "https://isml.kaist.ac.kr/",
     "research": [
@@ -111,7 +111,7 @@
     "role": "mentor",
     "title": "Associate Professor",
     "affiliation": "GIST",
-    "image": "/images/members/uehwan_kim.jpg",
+    "image": "/images/members/uehwan_kim.png",
     "email": "uehwan@gist.ac.kr",
     "website": "https://uehwan.github.io/",
     "research": [
@@ -126,7 +126,7 @@
     "role": "mentor",
     "title": "Senior Researcher",
     "affiliation": "KIST",
-    "image": "/images/members/jaehong_kim.jpg",
+    "image": "/images/members/jaehong_kim.png",
     "email": "jaehongkim@kist.re.kr",
     "website": "",
     "research": [
@@ -156,7 +156,7 @@
     "role": "mentor",
     "title": "Assistant Professor",
     "affiliation": "GIST",
-    "image": "/images/members/jeongeun_park.webp",
+    "image": "/images/members/jeongeun_park.png",
     "email": "parkje@gist.ac.kr",
     "website": "https://jeparklab.com/",
     "research": [
@@ -171,7 +171,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/zee_yong_park.jpg",
+    "image": "/images/members/zee_yong_park.png",
     "email": "zeeyong@gist.ac.kr",
     "website": "https://life.gist.ac.kr/mass/index.do",
     "research": [
@@ -201,7 +201,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/miryoung_song.jpg",
+    "image": "/images/members/miryoung_song.png",
     "email": "msong@gist.ac.kr",
     "website": "https://ndl.gist.ac.kr/ndl/",
     "research": [
@@ -216,7 +216,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "KAIST",
-    "image": "/images/members/young_min_song.jpg",
+    "image": "/images/members/young_min_song.png",
     "email": "ymsong@kaist.ac.kr",
     "website": "https://www.ymsong.net/",
     "research": [
@@ -231,7 +231,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "KAIST",
-    "image": "/images/members/jijoon_song.jpg",
+    "image": "/images/members/jijoon_song.png",
     "email": "songj@kaist.ac.kr",
     "website": "https://www.song-kaist.org/",
     "research": [
@@ -246,7 +246,7 @@
     "role": "mentor",
     "title": "Associate Professor",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hyeonjin_shin.png",
     "email": "hyeonjin.shin@gist.ac.kr",
     "website": "https://sites.google.com/view/gist-dream-hjshingroup/home?authuser=0",
     "research": [
@@ -261,7 +261,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "UNIST",
-    "image": "/images/members/jahyoung_ryu.jpg",
+    "image": "/images/members/jahyoung_ryu.png",
     "email": "jhryu@unist.ac.kr",
     "website": "https://jhryu.unist.ac.kr/",
     "research": [
@@ -276,7 +276,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "KAIST",
-    "image": "/images/members/jong_min_yuk.jpg",
+    "image": "/images/members/jong_min_yuk.png",
     "email": "jongmin.yuk@kaist.ac.kr",
     "website": "https://yuklab.kaist.ac.kr/",
     "research": [
@@ -306,7 +306,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/myunghan_yoon.jpg",
+    "image": "/images/members/myunghan_yoon.png",
     "email": "mhyoon@gist.ac.kr",
     "website": "https://sites.google.com/site/gistbioelectronics/",
     "research": [
@@ -321,7 +321,7 @@
     "role": "mentor",
     "title": "Professor, PI",
     "affiliation": "GIST",
-    "image": "/images/members/eunji_lee.jpg",
+    "image": "/images/members/eunji_lee.png",
     "email": "eunjilee@gist.ac.kr",
     "website": "https://so-mat.wixsite.com/gist",
     "research": [
@@ -336,7 +336,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/jae_young_lee.jpg",
+    "image": "/images/members/jae_young_lee.png",
     "email": "jaeyounglee@gist.ac.kr",
     "website": "https://sites.google.com/site/biomaterialjyl/",
     "research": [
@@ -351,7 +351,7 @@
     "role": "mentor",
     "title": "Associate Professor",
     "affiliation": "DGIST",
-    "image": "/images/members/jongchan_lee.jpg",
+    "image": "/images/members/jongchan_lee.png",
     "email": "jclee@dgist.ac.kr",
     "website": "https://sites.google.com/view/jcleelab/home",
     "research": [
@@ -366,7 +366,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "GIST",
-    "image": "/images/members/hyunju_lee.jpg",
+    "image": "/images/members/hyunju_lee.png",
     "email": "hyunjulee@gist.ac.kr",
     "website": "https://combio.gist.ac.kr/combio/",
     "research": [
@@ -381,7 +381,7 @@
     "role": "mentor",
     "title": "Principal Researcher",
     "affiliation": "KIST",
-    "image": "/images/members/jung_ah_lim.jpg",
+    "image": "/images/members/jung_ah_lim.png",
     "email": "jalim@kist.re.kr",
     "website": "https://sites.google.com/view/osclim/home",
     "research": [
@@ -396,7 +396,7 @@
     "role": "mentor",
     "title": "Associate Professor",
     "affiliation": "GIST",
-    "image": "/images/members/hyunseob_lim.jpg",
+    "image": "/images/members/hyunseob_lim.png",
     "email": "hslim17@gist.ac.kr",
     "website": "https://www.hyunseob.net/",
     "research": [
@@ -426,7 +426,7 @@
     "role": "mentor",
     "title": "Professor",
     "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/changhee_cho.png",
     "email": "chcho@dgist.ac.kr",
     "website": "https://sites.google.com/view/dgistfsnlab/",
     "research": [
@@ -441,7 +441,7 @@
     "role": "mentor",
     "title": "Principal Researcher",
     "affiliation": "KIST",
-    "image": "/images/members/hyunsu_ju.jpg",
+    "image": "/images/members/hyunsu_ju.png",
     "email": "hyunsuju@kist.re.kr",
     "website": "https://kist.re.kr/eng/research/quantum-people.do",
     "research": [
@@ -486,7 +486,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/yoonjeong_kim.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -501,7 +501,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jeongwoon_kim.png",
     "email": "",
     "website": "",
     "research": [
@@ -516,7 +516,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jaeuk_kim.png",
     "email": "",
     "website": "",
     "research": [
@@ -531,7 +531,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/haram_nah.png",
     "email": "",
     "website": "",
     "research": [
@@ -546,7 +546,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/gaeun_park.png",
     "email": "",
     "website": "",
     "research": [
@@ -561,7 +561,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/sejin_park.png",
     "email": "",
     "website": "",
     "research": [
@@ -576,7 +576,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jaehui_park.png",
     "email": "",
     "website": "",
     "research": [
@@ -606,7 +606,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/cheongwon_bae.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -621,7 +621,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hyeon_oh_shin.png",
     "email": "",
     "website": "",
     "research": [
@@ -636,7 +636,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/chaehyeon_ahn.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -651,7 +651,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/gyeongseok_yang.png",
     "email": "",
     "website": "",
     "research": [
@@ -666,7 +666,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/in_hyeok_oh.png",
     "email": "",
     "website": "",
     "research": [
@@ -696,7 +696,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/huiseong_yun.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -741,7 +741,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/ji_hyeon_lee.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -756,7 +756,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hanna_lee.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -771,7 +771,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/seon_woo_lim.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -801,7 +801,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/sehui_chang.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -816,7 +816,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hwandong_jang.png",
     "email": "",
     "website": "",
     "research": [
@@ -861,7 +861,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hyeryun_jeong.png",
     "email": "",
     "website": "",
     "research": [
@@ -876,7 +876,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/sunghwan_jo.png",
     "email": "",
     "website": "",
     "research": [
@@ -891,7 +891,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/junghyun_cho.png",
     "email": "",
     "website": "",
     "research": [
@@ -906,7 +906,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/haryeong_cho.png",
     "email": "",
     "website": "",
     "research": [
@@ -921,7 +921,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/hyeonah_ju.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -936,7 +936,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jeong_min_ji.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -951,7 +951,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/ju_hyung_chae.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -966,7 +966,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "UNIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/eun_seong_choi.png",
     "email": "",
     "website": "",
     "research": [
@@ -996,7 +996,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/juhwan_choi.png",
     "email": "",
     "website": "",
     "research": [
@@ -1011,7 +1011,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/asad_rasheed.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1026,7 +1026,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/bu_yingjie.png",
     "email": "",
     "website": "",
     "research": [
@@ -1071,7 +1071,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/keita_tanaka.png",
     "email": "",
     "website": "",
     "research": [
@@ -1086,7 +1086,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "DGIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/sarmistha_mitra.png",
     "email": "",
     "website": "",
     "research": [
@@ -1101,7 +1101,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/shah_syed_ahson.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1116,7 +1116,7 @@
     "role": "fellow",
     "title": "InnoCORE fellow",
     "affiliation": "CNUH",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/uroos_akber.png",
     "email": "",
     "website": "",
     "research": [
@@ -1161,7 +1161,7 @@
     "role": "alumni",
     "title": "원광대 전자공학과 조교수",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/junewoo_kim.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1176,7 +1176,7 @@
     "role": "alumni",
     "title": "IFDC",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/ingyu_bak.png",
     "email": "",
     "website": "",
     "research": [
@@ -1206,7 +1206,7 @@
     "role": "alumni",
     "title": "KISTI",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/sungho_shin.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1236,7 +1236,7 @@
     "role": "alumni",
     "title": "",
     "affiliation": "CNUH",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/youngkyoung_ryu.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1281,7 +1281,7 @@
     "role": "alumni",
     "title": "",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/junyoung_jeon.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1296,7 +1296,7 @@
     "role": "alumni",
     "title": "",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/yugyung_jung.png",
     "email": "",
     "website": "",
     "research": [
@@ -1341,7 +1341,7 @@
     "role": "alumni",
     "title": "아주대 응용화학과 교수",
     "affiliation": "KAIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jungmoo_heo.jpg",
     "email": "",
     "website": "",
     "research": [
@@ -1356,7 +1356,7 @@
     "role": "alumni",
     "title": "",
     "affiliation": "GIST",
-    "image": "/images/members/placeholder.svg",
+    "image": "/images/members/jun_ho_hwang.jpg",
     "email": "",
     "website": "",
     "research": [
