@@ -3,6 +3,7 @@ title: 2026년 봄학기 InnoCORE 세미나 개최 안내
 date: 2026-05-30
 pinned: true
 link: https://sites.google.com/view/ai-ace/research/co-lab-events
+image: https://drive.google.com/file/d/1hFYUDOt3MSkaDNaHrJfhFNQtGt1WRN94/view
 ---
 AI-ACE@GIST 연구단은 오는 6월 15일(월) 오후 2시부터 GIST 오룡관 대강당에서
 2026년 봄학기 InnoCORE 세미나를 개최합니다.
