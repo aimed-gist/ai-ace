@@ -10,3 +10,6 @@ image: https://drive.google.com/file/d/1hFYUDOt3MSkaDNaHrJfhFNQtGt1WRN94/view
 여러 문단으로 나눠도 되고, 빈 줄로 문단을 구분합니다.
 
 두번째 테스트
+
+
+![대체 텍스트](https://drive.google.com/file/d/1hFYUDOt3MSkaDNaHrJfhFNQtGt1WRN94/view)
