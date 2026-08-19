@@ -12,4 +12,4 @@ image: https://drive.google.com/file/d/1hFYUDOt3MSkaDNaHrJfhFNQtGt1WRN94/view
 두번째 테스트
 
 
-![대체 텍스트](image.png)
+![대체 텍스트](images.png)
