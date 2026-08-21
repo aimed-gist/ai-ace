@@ -1,5 +1,194 @@
 [
   {
+    "id": "media-혼자보다_함께_융합으로_답을_찾다_gist_ai_ace_이노코어_연구단_2026_성과공유회_및_역량강화_워크",
+    "category": "media",
+    "title": "“혼자보다 함께 융합으로 답을 찾다“ GIST AI-ACE 이노코어 연구단 ‘2026 성과공유회 및 역량강화 워크숍‘ 개최",
+    "date": "2026-08-09",
+    "summary": "지스트",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070103.html?mode=V&no=222645",
+    "image": "/images/media/혼자보다_함께_융합으로_답을_찾다_gist_ai_ace_이노코어_연구단_2026_성과공유회_및_역량강화_워크.png"
+  },
+  {
+    "id": "colab-ai_ace_innocore_성과공유회_및_역량강화_워크샵",
+    "category": "co-lab",
+    "title": "AI-ACE InnoCORE 성과공유회 및 역량강화 워크샵",
+    "date": "2026-08-06",
+    "summary": "",
+    "link": "",
+    "image": ""
+  },
+  {
+    "id": "media-gist_알파폴드3_내부_표현_정보_활용한_ai_기술로_신약_후보물질_예측_정확도_향상",
+    "category": "media",
+    "title": "GIST, 알파폴드3 '내부 표현 정보' 활용한 AI 기술로 신약 후보물질 예측 정확도 향상",
+    "date": "2026-08-06",
+    "summary": "지스트",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070102.html?mode=V&no=222596",
+    "image": "/images/media/gist_알파폴드3_내부_표현_정보_활용한_ai_기술로_신약_후보물질_예측_정확도_향상.png"
+  },
+  {
+    "id": "media-전남대_치전원_줄기세포분비체연구단_gist_이노코어연구단_뇌졸중_치료_가능성_제시",
+    "category": "media",
+    "title": "전남대 치전원 줄기세포분비체연구단-GIST 이노코어연구단, 뇌졸중 치료 가능성 제시",
+    "date": "2026-07-28",
+    "summary": "전자신문",
+    "link": "https://www.etnews.com/20260728000391",
+    "image": "/images/media/전남대_치전원_줄기세포분비체연구단_gist_이노코어연구단_뇌졸중_치료_가능성_제시.png"
+  },
+  {
+    "id": "media-gist_비안개_등_악천후에서도_제_기능하는_라이다_센서_커버_광학_코팅_기술_개발",
+    "category": "media",
+    "title": "GIST, 비·안개 등 악천후에서도 제 기능하는 ‘라이다 센서 커버 광학 코팅 기술’ 개발",
+    "date": "2026-07-09",
+    "summary": "전자신문",
+    "link": "https://www.etnews.com/20260709000010?utm_source=chatgpt.com",
+    "image": "/images/media/gist_비안개_등_악천후에서도_제_기능하는_라이다_센서_커버_광학_코팅_기술_개발.jpg"
+  },
+  {
+    "id": "media-쓰고_버린_전자소자_벌레가_먹어_분해한다_gist_인하대_친환경_전자소자_개발",
+    "category": "media",
+    "title": "“쓰고 버린 전자소자, 벌레가 먹어 분해한다” GIST-인하대, 친환경 전자소자 개발",
+    "date": "2026-07-06",
+    "summary": "문화일보",
+    "link": "https://www.munhwa.com/article/11600437?ref=naver",
+    "image": "/images/media/쓰고_버린_전자소자_벌레가_먹어_분해한다_gist_인하대_친환경_전자소자_개발.jpg"
+  },
+  {
+    "id": "media-gist_ai_ace_이노코어_연구단_세계적_바이오나노_석학과_함께한_연구_교류의_장_개최",
+    "category": "media",
+    "title": "GIST AI-ACE 이노코어 연구단, 세계적 바이오·나노 석학과 함께한 연구 교류의 장 개최",
+    "date": "2026-06-24",
+    "summary": "지스트",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070103.html?mode=V&no=222078",
+    "image": "/images/media/gist_ai_ace_이노코어_연구단_세계적_바이오나노_석학과_함께한_연구_교류의_장_개최.png"
+  },
+  {
+    "id": "media-세포에_색칠하지_않아도_내부가_보인다_gist_kaist_살아있는_세포_내부_실시간_관찰_기술_개발",
+    "category": "media",
+    "title": "“세포에 색칠하지 않아도 내부가 보인다” GIST-KAIST, 살아있는 세포 내부 실시간 관찰 기술 개발",
+    "date": "2026-06-11",
+    "summary": "BRIC",
+    "link": "https://www.ibric.org/bric/trend/bio-news.do?mode=view&articleNo=10038241&title=%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94+%EC%84%B8%ED%8F%AC+%EB%82%B4%EB%B6%80+%EC%8B%A4%EC%8B%9C%EA%B0%84+%EA%B4%80%EC%B0%B0+%EA%B8%B0%EC%88%A0+%EA%B0%9C%EB%B0%9C#!/list",
+    "image": "/images/media/세포에_색칠하지_않아도_내부가_보인다_gist_kaist_살아있는_세포_내부_실시간_관찰_기술_개발.png"
+  },
+  {
+    "id": "media-첨단_바이오ai_융합으로_초학제_연구_시대_열다",
+    "category": "media",
+    "title": "첨단 바이오·AI 융합으로 초학제 연구 시대 열다",
+    "date": "2026-06-07",
+    "summary": "대덕넷",
+    "link": "https://www.hellodd.com/news/articleView.html?idxno=111886",
+    "image": "/images/media/첨단_바이오ai_융합으로_초학제_연구_시대_열다.jpg"
+  },
+  {
+    "id": "media-gist_이다영_박사후연구원_美_재료학회mrs_최우수_포스터상_수상",
+    "category": "media",
+    "title": "GIST 이다영 박사후연구원, 美 재료학회(MRS) ‘최우수 포스터상‘ 수상",
+    "date": "2026-06-02",
+    "summary": "지스트",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070104.html?mode=V&no=221785",
+    "image": "/images/media/gist_이다영_박사후연구원_美_재료학회mrs_최우수_포스터상_수상.png"
+  },
+  {
+    "id": "media-gist_촬영_시간위치_달라도_영상_속_물체_변화_찾아내는_ai_개발",
+    "category": "media",
+    "title": "GIST, 촬영 시간·위치 달라도 영상 속 물체 변화 찾아내는 AI 개발",
+    "date": "2026-06-02",
+    "summary": "AI POST",
+    "link": "https://www.aipostkorea.com/news/articleView.html?idxno=11630",
+    "image": "/images/media/gist_촬영_시간위치_달라도_영상_속_물체_변화_찾아내는_ai_개발.jpg"
+  },
+  {
+    "id": "media-차세대_ai_반도체_핵심소재_개발",
+    "category": "media",
+    "title": "차세대 AI 반도체 핵심소재 개발",
+    "date": "2026-05-04",
+    "summary": "매일경제",
+    "link": "https://www.imaeil.com/page/view/2026050311462091178",
+    "image": "/images/media/차세대_ai_반도체_핵심소재_개발.jpg"
+  },
+  {
+    "id": "media-노화_망막세포_표적_치료기술_개발",
+    "category": "media",
+    "title": "노화 망막세포 표적 치료기술 개발",
+    "date": "2026-04-09",
+    "summary": "뉴시스",
+    "link": "https://www.newsis.com/view/NISX20260408_0003583453#",
+    "image": "/images/media/노화_망막세포_표적_치료기술_개발.jpg"
+  },
+  {
+    "id": "media-gist_2026_ai_ace_이노코어_연구단_워크숍_개최",
+    "category": "media",
+    "title": "GIST, 2026 AI-ACE 이노코어 연구단 워크숍 개최",
+    "date": "2026-04-08",
+    "summary": "지스트",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070103.html?mode=V&no=221180",
+    "image": "/images/media/gist_2026_ai_ace_이노코어_연구단_워크숍_개최.png"
+  },
+  {
+    "id": "media-백금_적게_쓰고도_수소_더_만든다_gist_촉매_효율_3배_높인_기술_개발",
+    "category": "media",
+    "title": "“백금 적게 쓰고도 수소 더 만든다”… GIST, 촉매 효율 3배 높인 기술 개발",
+    "date": "2026-04-07",
+    "summary": "매일경제",
+    "link": "https://www.mk.co.kr/news/society/12009908",
+    "image": "/images/media/백금_적게_쓰고도_수소_더_만든다_gist_촉매_효율_3배_높인_기술_개발.jpg"
+  },
+  {
+    "id": "media-1인치에_화소_1만6900개저전력초고해상도_모노픽셀_디스플레이",
+    "category": "media",
+    "title": "1인치에 화소 1만6900개…저전력·초고해상도 모노픽셀 디스플레이",
+    "date": "2026-03-29",
+    "summary": "동아 사이언스",
+    "link": "https://www.dongascience.com/news/77083",
+    "image": "/images/media/1인치에_화소_1만6900개저전력초고해상도_모노픽셀_디스플레이.jpg"
+  },
+  {
+    "id": "colab-2026년_gist_ai_ace_innocore_워크샵",
+    "category": "co-lab",
+    "title": "2026년 GIST AI-ACE InnoCORE 워크샵",
+    "date": "2026-03-19",
+    "summary": "",
+    "link": "",
+    "image": ""
+  },
+  {
+    "id": "media-의료기기_코팅해_세균_튕겨내는_항균_젤개발",
+    "category": "media",
+    "title": "의료기기 코팅해 세균 튕겨내는 ‘항균 젤’개발",
+    "date": "2026-03-13",
+    "summary": "서울경제",
+    "link": "https://www.sedaily.com/article/20018823?ref=naver",
+    "image": "/images/media/의료기기_코팅해_세균_튕겨내는_항균_젤개발.jpg"
+  },
+  {
+    "id": "media-gist_차세대_반도체_비파괴_품질_검사_기술_개발",
+    "category": "media",
+    "title": "GIST, 차세대 반도체 비파괴 품질 검사 기술 개발",
+    "date": "2026-01-22",
+    "summary": "교수신문",
+    "link": "https://www.kyosu.net/news/articleView.html?idxno=155802",
+    "image": "/images/media/gist_차세대_반도체_비파괴_품질_검사_기술_개발.jpg"
+  },
+  {
+    "id": "colab-ai_ace_innocore_성과_확산_멘토_워크샵",
+    "category": "co-lab",
+    "title": "AI-ACE InnoCORE 성과 확산 멘토 워크샵",
+    "date": "2026-01-16",
+    "summary": "",
+    "link": "",
+    "image": ""
+  },
+  {
+    "id": "media-ai_융합_전자현미경_분석으로_연성_물질_물성_예측_플랫폼_제시",
+    "category": "media",
+    "title": "AI 융합 전자현미경 분석으로 연성 물질 물성 예측 플랫폼 제시",
+    "date": "2026-01-06",
+    "summary": "동아 사이언스",
+    "link": "https://www.dongascience.com/ko/news/75848",
+    "image": "/images/media/ai_융합_전자현미경_분석으로_연성_물질_물성_예측_플랫폼_제시.png"
+  },
+  {
     "id": "notice-2026년_봄학기_세미나_안내",
     "category": "notice",
     "title": "\"2026년 봄학기 세미나 안내\"",
@@ -20,22 +209,58 @@
     "image": ""
   },
   {
-    "id": "colab-하계워크샵",
+    "id": "colab-aws_ai_deep_dive_워크샵",
     "category": "co-lab",
-    "title": "하계워크샵",
-    "date": "2026-01-01",
+    "title": "AWS AI Deep Dive 워크샵",
+    "date": "2025-11-29",
     "summary": "",
     "link": "",
-    "image": "/images/colab/하계워크샵.jpg"
+    "image": ""
+  },
+  {
+    "id": "media-전기_안_써도_여름엔_시원_겨울엔_따뜻_kaist가_찾은_은백양나무_잎의_비밀",
+    "category": "media",
+    "title": "전기 안 써도 '여름엔 시원, 겨울엔 따뜻'… KAIST가 찾은 은백양나무 잎의 비밀",
+    "date": "2025-11-19",
+    "summary": "사이언스 투데이",
+    "link": "https://science.ytn.co.kr/program/view.php?mcd=0082&hcd&key=202511191108324022",
+    "image": "/images/media/전기_안_써도_여름엔_시원_겨울엔_따뜻_kaist가_찾은_은백양나무_잎의_비밀.png"
+  },
+  {
+    "id": "media-gist_kaist_빛의_방향과_전압으로_색을_제어하는_초저전력_차세대_디스플레이_핵심_기술_개발",
+    "category": "media",
+    "title": "GIST-KAIST, 빛의 방향과 전압으로 색을 제어하는 초저전력 차세대 디스플레이 핵심 기술 개발",
+    "date": "2025-11-04",
+    "summary": "AI POST",
+    "link": "https://www.aipostkorea.com/news/articleView.html?idxno=9829",
+    "image": "/images/media/gist_kaist_빛의_방향과_전압으로_색을_제어하는_초저전력_차세대_디스플레이_핵심_기술_개발.png"
+  },
+  {
+    "id": "media-보석풍뎅이_등껍질의_다채로운_빛깔_1볼트로_구현하다",
+    "category": "media",
+    "title": "보석풍뎅이 등껍질의 다채로운 빛깔, 1볼트로 구현하다",
+    "date": "2025-11-04",
+    "summary": "베리타스 알파",
+    "link": "https://www.veritas-a.com/news/articleView.html?idxno=580196",
+    "image": "/images/media/보석풍뎅이_등껍질의_다채로운_빛깔_1볼트로_구현하다.png"
   },
   {
     "id": "media-gist_ai나노융합_기반_뇌질환_조기진단_연구단_출범",
     "category": "media",
     "title": "GIST, 'AI+나노융합 기반 뇌질환 조기진단 연구단' 출범",
     "date": "2025-11-03",
-    "summary": "",
+    "summary": "동아일보",
     "link": "https://edu.donga.com/news/articleView.html?idxno=97647",
     "image": "/images/media/gist_ai나노융합_기반_뇌질환_조기진단_연구단_출범.jpg"
+  },
+  {
+    "id": "colab-ai_ace_innocore_연구단_개소식",
+    "category": "co-lab",
+    "title": "AI-ACE InnoCORE 연구단 개소식",
+    "date": "2025-11-01",
+    "summary": "",
+    "link": "",
+    "image": ""
   },
   {
     "id": "media-뇌질환_조기진단_위한_ai_융합연구_방향_제시_gist_이노코어_연구단_첫_성과_발표",
