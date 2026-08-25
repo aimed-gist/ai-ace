@@ -200,15 +200,6 @@
     "source": "sheet"
   },
   {
-    "id": "media-ai_ace_연구단_뇌질환_조기진단_ai_개발",
-    "category": "media",
-    "title": "AI-ACE 연구단, 뇌질환 조기진단 AI 개발\"",
-    "date": "2026-01-01",
-    "summary": "동아일보",
-    "link": "https://drive.google.com/file/d/1nWwgvTR324ZhHHo-EaCbSEFV9TXaLlP1/view?usp=drive_link",
-    "image": ""
-  },
-  {
     "id": "colab-aws_ai_deep_dive_워크샵",
     "category": "co-lab",
     "title": "AWS AI Deep Dive 워크샵",
