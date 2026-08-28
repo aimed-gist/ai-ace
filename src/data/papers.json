@@ -240,6 +240,34 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1002-admt-71166",
+    "title": "Coating‐Free Nanoscratching for Liquid‐Crystal Alignment on PCB‐Compatible Millimeter‐Wave Reflective Unit Cells",
+    "authors": [
+      "Ma",
+      "J.",
+      "Park",
+      "G.",
+      "Lee",
+      "G.",
+      "Lee",
+      "H.",
+      "Yu",
+      "J.",
+      "Yoon",
+      "D. K."
+    ],
+    "journal": "Advanced Materials Technologies",
+    "year": 2026,
+    "doi": "10.1002/admt.71166",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-admt-71166.jpg",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-s41528-026-00591-z",
     "title": "Conductive fiber-based free-standing grid electrodes for user-friendly facial muscle movement detection",
     "authors": [
@@ -825,6 +853,94 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1002-sstr-70523.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-adfm-76380",
+    "title": "Janus Photonic Graphics by Stratified Assembly of Two Distinct Colloids",
+    "authors": [
+      "Kim",
+      "Y. G.",
+      "Jung",
+      "Y.",
+      "Yang",
+      "S.",
+      "Lee",
+      "J.",
+      "Kim",
+      "S."
+    ],
+    "journal": "Advanced Functional Materials",
+    "year": 2026,
+    "doi": "10.1002/adfm.76380",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adfm-76380.jpg",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1007-s13534-026-00602-y",
+    "title": "Long-term in vitro and in vivo biocompatibility evaluation of encapsulation materials for micro-LEDs using a multimodal assessment strategy",
+    "authors": [
+      "Baek",
+      "J.",
+      "Jeong",
+      "H.",
+      "Kong",
+      "D.",
+      "Kim",
+      "J. G."
+    ],
+    "journal": "Biomedical Engineering Letters",
+    "year": 2026,
+    "doi": "10.1007/s13534-026-00602-y",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1007-s13534-026-00602-y.webp",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1038-s41467-026-76089-z",
+    "title": "Microchiral pinwheel arrays based on achiral molecules",
+    "authors": [
+      "Han",
+      "J. Y.",
+      "Park",
+      "W. K.",
+      "Noh",
+      "B.",
+      "Araoka",
+      "F.",
+      "Jeong",
+      "S.",
+      "Jhun",
+      "B. H.",
+      "You",
+      "Y.",
+      "Park",
+      "Y.",
+      "Lee",
+      "K. J.",
+      "Heo",
+      "J.",
+      "Yoon",
+      "D. K."
+    ],
+    "journal": "Nature Communications",
+    "year": 2026,
+    "doi": "10.1038/s41467-026-76089-z",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
     "abstract": ""
   },
   {
@@ -1730,6 +1846,81 @@
     "abstract": ""
   },
   {
+    "id": "patent-10-2026-0113856",
+    "title": "다공성 전도성 지지체를 포함하는 전기 촉매 및 이의 제조방법",
+    "authors": [
+      "윤명한",
+      "이다영"
+    ],
+    "journal": "KR 10-2026-0113856 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0113856",
+    "type": "patent",
+    "pi": "윤명한",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0131578",
+    "title": "분리형 초음파 무화 장치",
+    "authors": [
+      "이종찬"
+    ],
+    "journal": "KR 10-2026-0131578 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0131578",
+    "type": "patent",
+    "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0095169",
+    "title": "세포 내 3차원 위치 추정 방법 및 이를 이용한 장치",
+    "authors": [
+      "이종찬",
+      "고동빈",
+      "정세주",
+      "황대원"
+    ],
+    "journal": "KR 10-2026-0095169 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0095169",
+    "type": "patent",
+    "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0095170",
+    "title": "세포 내 다중 표적의 3차원 위치 추정 방법",
+    "authors": [
+      "이종찬",
+      "고동빈",
+      "정세주",
+      "황대원"
+    ],
+    "journal": "KR 10-2026-0095170 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0095170",
+    "type": "patent",
+    "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
     "id": "patent-10-2026-0092310",
     "title": "세포 시각화용 플라즈모닉 메타표면 구조체 및 이를 이용한 세포 시각화 방법",
     "authors": [
@@ -1762,6 +1953,24 @@
     "doi": "10-2026-0074618",
     "type": "patent",
     "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0157119",
+    "title": "이중 네트워크 구조의 하이드로겔 쉘과 오일 코어를 갖는 마이크로캡슐 및 그 제조 방법",
+    "authors": [
+      "김신현",
+      "오윤진"
+    ],
+    "journal": "KR 10-2026-0157119 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0157119",
+    "type": "patent",
+    "pi": "김신현",
     "division": "",
     "featured": false,
     "note": "",
