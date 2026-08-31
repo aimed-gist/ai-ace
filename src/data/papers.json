@@ -104,6 +104,30 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1002-adts-70514",
+    "title": "An Optically Transparent, Lightweight, High‐Efficiency, and Ultra‐Broadband Polarization Converter Based on a Low‐Filling‐Factor Metallic Frame Metasurface",
+    "authors": [
+      "Phan",
+      "H. L.",
+      "Baek",
+      "J.",
+      "Lee",
+      "D.",
+      "Kim",
+      "M."
+    ],
+    "journal": "Advanced Theory and Simulations",
+    "year": 2026,
+    "doi": "10.1002/adts.70514",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adts-70514.jpg",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-3390-ijms27073048",
     "title": "Bacopa monnieri Promotes Neuronal Development by Regulating the Neurotrophin Signaling Pathway",
     "authors": [
@@ -323,6 +347,21 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1016-j-mtbio-2026-103182.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-smll-75282",
+    "title": "Crystallization‐Driven Helical Conjugated Polymer Nanowires for Circularly Polarized Light‐Addressable Ferroelectric Physical Unclonable Functions",
+    "authors": [],
+    "journal": "Small",
+    "year": 2026,
+    "doi": "10.1002/smll.75282",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
     "abstract": ""
   },
   {
