@@ -1221,6 +1221,28 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1016-j-compeleceng-2026-111409",
+    "title": "Pathological tremor filtering and prediction using RSSA-based RVFL networks",
+    "authors": [
+      "Rasheed",
+      "A.",
+      "Tsai",
+      "C.",
+      "Veluvolu",
+      "K. C."
+    ],
+    "journal": "Computers and Electrical Engineering",
+    "year": 2026,
+    "doi": "10.1016/j.compeleceng.2026.111409",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-compeleceng-2026-111409.jpg",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1002-adma-202516522",
     "title": "Physical Implementation of Reinforcement Learning via a Signal Summation Process in a Dual‐Input Synaptic Transistor: Photoinduced Dipole Inversion of Au(I) Complex with Charge Traps of cPVP",
     "authors": [
@@ -2860,6 +2882,28 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1039-d5mh01905b.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1109-jbhi-2025-3643854",
+    "title": "TUNA: A Target-Aware Unified Network for Protein-Ligand Binding Affinity Prediction via Multi-Modal Feature Integration",
+    "authors": [
+      "Yoon",
+      "J.",
+      "Kim",
+      "Y.",
+      "Lee",
+      "H."
+    ],
+    "journal": "IEEE Journal of Biomedical and Health Informatics",
+    "year": 2025,
+    "doi": "10.1109/JBHI.2025.3643854",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1109-jbhi-2025-3643854.jpg",
     "abstract": ""
   },
   {
