@@ -2038,6 +2038,28 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1186-s13321-026-01259-6",
+    "title": "AlphaDTA: integrating AlphaFold3 embeddings and 3D complex structures for drug–target binding affinity prediction",
+    "authors": [
+      "Chung",
+      "M.",
+      "Park",
+      "S.",
+      "Lee",
+      "H."
+    ],
+    "journal": "Journal of Cheminformatics",
+    "year": 2025,
+    "doi": "10.1186/s13321-026-01259-6",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1186-s13321-026-01259-6.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-s41598-025-18807-z",
     "title": "An integrated transcriptomic approach for identifying enhancers in limb motor pools",
     "authors": [
@@ -2865,6 +2887,28 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1186-s12859-026-06602-0",
+    "title": "scStyling: quantile-based transformation of bulk RNA-seq into single-cell-like profiles",
+    "authors": [
+      "Jeong",
+      "S.",
+      "Park",
+      "S.",
+      "Lee",
+      "H."
+    ],
+    "journal": "BMC Bioinformatics",
+    "year": 2025,
+    "doi": "10.1186/s12859-026-06602-0",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1186-s12859-026-06602-0.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1002-adfm-202519542",
     "title": "Spectrally Tunable 2D Material‐Based Infrared Photodetectors for Intelligent Optoelectronics",
     "authors": [
@@ -3058,6 +3102,30 @@
     "featured": false,
     "note": "",
     "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1016-j-cej-2026-181314",
+    "title": "Magnetically self-assembled 3D micro-pillar supercapacitor with high areal capacitance",
+    "authors": [
+      "Kim",
+      "S.",
+      "Oh",
+      "I. H.",
+      "Jeong",
+      "H.",
+      "Chang",
+      "S. T."
+    ],
+    "journal": "Chemical Engineering Journal",
+    "year": 2024,
+    "doi": "10.1016/j.cej.2026.181314",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-cej-2026-181314.png",
     "abstract": ""
   }
 ]
