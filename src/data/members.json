@@ -1194,21 +1194,6 @@
     "bio": ""
   },
   {
-    "id": "fellow-seongil_im",
-    "name": "임성일",
-    "nameEn": "Seongil Im",
-    "role": "fellow",
-    "title": "InnoCORE fellow",
-    "affiliation": "KIST",
-    "image": "/images/members/seongil_im.png",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
-    ],
-    "bio": ""
-  },
-  {
     "id": "fellow-sehui_chang",
     "name": "장세희",
     "nameEn": "Sehui Chang",
@@ -1415,21 +1400,6 @@
     "website": "",
     "research": [
       "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
-    "id": "fellow-asad_rasheed",
-    "name": "",
-    "nameEn": "Asad Rasheed",
-    "role": "fellow",
-    "title": "InnoCORE fellow",
-    "affiliation": "GIST",
-    "image": "/images/members/asad_rasheed.jpg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Collective Intelligence"
     ],
     "bio": ""
   },
@@ -1659,6 +1629,21 @@
     "bio": ""
   },
   {
+    "id": "alumni-seongil_im",
+    "name": "임성일",
+    "nameEn": "Seongil Im",
+    "role": "alumni",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/seongil_im.png",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
     "id": "alumni-jeewon_lim",
     "name": "임지원",
     "nameEn": "Jeewon Lim",
@@ -1760,6 +1745,21 @@
     "website": "",
     "research": [
       "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "alumni-asad_rasheed",
+    "name": "",
+    "nameEn": "Asad Rasheed",
+    "role": "alumni",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/asad_rasheed.jpg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
     ],
     "bio": ""
   }
