@@ -879,6 +879,21 @@
     "bio": ""
   },
   {
+    "id": "fellow-hyun_woo_ko",
+    "name": "고현우",
+    "nameEn": "Hyun Woo Ko",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KIST",
+    "image": "/images/members/hyun_woo_ko.png",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
     "id": "fellow-gyurin_kim",
     "name": "김규린",
     "nameEn": "Gyurin Kim",
@@ -1134,6 +1149,21 @@
     "bio": ""
   },
   {
+    "id": "fellow-sanghyeon_lee",
+    "name": "이상현",
+    "nameEn": "Sang-Hyeon Lee",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "GIST",
+    "image": "/images/members/sanghyeon_lee.png",
+    "email": "",
+    "website": "",
+    "research": [
+      "Collective Intelligence"
+    ],
+    "bio": ""
+  },
+  {
     "id": "fellow-young_joo_lee",
     "name": "이영주",
     "nameEn": "Young Joo Lee",
@@ -1344,21 +1374,6 @@
     "bio": ""
   },
   {
-    "id": "fellow-ju_hyung_chae",
-    "name": "채주형",
-    "nameEn": "Ju Hyung Chae",
-    "role": "fellow",
-    "title": "InnoCORE fellow",
-    "affiliation": "GIST",
-    "image": "/images/members/ju_hyung_chae.jpg",
-    "email": "",
-    "website": "",
-    "research": [
-      "Artificial Peptide"
-    ],
-    "bio": ""
-  },
-  {
     "id": "fellow-eun_seong_choi",
     "name": "최은성",
     "nameEn": "Eun Seong Choi",
@@ -1456,6 +1471,21 @@
     "title": "InnoCORE fellow",
     "affiliation": "GIST",
     "image": "/images/members/keita_tanaka.png",
+    "email": "",
+    "website": "",
+    "research": [
+      "Emerging devices"
+    ],
+    "bio": ""
+  },
+  {
+    "id": "fellow-luu_trung_thien",
+    "name": "",
+    "nameEn": "Luu Trung Thien",
+    "role": "fellow",
+    "title": "InnoCORE fellow",
+    "affiliation": "KAIST",
+    "image": "/images/members/luu_trung_thien.png",
     "email": "",
     "website": "",
     "research": [
@@ -1704,6 +1734,21 @@
     "bio": ""
   },
   {
+    "id": "alumni-ju_hyung_chae",
+    "name": "채주형",
+    "nameEn": "Ju Hyung Chae",
+    "role": "alumni",
+    "title": "",
+    "affiliation": "GIST",
+    "image": "/images/members/ju_hyung_chae.jpg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
     "id": "alumni-seongmin_cheon",
     "name": "천성민",
     "nameEn": "Seongmin Cheon",
@@ -1753,7 +1798,7 @@
     "name": "",
     "nameEn": "Asad Rasheed",
     "role": "alumni",
-    "title": "InnoCORE fellow",
+    "title": "KFUPM",
     "affiliation": "GIST",
     "image": "/images/members/asad_rasheed.jpg",
     "email": "",
