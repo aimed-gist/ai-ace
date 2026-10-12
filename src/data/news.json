@@ -198,17 +198,6 @@
     "image": "/images/media/ai_융합_전자현미경_분석으로_연성_물질_물성_예측_플랫폼_제시.png"
   },
   {
-    "id": "notice-2026년_봄학기_세미나_안내",
-    "category": "notice",
-    "title": "\"2026년 봄학기 세미나 안내\"",
-    "date": "2026-01-01",
-    "summary": "5월 30일 오후 2시, GIST 본관 1층에서 진행됩니다.",
-    "link": "https://drive.google.com/file/d/1nWwgvTR324ZhHHo-EaCbSEFV9TXaLlP1/view?usp=drive_link",
-    "image": "",
-    "pinned": true,
-    "source": "sheet"
-  },
-  {
     "id": "colab-aws_ai_deep_dive_워크샵",
     "category": "co-lab",
     "title": "AWS AI Deep Dive 워크샵",
