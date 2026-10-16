@@ -21,7 +21,10 @@ type NoticeMd = {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export async function generateStaticParams() {
-  return (noticesMd as NoticeMd[]).map((n) => ({ slug: n.slug }));
+  const params = (noticesMd as NoticeMd[]).map((n) => ({ slug: n.slug }));
+  // output: "export" 는 빈 배열이면 빌드가 실패하므로, 글이 0개일 때는
+  // 자리표시 slug 하나를 둔다 (페이지에서 notFound() 처리됨).
+  return params.length > 0 ? params : [{ slug: "_empty" }];
 }
 
 export const dynamicParams = false;

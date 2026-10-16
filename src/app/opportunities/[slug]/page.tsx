@@ -33,7 +33,10 @@ function isEmail(s: string) {
 }
 
 export async function generateStaticParams() {
-  return (opportunitiesMd as OpportunityMd[]).map((o) => ({ slug: o.slug }));
+  const params = (opportunitiesMd as OpportunityMd[]).map((o) => ({ slug: o.slug }));
+  // output: "export" 는 빈 배열이면 빌드가 실패하므로, 글이 0개일 때는
+  // 자리표시 slug 하나를 둔다 (페이지에서 notFound() 처리됨).
+  return params.length > 0 ? params : [{ slug: "_empty" }];
 }
 
 export const dynamicParams = false;
