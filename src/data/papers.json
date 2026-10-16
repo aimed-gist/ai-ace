@@ -802,34 +802,6 @@
     "abstract": ""
   },
   {
-    "id": "preprint-10-1117-12-3098950",
-    "title": "Intracellular refractive index imaging via plasmonic metasurfaces",
-    "authors": [
-      "Kim",
-      "D.",
-      "Kim",
-      "J.",
-      "Ma",
-      "J.",
-      "Kim",
-      "G.",
-      "Lee",
-      "J.",
-      "Jeong",
-      "H."
-    ],
-    "journal": "SPIE Advanced Biophotonics Conference (SPIE ABC 2025)",
-    "year": 2026,
-    "doi": "10.1117/12.3098950",
-    "type": "preprint",
-    "pi": "Hyeon-Ho Jeong",
-    "division": "Emerging Devices",
-    "featured": false,
-    "note": "",
-    "image": "",
-    "abstract": ""
-  },
-  {
     "id": "publication-10-1002-sstr-70523",
     "title": "Iontronic Fringing‐Field Proximity Sensors via Edge‐Rich Stretchable Electrodes for High‐Sensitivity Noncontact Detection",
     "authors": [
@@ -1157,32 +1129,6 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1002-adma-202516522.png",
-    "abstract": ""
-  },
-  {
-    "id": "preprint-10-1117-12-3097674",
-    "title": "Plasmonic metasurfaces with scalable quasi-orders for optical security",
-    "authors": [
-      "Kim",
-      "G.",
-      "Kim",
-      "D.",
-      "Lee",
-      "J.",
-      "Song",
-      "Y. M.",
-      "Jeong",
-      "H."
-    ],
-    "journal": "SPIE Advanced Biophotonics Conference (SPIE ABC 2025)",
-    "year": 2026,
-    "doi": "10.1117/12.3097674",
-    "type": "preprint",
-    "pi": "Hyeon-Ho Jeong",
-    "division": "Emerging Devices",
-    "featured": false,
-    "note": "",
-    "image": "",
     "abstract": ""
   },
   {
@@ -2673,7 +2619,7 @@
     "division": "",
     "featured": false,
     "note": "",
-    "image": "/images/papers/10-1038-s41467-026-76089-z.webp",
+    "image": "/images/papers/10-1038-s41467-026-76089-z.png",
     "abstract": ""
   },
   {
