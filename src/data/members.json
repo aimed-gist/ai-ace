@@ -450,6 +450,21 @@
     "bio": ""
   },
   {
+    "id": "mentor-dummy",
+    "name": "",
+    "nameEn": "dummy",
+    "role": "mentor",
+    "title": "",
+    "affiliation": "",
+    "image": "/images/members/placeholder.svg",
+    "email": "",
+    "website": "",
+    "research": [
+      "Artificial Peptide"
+    ],
+    "bio": ""
+  },
+  {
     "id": "global_mentor-bumsu_lee",
     "name": "",
     "nameEn": "Bumsu Lee",
