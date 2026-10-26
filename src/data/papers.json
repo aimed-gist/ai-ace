@@ -1,5 +1,29 @@
 [
   {
+    "id": "publication-10-1016-j-apsusc-2026-168446",
+    "title": "Dual-phosphonic-acid-anchored self-assembled monolayers enhance bottom-electrode interfaces in perovskite memristors",
+    "authors": [
+      "Asafo-Adjei",
+      "B.",
+      "Lee",
+      "J. H.",
+      "Buertey Buer",
+      "A.",
+      "Jo",
+      "J. W."
+    ],
+    "journal": "Applied Surface Science",
+    "year": 2027,
+    "doi": "10.1016/j.apsusc.2026.168446",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-apsusc-2026-168446.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1021-acsnano-5c16998",
     "title": "<i>N</i>\n                    -Terminal Octylated Peptoid Hydrogels as 3D-Printable Cell Scaffolds and Proteolytically Robust Cargo Depots",
     "authors": [
@@ -323,6 +347,90 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1016-j-mtbio-2026-103182.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-advs-77167",
+    "title": "Damage‐Free Passivation of Ambipolar OECTs with Fluoropolymer Film for Enhanced Performance and Stability Toward Reliable Biosignal Processing",
+    "authors": [
+      "Yang",
+      "J.",
+      "Lee",
+      "B.",
+      "Lee",
+      "H.",
+      "Kim",
+      "M.",
+      "Choi",
+      "C.",
+      "Lim",
+      "J. A.",
+      "Kim",
+      "Y.",
+      "Im",
+      "S. G."
+    ],
+    "journal": "Advanced Science",
+    "year": 2026,
+    "doi": "10.1002/advs.77167",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-advs-77167.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-adma-75087",
+    "title": "Differential Sedimentation and Cryo‐TEM Mapping Resolve Structural Heterogeneity in Conjugated Polymer Nanowires for Programmable Stretchable Electronics",
+    "authors": [
+      "Yoon",
+      "J.",
+      "Hwang",
+      "J. H.",
+      "Lee",
+      "E."
+    ],
+    "journal": "Advanced Materials",
+    "year": 2026,
+    "doi": "10.1002/adma.75087",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adma-75087.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1021-acsnano-6c09591",
+    "title": "Directional Li+ Flux Control via Liquid-Crystalline\nPolymer Separators for Fast-Charging Lithium Metal Batteries",
+    "authors": [
+      "Lee",
+      "G.",
+      "Choi",
+      "R. H.",
+      "Park",
+      "G.",
+      "Kim",
+      "J.",
+      "Kim",
+      "Y.",
+      "Byon",
+      "H. R.",
+      "Yoon",
+      "D. K."
+    ],
+    "journal": "ACS Nano",
+    "year": 2026,
+    "doi": "10.1021/acsnano.6c09591",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1021-acsnano-6c09591.png",
     "abstract": ""
   },
   {
@@ -1040,6 +1148,44 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1021-acsnano-6c08504",
+    "title": "Near-Infrared Plasmonic\nNanogap Organic Photodetectors\nfor On-Chip Photonic Integration",
+    "authors": [
+      "Kim",
+      "D.",
+      "Lee",
+      "H.",
+      "Choi",
+      "C.",
+      "Hong",
+      "J. P.",
+      "Hwang",
+      "D. K.",
+      "Takele",
+      "W. M.",
+      "Habteyes",
+      "T. G.",
+      "Cho",
+      "J. H.",
+      "Lee",
+      "I.",
+      "Han",
+      "J.",
+      "Lim",
+      "J. A."
+    ],
+    "journal": "ACS Nano",
+    "year": 2026,
+    "doi": "10.1021/acsnano.6c08504",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1021-acsnano-6c08504.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1039-d6tc00086j",
     "title": "Non-monotonic plasmonic alignment governed by liquid-crystalline DNA hydrogel networks",
     "authors": [
@@ -1067,6 +1213,32 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1039-d6tc00086j.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1007-s00339-026-10215-y",
+    "title": "Numerical design of tunable ultrabroadband water-based metamaterial absorber with visible see-through capability for infrared- and microwave-compatible camouflage",
+    "authors": [
+      "Phan",
+      "H. L.",
+      "Shah",
+      "S. A. A.",
+      "Baek",
+      "J.",
+      "Lee",
+      "D.",
+      "Kim",
+      "M."
+    ],
+    "journal": "Applied Physics A",
+    "year": 2026,
+    "doi": "10.1007/s00339-026-10215-y",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1007-s00339-026-10215-y.png",
     "abstract": ""
   },
   {
@@ -1177,6 +1349,34 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1002-adom-202503370.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-adfm-78019",
+    "title": "Programmable Soft Actuator with Multi‐Responsiveness Based on Conductive MOF‐Liquid Crystal Polymer Composite",
+    "authors": [
+      "Hong",
+      "T.",
+      "Kim",
+      "G.",
+      "Lee",
+      "C.",
+      "Lee",
+      "S.",
+      "Park",
+      "J. G.",
+      "Yoon",
+      "D. K."
+    ],
+    "journal": "Advanced Functional Materials",
+    "year": 2026,
+    "doi": "10.1002/adfm.78019",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adfm-78019.png",
     "abstract": ""
   },
   {
@@ -1359,6 +1559,30 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1021-acs-nanolett-5c05097.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1021-acs-macromol-6c01722",
+    "title": "Ring-Opening Metathesis Polymerization of Structural Diverse Bicyclic Amide-Containing Monomers to Chemically Recyclable, Degradable, and Mechanically Enhanced Polyolefins",
+    "authors": [
+      "Shin",
+      "S.",
+      "Kim",
+      "Y.",
+      "Seo",
+      "M.",
+      "Kim",
+      "C."
+    ],
+    "journal": "Macromolecules",
+    "year": 2026,
+    "doi": "10.1021/acs.macromol.6c01722",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1021-acs-macromol-6c01722.png",
     "abstract": ""
   },
   {
@@ -1707,6 +1931,23 @@
     "doi": "10-2026-0066924",
     "type": "patent",
     "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0004683",
+    "title": "노화된 망막세포 표적용 나노입자 및 이를 포함하는 황반변성의 예방 또는 치료용 약학적조성물",
+    "authors": [
+      "유자형 정혜원 채재병 이세민 이효경 양경석 오준용"
+    ],
+    "journal": "KR 10-2026-0004683 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0004683",
+    "type": "patent",
+    "pi": "유자형",
     "division": "",
     "featured": false,
     "note": "",
@@ -2729,7 +2970,7 @@
     "division": "Collective Intelligence",
     "featured": false,
     "note": "",
-    "image": "",
+    "image": "/images/papers/10-1093-sexmed-qfaf065.png",
     "abstract": ""
   },
   {
@@ -3078,6 +3319,24 @@
     "doi": "10-2025-0182792",
     "type": "patent",
     "pi": "양성",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2025-0141708",
+    "title": "초분지성 글리세롤로 표면이 개질된 약물 전달용 나노입자 및 이를 포함하는 암의 예방 또는 치료용 약학적 조성물",
+    "authors": [
+      "유자형",
+      "양경석"
+    ],
+    "journal": "KR 10-2025-0141708 (출원)",
+    "year": 2025,
+    "doi": "10-2025-0141708",
+    "type": "patent",
+    "pi": "유자형",
     "division": "",
     "featured": false,
     "note": "",
