@@ -1268,6 +1268,26 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1021-acsami-6c17963",
+    "title": "Photonic-Crystal-Integrated Plasmonic Hydrogel Microcylinder Arrays for Enhanced and Fouling-Resistant SERS",
+    "authors": [
+      "Yoon",
+      "J.",
+      "Kim",
+      "S."
+    ],
+    "journal": "ACS Applied Materials &amp; Interfaces",
+    "year": 2026,
+    "doi": "10.1021/acsami.6c17963",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1021-acsami-6c17963.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1002-adma-202516522",
     "title": "Physical Implementation of Reinforcement Learning via a Signal Summation Process in a Dual‐Input Synaptic Transistor: Photoinduced Dipole Inversion of Au(I) Complex with Charge Traps of cPVP",
     "authors": [
@@ -1931,6 +1951,24 @@
     "doi": "10-2026-0066924",
     "type": "patent",
     "pi": "이종찬",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "patent-10-2026-0209815",
+    "title": "교류 자기장 유도 온열 자극을 이용한 중간엽 줄기세포의 골분화 촉진용 자성 하이드로젤, 및 이의 용도",
+    "authors": [
+      "이재영",
+      "나하람"
+    ],
+    "journal": "KR 10-2026-0209815 (출원)",
+    "year": 2026,
+    "doi": "10-2026-0209815",
+    "type": "patent",
+    "pi": "이재영",
     "division": "",
     "featured": false,
     "note": "",
