@@ -9,7 +9,7 @@ contact: innocore_apply@gist.ac.kr
 AI-ACE@GIST 연구단은 신경성 뇌질환 조기진단을 위한 AI-나노 융합 연구를
 수행할 InnoCORE Post-Doctoral Fellow를 상시 모집합니다. (총 50명 규모)
 
-모집요강 참고 (https://drive.google.com/file/d/1KE0MJ-_5fHzr7H0xMcI_KV8wxguLKQoj/view?usp=drive_link)
+[모집요강 참고](https://drive.google.com/file/d/1KE0MJ-_5fHzr7H0xMcI_KV8wxguLKQoj/view?usp=drive_link)
 
 ## 지원 자격
 
@@ -18,13 +18,13 @@ AI-ACE@GIST 연구단은 신경성 뇌질환 조기진단을 위한 AI-나노 �
 
 ## 필수 제출 서류
 
-1. 참여의향서 제출 (https://docs.google.com/forms/d/e/1FAIpQLSf4Nk45czZzFQzq0aSstlNc7yiLbmWve9-QGxqCAjYGy6z8DQ/viewform)
+1. [참여의향서 제출](https://docs.google.com/forms/d/e/1FAIpQLSf4Nk45czZzFQzq0aSstlNc7yiLbmWve9-QGxqCAjYGy6z8DQ/viewform)
 2. 이력서 (CV) - 자유양식
-3. 연구계획서, 추천서 2부, 추천인의 개인정보 동의서 2부 (양식 https://drive.google.com/file/d/1t0jVytK9-Rs4_mSvLpIvZNMZs0QYULrD/view?usp=drive_link)
+3. 연구계획서, 추천서 2부, 추천인의 개인정보 동의서 2부 ([지정 양식](https://drive.google.com/file/d/1t0jVytK9-Rs4_mSvLpIvZNMZs0QYULrD/view?usp=drive_link))
 
 ## 지원 방법
 
-서류를 다음 이메일로 제출해 주세요.
+위의 서류를 다음 이메일로 제출해 주세요.
 innocore_apply@gist.ac.kr
 
 ## 문의
