@@ -1,5 +1,41 @@
 [
   {
+    "id": "media-gist_빛_회전_방향만으로_유기_소재_구조_제어정보_기록판독_기술_개발",
+    "category": "media",
+    "title": "GIST, 빛 회전 방향만으로 유기 소재 구조 제어…정보 기록·판독 기술 개발",
+    "date": "2026-10-29",
+    "summary": "전자신문",
+    "link": "https://www.etnews.com/20261029000020",
+    "image": "/images/media/gist_빛_회전_방향만으로_유기_소재_구조_제어정보_기록판독_기술_개발.jpg"
+  },
+  {
+    "id": "media-학습하지_않은_약물도_반응_예측_신약_후보물질_선별_돕는_ai_개발",
+    "category": "media",
+    "title": "“학습하지 않은 약물도 반응 예측”, 신약 후보물질 선별 돕는 AI 개발",
+    "date": "2026-10-19",
+    "summary": "전자신문",
+    "link": "https://www.etnews.com/20261019000004",
+    "image": "/images/media/학습하지_않은_약물도_반응_예측_신약_후보물질_선별_돕는_ai_개발.jpg"
+  },
+  {
+    "id": "media-고분자_나노선_분자_배열_규명전자소재_성능신축성_조율_길_열어",
+    "category": "media",
+    "title": "고분자 나노선 분자 배열 규명...전자소재 성능·신축성 조율 길 열어",
+    "date": "2026-10-18",
+    "summary": "동아사이언스",
+    "link": "https://www.dongascience.com/ko/news/80403",
+    "image": "/images/media/고분자_나노선_분자_배열_규명전자소재_성능신축성_조율_길_열어.jpg"
+  },
+  {
+    "id": "media-빛과_ai로_육류_신선도_판별_gist_이영주_박사후연구원_세계식육과학기술학회_젊은_과학자상_수상",
+    "category": "media",
+    "title": "“빛과 AI로 육류 신선도 판별” GIST 이영주 박사후연구원, 세계식육과학기술학회 '젊은 과학자상' 수상",
+    "date": "2026-10-16",
+    "summary": "GIST",
+    "link": "https://www.gist.ac.kr/kr/html/sub07/070104.html?mode=V&no=224200",
+    "image": "/images/media/빛과_ai로_육류_신선도_판별_gist_이영주_박사후연구원_세계식육과학기술학회_젊은_과학자상_수상.png"
+  },
+  {
     "id": "media-unist_에너지화학공학_고현협_교수팀_양이온_농도_차이로_장시간_전압_생산_웨어러블_기기_등_자가발전_전원",
     "category": "media",
     "title": "UNIST 에너지화학공학 고현협 교수팀 양이온 농도 차이로 장시간 전압 생산 웨어러블 기기 등 자가발전 전원 기대",
@@ -61,6 +97,15 @@
     "summary": "지스트",
     "link": "https://www.gist.ac.kr/kr/html/sub07/070102.html?mode=V&no=222596",
     "image": "/images/media/gist_알파폴드3_내부_표현_정보_활용한_ai_기술로_신약_후보물질_예측_정확도_향상.png"
+  },
+  {
+    "id": "media-신소재공학과_3학년_진주영_학생_체온에서_스스로_조립돼_약물을_전달하는_고분자_기반_차세대_나노약물전달체_개",
+    "category": "media",
+    "title": "신소재공학과 3학년 진주영 학생, 체온에서 스스로 조립돼 약물을 전달하는 고분자 기반 차세대 나노약물전달체 개발… 항암 효과 향상 및 정상세포 독성 감소 가능성 확인",
+    "date": "2026-07-31",
+    "summary": "베리타스 알파",
+    "link": "https://www.veritas-a.com/news/articleView.html?idxno=621605",
+    "image": "/images/media/신소재공학과_3학년_진주영_학생_체온에서_스스로_조립돼_약물을_전달하는_고분자_기반_차세대_나노약물전달체_개.jpg"
   },
   {
     "id": "media-전남대_치전원_줄기세포분비체연구단_gist_이노코어연구단_뇌졸중_치료_가능성_제시",
