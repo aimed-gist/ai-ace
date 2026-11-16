@@ -1,29 +1,5 @@
 [
   {
-    "id": "publication-10-1016-j-apsusc-2026-168446",
-    "title": "Dual-phosphonic-acid-anchored self-assembled monolayers enhance bottom-electrode interfaces in perovskite memristors",
-    "authors": [
-      "Asafo-Adjei",
-      "B.",
-      "Lee",
-      "J. H.",
-      "Buertey Buer",
-      "A.",
-      "Jo",
-      "J. W."
-    ],
-    "journal": "Applied Surface Science",
-    "year": 2027,
-    "doi": "10.1016/j.apsusc.2026.168446",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1016-j-apsusc-2026-168446.png",
-    "abstract": ""
-  },
-  {
     "id": "publication-10-1021-acsnano-5c16998",
     "title": "<i>N</i>\n                    -Terminal Octylated Peptoid Hydrogels as 3D-Printable Cell Scaffolds and Proteolytically Robust Cargo Depots",
     "authors": [
@@ -125,6 +101,52 @@
     "featured": false,
     "note": "",
     "image": "",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1186-s13321-026-01259-6",
+    "title": "AlphaDTA: integrating AlphaFold3 embeddings and 3D complex structures for drug–target binding affinity prediction",
+    "authors": [
+      "Chung",
+      "M.",
+      "Park",
+      "S.",
+      "Lee",
+      "H."
+    ],
+    "journal": "Journal of Cheminformatics",
+    "year": 2026,
+    "doi": "10.1186/s13321-026-01259-6",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1186-s13321-026-01259-6.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-adts-70514",
+    "title": "An Optically Transparent, Lightweight, High‐Efficiency, and Ultra‐Broadband Polarization Converter Based on a Low‐Filling‐Factor Metallic Frame Metasurface",
+    "authors": [
+      "Phan",
+      "H. L.",
+      "Baek",
+      "J.",
+      "Lee",
+      "D.",
+      "Kim",
+      "M."
+    ],
+    "journal": "Advanced Theory and Simulations",
+    "year": 2026,
+    "doi": "10.1002/adts.70514",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adts-70514.jpg",
     "abstract": ""
   },
   {
@@ -360,6 +382,84 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1002-adma-74566",
+    "title": "Confinement‐Induced Donnan Potential Enables Sealed Hydrovoltaic Power From Microliter Water",
+    "authors": [
+      "Na",
+      "S.",
+      "Jung",
+      "G.",
+      "Chang",
+      "Y.",
+      "Ro",
+      "Y. G.",
+      "Park",
+      "C.",
+      "Yeom",
+      "J.",
+      "Kim",
+      "J.",
+      "Kim",
+      "J.",
+      "Lee",
+      "H.",
+      "Oh",
+      "H.",
+      "Ko",
+      "H."
+    ],
+    "journal": "Advanced Materials",
+    "year": 2026,
+    "doi": "10.1002/adma.74566",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-adma-74566.jpg",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1021-acs-biomac-6c00899",
+    "title": "Coordination-Driven\nProgramming of MOF Stability via\nTargeting Protein Corona Engineering for Hypoxia-Relieving Sonodynamic\nTherapy",
+    "authors": [
+      "Sim",
+      "Y.",
+      "Yang",
+      "G.",
+      "Nam",
+      "J.",
+      "Baek",
+      "S.",
+      "Yoon",
+      "J. H.",
+      "Lee",
+      "J.",
+      "Lee",
+      "H. K.",
+      "Lee",
+      "J.",
+      "Choi",
+      "E.",
+      "Kim",
+      "G.",
+      "Choe",
+      "W.",
+      "Ryu",
+      "J."
+    ],
+    "journal": "Biomacromolecules",
+    "year": 2026,
+    "doi": "10.1021/acs.biomac.6c00899",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1021-acs-biomac-6c00899.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1016-j-mtbio-2026-103182",
     "title": "Crosslinked hyaluronic acid-doped polypyrrole: Stable, nonbiofouling implantable bioelectrodes for in vivo signal recording",
     "authors": [
@@ -381,6 +481,21 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1016-j-mtbio-2026-103182.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1002-smll-75282",
+    "title": "Crystallization‐Driven Helical Conjugated Polymer Nanowires for Circularly Polarized Light‐Addressable Ferroelectric Physical Unclonable Functions",
+    "authors": [],
+    "journal": "Small",
+    "year": 2026,
+    "doi": "10.1002/smll.75282",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1002-smll-75282.jpg",
     "abstract": ""
   },
   {
@@ -533,6 +648,30 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1021-acs-biomac-5c02196.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1016-j-apsusc-2026-168446",
+    "title": "Dual-phosphonic-acid-anchored self-assembled monolayers enhance bottom-electrode interfaces in perovskite memristors",
+    "authors": [
+      "Asafo-Adjei",
+      "B.",
+      "Lee",
+      "J. H.",
+      "Buertey Buer",
+      "A.",
+      "Jo",
+      "J. W."
+    ],
+    "journal": "Applied Surface Science",
+    "year": 2026,
+    "doi": "10.1016/j.apsusc.2026.168446",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-apsusc-2026-168446.png",
     "abstract": ""
   },
   {
@@ -1118,6 +1257,44 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1016-j-cej-2026-180989",
+    "title": "Kosmotropic polymer crosslinking via boronic acid–diol chemistry enables conformal separators for high-rate aqueous zinc batteries",
+    "authors": [
+      "Park",
+      "G.",
+      "Seo",
+      "J.",
+      "Kim",
+      "W.",
+      "Son",
+      "A.",
+      "Kim",
+      "M.",
+      "Choi",
+      "Y.",
+      "Han",
+      "S.",
+      "Liu",
+      "X.",
+      "Passerini",
+      "S.",
+      "Ryu",
+      "J.",
+      "Lee",
+      "S."
+    ],
+    "journal": "Chemical Engineering Journal",
+    "year": 2026,
+    "doi": "10.1016/j.cej.2026.180989",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-cej-2026-180989.jpg",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-s41467-026-78973-0",
     "title": "Liquid-metal physical unclonable functions resistant to both physical and digital cloning",
     "authors": [
@@ -1158,6 +1335,30 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1007-s13534-026-00602-y",
+    "title": "Long-term in vitro and in vivo biocompatibility evaluation of encapsulation materials for micro-LEDs using a multimodal assessment strategy",
+    "authors": [
+      "Baek",
+      "J.",
+      "Jeong",
+      "H.",
+      "Kong",
+      "D.",
+      "Kim",
+      "J. G."
+    ],
+    "journal": "Biomedical Engineering Letters",
+    "year": 2026,
+    "doi": "10.1007/s13534-026-00602-y",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1007-s13534-026-00602-y.webp",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1038-s41598-026-78347-y",
     "title": "Longitudinal monitoring of tumor physiology following cyclophosphamide treatment using diffuse reflectance spectroscopy and diffuse correlation spectroscopy",
     "authors": [
@@ -1186,6 +1387,30 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1016-j-cej-2026-181314",
+    "title": "Magnetically self-assembled 3D micro-pillar supercapacitor with high areal capacitance",
+    "authors": [
+      "Kim",
+      "S.",
+      "Oh",
+      "I. H.",
+      "Jeong",
+      "H.",
+      "Chang",
+      "S. T."
+    ],
+    "journal": "Chemical Engineering Journal",
+    "year": 2026,
+    "doi": "10.1016/j.cej.2026.181314",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-cej-2026-181314.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1088-2631-7990-aea1a8",
     "title": "Materials, design, and fabrication of curved image sensors for bio-inspired, AI-friendly vision systems",
     "authors": [
@@ -1211,6 +1436,44 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1088-2631-7990-aea1a8.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1038-s41467-026-76089-z",
+    "title": "Microchiral pinwheel arrays based on achiral molecules",
+    "authors": [
+      "Han",
+      "J. Y.",
+      "Park",
+      "W. K.",
+      "Noh",
+      "B.",
+      "Araoka",
+      "F.",
+      "Jeong",
+      "S.",
+      "Jhun",
+      "B. H.",
+      "You",
+      "Y.",
+      "Park",
+      "Y.",
+      "Lee",
+      "K. J.",
+      "Heo",
+      "J.",
+      "Yoon",
+      "D. K."
+    ],
+    "journal": "Nature Communications",
+    "year": 2026,
+    "doi": "10.1038/s41467-026-76089-z",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1038-s41467-026-76089-z.png",
     "abstract": ""
   },
   {
@@ -1580,6 +1843,28 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1016-j-compeleceng-2026-111409",
+    "title": "Pathological tremor filtering and prediction using RSSA-based RVFL networks",
+    "authors": [
+      "Rasheed",
+      "A.",
+      "Tsai",
+      "C.",
+      "Veluvolu",
+      "K. C."
+    ],
+    "journal": "Computers and Electrical Engineering",
+    "year": 2026,
+    "doi": "10.1016/j.compeleceng.2026.111409",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1016-j-compeleceng-2026-111409.jpg",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1021-acsami-6c17963",
     "title": "Photonic-Crystal-Integrated Plasmonic Hydrogel Microcylinder Arrays for Enhanced and Fouling-Resistant SERS",
     "authors": [
@@ -1946,6 +2231,28 @@
     "abstract": ""
   },
   {
+    "id": "publication-10-1186-s12859-026-06602-0",
+    "title": "scStyling: quantile-based transformation of bulk RNA-seq into single-cell-like profiles",
+    "authors": [
+      "Jeong",
+      "S.",
+      "Park",
+      "S.",
+      "Lee",
+      "H."
+    ],
+    "journal": "BMC Bioinformatics",
+    "year": 2026,
+    "doi": "10.1186/s12859-026-06602-0",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1186-s12859-026-06602-0.png",
+    "abstract": ""
+  },
+  {
     "id": "publication-10-1021-acs-biomac-6c00174",
     "title": "Self-Assembled Nanomaterials for ER-Targeted Cancer Therapy: From Molecular Design to Therapeutic Applications",
     "authors": [
@@ -2217,6 +2524,28 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1021-acsapm-6c01197.png",
+    "abstract": ""
+  },
+  {
+    "id": "publication-10-1109-jbhi-2025-3643854",
+    "title": "TUNA: A Target-Aware Unified Network for Protein-Ligand Binding Affinity Prediction via Multi-Modal Feature Integration",
+    "authors": [
+      "Yoon",
+      "J.",
+      "Kim",
+      "Y.",
+      "Lee",
+      "H."
+    ],
+    "journal": "IEEE Journal of Biomedical and Health Informatics",
+    "year": 2026,
+    "doi": "10.1109/JBHI.2025.3643854",
+    "type": "publication",
+    "pi": "",
+    "division": "",
+    "featured": false,
+    "note": "",
+    "image": "/images/papers/10-1109-jbhi-2025-3643854.jpg",
     "abstract": ""
   },
   {
@@ -2703,28 +3032,6 @@
     "abstract": ""
   },
   {
-    "id": "publication-10-1186-s13321-026-01259-6",
-    "title": "AlphaDTA: integrating AlphaFold3 embeddings and 3D complex structures for drug–target binding affinity prediction",
-    "authors": [
-      "Chung",
-      "M.",
-      "Park",
-      "S.",
-      "Lee",
-      "H."
-    ],
-    "journal": "Journal of Cheminformatics",
-    "year": 2025,
-    "doi": "10.1186/s13321-026-01259-6",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1186-s13321-026-01259-6.png",
-    "abstract": ""
-  },
-  {
     "id": "publication-10-1038-s41598-025-18807-z",
     "title": "An integrated transcriptomic approach for identifying enhancers in limb motor pools",
     "authors": [
@@ -2750,30 +3057,6 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1038-s41598-025-18807-z.jpg",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1002-adts-70514",
-    "title": "An Optically Transparent, Lightweight, High‐Efficiency, and Ultra‐Broadband Polarization Converter Based on a Low‐Filling‐Factor Metallic Frame Metasurface",
-    "authors": [
-      "Phan",
-      "H. L.",
-      "Baek",
-      "J.",
-      "Lee",
-      "D.",
-      "Kim",
-      "M."
-    ],
-    "journal": "Advanced Theory and Simulations",
-    "year": 2025,
-    "doi": "10.1002/adts.70514",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1002-adts-70514.jpg",
     "abstract": ""
   },
   {
@@ -2863,44 +3146,6 @@
     "abstract": ""
   },
   {
-    "id": "publication-10-1002-adma-74566",
-    "title": "Confinement‐Induced Donnan Potential Enables Sealed Hydrovoltaic Power From Microliter Water",
-    "authors": [
-      "Na",
-      "S.",
-      "Jung",
-      "G.",
-      "Chang",
-      "Y.",
-      "Ro",
-      "Y. G.",
-      "Park",
-      "C.",
-      "Yeom",
-      "J.",
-      "Kim",
-      "J.",
-      "Kim",
-      "J.",
-      "Lee",
-      "H.",
-      "Oh",
-      "H.",
-      "Ko",
-      "H."
-    ],
-    "journal": "Advanced Materials",
-    "year": 2025,
-    "doi": "10.1002/adma.74566",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1002-adma-74566.jpg",
-    "abstract": ""
-  },
-  {
     "id": "publication-10-1002-adsu-202500446",
     "title": "Continuous‐Flow Adsorption With Imidazolium‐Based Porous Organic Polymers Capable of Selective Removal of Chromate Contaminants From Water",
     "authors": [
@@ -2926,61 +3171,6 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1002-adsu-202500446.png",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1021-acs-biomac-6c00899",
-    "title": "Coordination-Driven\nProgramming of MOF Stability via\nTargeting Protein Corona Engineering for Hypoxia-Relieving Sonodynamic\nTherapy",
-    "authors": [
-      "Sim",
-      "Y.",
-      "Yang",
-      "G.",
-      "Nam",
-      "J.",
-      "Baek",
-      "S.",
-      "Yoon",
-      "J. H.",
-      "Lee",
-      "J.",
-      "Lee",
-      "H. K.",
-      "Lee",
-      "J.",
-      "Choi",
-      "E.",
-      "Kim",
-      "G.",
-      "Choe",
-      "W.",
-      "Ryu",
-      "J."
-    ],
-    "journal": "Biomacromolecules",
-    "year": 2025,
-    "doi": "10.1021/acs.biomac.6c00899",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1021-acs-biomac-6c00899.png",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1002-smll-75282",
-    "title": "Crystallization‐Driven Helical Conjugated Polymer Nanowires for Circularly Polarized Light‐Addressable Ferroelectric Physical Unclonable Functions",
-    "authors": [],
-    "journal": "Small",
-    "year": 2025,
-    "doi": "10.1002/smll.75282",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1002-smll-75282.jpg",
     "abstract": ""
   },
   {
@@ -3208,106 +3398,6 @@
     "abstract": ""
   },
   {
-    "id": "publication-10-1016-j-cej-2026-180989",
-    "title": "Kosmotropic polymer crosslinking via boronic acid–diol chemistry enables conformal separators for high-rate aqueous zinc batteries",
-    "authors": [
-      "Park",
-      "G.",
-      "Seo",
-      "J.",
-      "Kim",
-      "W.",
-      "Son",
-      "A.",
-      "Kim",
-      "M.",
-      "Choi",
-      "Y.",
-      "Han",
-      "S.",
-      "Liu",
-      "X.",
-      "Passerini",
-      "S.",
-      "Ryu",
-      "J.",
-      "Lee",
-      "S."
-    ],
-    "journal": "Chemical Engineering Journal",
-    "year": 2025,
-    "doi": "10.1016/j.cej.2026.180989",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1016-j-cej-2026-180989.jpg",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1007-s13534-026-00602-y",
-    "title": "Long-term in vitro and in vivo biocompatibility evaluation of encapsulation materials for micro-LEDs using a multimodal assessment strategy",
-    "authors": [
-      "Baek",
-      "J.",
-      "Jeong",
-      "H.",
-      "Kong",
-      "D.",
-      "Kim",
-      "J. G."
-    ],
-    "journal": "Biomedical Engineering Letters",
-    "year": 2025,
-    "doi": "10.1007/s13534-026-00602-y",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1007-s13534-026-00602-y.webp",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1038-s41467-026-76089-z",
-    "title": "Microchiral pinwheel arrays based on achiral molecules",
-    "authors": [
-      "Han",
-      "J. Y.",
-      "Park",
-      "W. K.",
-      "Noh",
-      "B.",
-      "Araoka",
-      "F.",
-      "Jeong",
-      "S.",
-      "Jhun",
-      "B. H.",
-      "You",
-      "Y.",
-      "Park",
-      "Y.",
-      "Lee",
-      "K. J.",
-      "Heo",
-      "J.",
-      "Yoon",
-      "D. K."
-    ],
-    "journal": "Nature Communications",
-    "year": 2025,
-    "doi": "10.1038/s41467-026-76089-z",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1038-s41467-026-76089-z.png",
-    "abstract": ""
-  },
-  {
     "id": "publication-10-1063-5-0280852",
     "title": "Microstructured optical coatings for climate crisis mitigation",
     "authors": [
@@ -3415,28 +3505,6 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1093-sexmed-qfaf065.png",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1016-j-compeleceng-2026-111409",
-    "title": "Pathological tremor filtering and prediction using RSSA-based RVFL networks",
-    "authors": [
-      "Rasheed",
-      "A.",
-      "Tsai",
-      "C.",
-      "Veluvolu",
-      "K. C."
-    ],
-    "journal": "Computers and Electrical Engineering",
-    "year": 2025,
-    "doi": "10.1016/j.compeleceng.2026.111409",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1016-j-compeleceng-2026-111409.jpg",
     "abstract": ""
   },
   {
@@ -3549,28 +3617,6 @@
     "featured": false,
     "note": "",
     "image": "/images/papers/10-1002-adhm-202502203.jpg",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1186-s12859-026-06602-0",
-    "title": "scStyling: quantile-based transformation of bulk RNA-seq into single-cell-like profiles",
-    "authors": [
-      "Jeong",
-      "S.",
-      "Park",
-      "S.",
-      "Lee",
-      "H."
-    ],
-    "journal": "BMC Bioinformatics",
-    "year": 2025,
-    "doi": "10.1186/s12859-026-06602-0",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1186-s12859-026-06602-0.png",
     "abstract": ""
   },
   {
@@ -3710,28 +3756,6 @@
     "abstract": ""
   },
   {
-    "id": "publication-10-1109-jbhi-2025-3643854",
-    "title": "TUNA: A Target-Aware Unified Network for Protein-Ligand Binding Affinity Prediction via Multi-Modal Feature Integration",
-    "authors": [
-      "Yoon",
-      "J.",
-      "Kim",
-      "Y.",
-      "Lee",
-      "H."
-    ],
-    "journal": "IEEE Journal of Biomedical and Health Informatics",
-    "year": 2025,
-    "doi": "10.1109/JBHI.2025.3643854",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1109-jbhi-2025-3643854.jpg",
-    "abstract": ""
-  },
-  {
     "id": "patent-10-2025-0182880",
     "title": "박테리아 회수용 미세유체 장치",
     "authors": [
@@ -3785,30 +3809,6 @@
     "featured": false,
     "note": "",
     "image": "",
-    "abstract": ""
-  },
-  {
-    "id": "publication-10-1016-j-cej-2026-181314",
-    "title": "Magnetically self-assembled 3D micro-pillar supercapacitor with high areal capacitance",
-    "authors": [
-      "Kim",
-      "S.",
-      "Oh",
-      "I. H.",
-      "Jeong",
-      "H.",
-      "Chang",
-      "S. T."
-    ],
-    "journal": "Chemical Engineering Journal",
-    "year": 2024,
-    "doi": "10.1016/j.cej.2026.181314",
-    "type": "publication",
-    "pi": "",
-    "division": "",
-    "featured": false,
-    "note": "",
-    "image": "/images/papers/10-1016-j-cej-2026-181314.png",
     "abstract": ""
   }
 ]
